@@ -8,10 +8,11 @@ import Home from "../pages/Home";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<Home />}>
-      <Route path="about" element={<About />} />
+    <>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
       {/* implement the component for other routes */}
-    </Route>,
+    </>,
   ),
 );
 

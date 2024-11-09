@@ -1,9 +1,9 @@
-const ServiceCard = ({text, description}) => {
+const ServiceCard = ({text, description, className=""}) => {
   return (
-   <div className="">
-    <div className="">
-      <h1 className="">{text}</h1>
-      <p className="">{description}</p>
+   <div>
+    <div>
+      <h1 >{text}</h1>
+      <p className={ `${className}`}> {description} </p>
     </div>
    </div>
 

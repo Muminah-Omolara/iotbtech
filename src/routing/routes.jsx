@@ -8,6 +8,10 @@ import Home from "../pages/Home";
 import Portfolio from "../pages/Portfolio";
 import Contact from "../pages/Contact";
 import Services from "../pages/Services";
+import ServiceCard from "../components/ServiceCard";
+import Input from "../components/Input";
+import Project from "../components/Project";
+
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -17,6 +21,11 @@ const router = createBrowserRouter(
       <Route path="/portfolio" element={<Portfolio />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/services" element={<Services />} />
+
+
+      <Route path="/serviceCard" element={<ServiceCard/>} />
+      <Route path="/Input" element={<Input/>} />
+      <Route path="/Project" element={<Project/>} />
     </>,
   ),
 );

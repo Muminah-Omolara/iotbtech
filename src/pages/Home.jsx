@@ -1,7 +1,11 @@
+import Clients from "../sections/Clients";
+import Hero from "../sections/Hero";
+
 const Home = () => {
   return (
     <div>
-      <h1 className="text-3xl font-bold underline text-tt-primary">Hello world! This is our HOME here</h1>
+      <Hero />
+      <Clients />
     </div>
   );
 };

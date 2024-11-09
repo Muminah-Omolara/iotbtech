@@ -6,7 +6,8 @@ export default {
       colors: {
         "tt-primary": "#008080",
         "tt-black": "#0E0E2C",
-        "tt-grey": "#A0A4AB"
+        "tt-grey": "#A0A4AB",
+        "tt-white": "#ffffff",
       }
     },
   },

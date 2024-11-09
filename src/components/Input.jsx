@@ -1,7 +1,9 @@
 
-const Input = () => {
+const Input = ({type = "text", placeholder, className}) => {
   return (
-    <input>Input</input>
+<input
+      type={type} placeholder={placeholder} className={ `${className}`}
+    />
   )
 }
 

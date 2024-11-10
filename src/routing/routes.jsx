@@ -8,6 +8,8 @@ import Home from "../pages/Home";
 import Portfolio from "../pages/Portfolio";
 import Contact from "../pages/Contact";
 import Services from "../pages/Services";
+import TeamCard from "../components/TeamCard"; 
+import Login from "../pages/Authentication/Login";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -17,8 +19,10 @@ const router = createBrowserRouter(
       <Route path="/portfolio" element={<Portfolio />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/services" element={<Services />} />
-    </>,
-  ),
+      <Route path="/team" element={<TeamCard />} /> 
+      <Route path="/login" element={<Login />} />
+    </>
+  )
 );
 
 export default router;

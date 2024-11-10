@@ -5,6 +5,7 @@ import webIcon from "./webicon.png"
 import colorPalette from "./color_palette.jpg"
 import cloudIcon from "./cloud_icon.png"
 import uiUx from "./ui_ux.png"
+import ServiceIcon from "./ServiceIcon.svg"
 
 export {
     tektariq,
@@ -14,4 +15,5 @@ export {
     colorPalette,
     cloudIcon,
     uiUx,
+    ServiceIcon,
 }

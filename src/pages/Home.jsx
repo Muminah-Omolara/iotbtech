@@ -1,3 +1,4 @@
+import TeamCard from "../components/TeamCard";
 import Login from "./Authentication/Login";
 
 const Home = () => {

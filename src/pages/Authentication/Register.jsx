@@ -9,52 +9,52 @@ function Register() {
       </div>
 
       <div className="w-full md:w-1/2 bg-white rounded-lg flex flex-col items-center md:items-start order-2 md:order-2">
-        <p className="text-2xl font-bold mb-4 text-[#3B71FE]">Sign Up</p>
+        <p className="text-2xl font-bold mb-4 text-tt-primary">Sign Up</p>
         <h2 className="text-3xl font-bold leading-snug text-left pb-6">Register with Tektariq</h2>
         <form action="">
           <input
             type="text"
             required
             placeholder="Enter Your Surname"
-            className="w-full p-3 mb-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#3B71FE] focus:border-[#3B71FE]"
+            className="w-full p-3 mb-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-tt-primary focus:border-tt-primary"
           />
           <input
             type="text"
             required
             placeholder="Enter Your Firstname"
-            className="w-full p-3 mb-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#3B71FE] focus:border-[#3B71FE]"
+            className="w-full p-3 mb-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-tt-primary focus:border-tt-primary"
           />
           <input
             type="email"
             required
             placeholder="Enter Your Email"
-            className="w-full p-3 mb-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#3B71FE] focus:border-[#3B71FE]"
+            className="w-full p-3 mb-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-tt-primary focus:border-tt-primary"
           />
           <input
             type="number"
             placeholder="Enter Your Mobile Number"
-            className="w-full p-3 mb-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#3B71FE] focus:border-[#3B71FE]"
+            className="w-full p-3 mb-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-tt-primary focus:border-tt-primary"
           />
           <input
             type="password"
             required
             placeholder="Enter Your Password"
-            className="w-full p-3 mb-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#3B71FE] focus:border-[#3B71FE]"
+            className="w-full p-3 mb-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-tt-primary focus:border-tt-primary"
           />
           <input
             type="password"
             required
             placeholder="Confirm Your Password"
-            className="w-full p-3 mb-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#3B71FE] focus:border-[#3B71FE]"
+            className="w-full p-3 mb-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-tt-primary focus:border-tt-primary"
           />
-          <button className="w-full p-3 bg-[#3B71FE] text-white rounded-md hover:bg-[#1F56D0] transition duration-300">
+          <button className="w-full p-3 bg-tt-primary text-white rounded-md hover:bg-tt-primary transition duration-300">
             Register
           </button>
         </form>
 
         <p className="mt-4 text-gray-700">
           Already have an account?{' '}
-          <a href="SignUp" className="text-[#3B71FE] hover:underline">
+          <a href="SignUp" className="text-tt-primary hover:underline">
             Log In
           </a>
         </p>

@@ -9,8 +9,8 @@ const TeamProfile = ({ image, name, portfolio }) => {
         alt={`${name}'s profile`}
         className="w-40 h-60  mb-4 object-cover"
       />
-      <h3 className="text-lg font-semibold ">{name}</h3>
-      <p className="text-sm font-semibold">{portfolio}</p>
+      <h3 className="text-lg font-semibold text-tt-black ">{name}</h3>
+      <p className="text-sm font-semibold text-tt-grey">{portfolio}</p>
       
     </div>
    

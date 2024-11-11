@@ -9,6 +9,7 @@ import Portfolio from "../pages/Portfolio";
 import Contact from "../pages/Contact";
 import Services from "../pages/Services";
 import TeamCard from "../components/TeamCard"; 
+import TestimonialCard from "../components/TestimonialCard";
 import Login from "../pages/Authentication/Login";
 
 const router = createBrowserRouter(
@@ -21,6 +22,8 @@ const router = createBrowserRouter(
       <Route path="/services" element={<Services />} />
       <Route path="/team" element={<TeamCard />} /> 
       <Route path="/login" element={<Login />} />
+      <Route path="/testimonial" element={<TestimonialCard />} />
+      
     </>
   )
 );

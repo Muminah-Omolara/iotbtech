@@ -49,7 +49,7 @@ const TestimonialCard = () => {
     <div className="bg-[#A0A4AB1A] pb-6 pt-6 md:pb-custom-pb md:pt-custom-pt">
       <div className="custom-container sm:px-4 lg:px-[163px] px-[1rem]">
         <div className="w-full">
-          <p className="text-2xl font-bold mb-4 text-[#3B71FE]">Testimonial</p>
+          <p className="text-2xl font-bold mb-4 text-tt-primary">Testimonial</p>
           <h2 className="text-3xl font-bold leading-snug text-left">
             You still hesitate about working with us? <br className="hidden md:block" /> Check what they say about us
           </h2>

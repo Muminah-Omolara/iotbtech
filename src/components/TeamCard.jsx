@@ -43,7 +43,7 @@ const TeamCard = () => {
 
   return (
     <div className="custom-container sm:px-4 lg:px-[163px] px-[1rem]">
-      <p className="p-4 sm:p-6 text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-[#3B71FE] text-left sm:text-left">
+      <p className="p-4 sm:p-6 text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-tt-primary text-left sm:text-left">
         The Team
       </p>
       <div className="flex flex-col sm:flex-row p-4 gap-6 items-start">

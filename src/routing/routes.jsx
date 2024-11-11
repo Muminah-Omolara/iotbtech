@@ -8,9 +8,7 @@ import Home from "../pages/Home";
 import Portfolio from "../pages/Portfolio";
 import Contact from "../pages/Contact";
 import Services from "../pages/Services";
-import ServiceCard from "../components/ServiceCard";
-import Input from "../components/Input";
-import Project from "../components/Project";
+
 
 
 const router = createBrowserRouter(

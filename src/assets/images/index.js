@@ -4,7 +4,13 @@ import tesla from "./tesla.png"
 import tiktok from "./tiktok.png"
 import yassir from "./yassir.png"
 import google from "./google.png"
-import introBg from "./intro-bg.jpg"
+import heroImage from "./heroImage.png"
+import adocImg from "./adoc.png"
+import bookingImg from "./booking.png"
+import delexImg from "./delex.png"
+import homeleyImg from "./homley.png"
+import webApp from "./webApp.png"
+import patternCircles from "./pattern_circles.png"
 
 export {
     microsoft,
@@ -13,5 +19,11 @@ export {
     tiktok,
     yassir,
     google,
-    introBg,
+    heroImage,
+    adocImg,
+    bookingImg,
+    delexImg,
+    homeleyImg,
+    webApp,
+    patternCircles,
 }

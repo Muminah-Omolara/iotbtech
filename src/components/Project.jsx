@@ -1,7 +1,6 @@
 import ServiceIcon from "../assets/icons/ServiceIcon.svg"
 import ServiceCard from "./ServiceCard"
 
-
 const Project = () => {
   return (
       <div className="flex flex-col lg:flex-row gap-4 lg:gap-48 p-4 ">

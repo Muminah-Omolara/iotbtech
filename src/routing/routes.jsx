@@ -9,8 +9,6 @@ import Portfolio from "../pages/Portfolio";
 import Contact from "../pages/Contact";
 import Services from "../pages/Services";
 
-
-
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" >

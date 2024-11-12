@@ -13,13 +13,13 @@ import Services from "../pages/Services";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <>
-      <Route path="/" element={<Home />} />
+    <Route path="/" >
+      <Route index element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/portfolio" element={<Portfolio />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/services" element={<Services />} />
-    </>,
+    </Route>,
   ),
 );
 

@@ -1,8 +1,10 @@
 
-const Input = ({type = "text", placeholder, className}) => {
+const Input = ({type, placeholder}) => {
   return (
 <input
-      type={type} placeholder={placeholder} className={ `${className}`}
+      type={type} 
+      placeholder={placeholder}
+       className="w-96 h-12 border-2 border-tt-grey focus:outline focus:border-tt-primary rounded-md"
     />
   )
 }

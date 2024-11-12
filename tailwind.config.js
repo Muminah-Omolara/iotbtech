@@ -7,7 +7,7 @@ export default {
         "tt-primary": "#008080",
         "tt-black": "#0E0E2C",
         "tt-grey": "#A0A4AB",
-        "tt-white": "#ffffff",
+        "tt-white": "#FFFFFF",
       }
     },
   },

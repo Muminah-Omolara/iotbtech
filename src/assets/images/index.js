@@ -10,6 +10,7 @@ import bookingImg from "./booking.png"
 import delexImg from "./delex.png"
 import homeleyImg from "./homley.png"
 import webApp from "./webApp.png"
+import patternCircles from "./pattern_circles.png"
 
 export {
     microsoft,
@@ -24,4 +25,5 @@ export {
     delexImg,
     homeleyImg,
     webApp,
+    patternCircles,
 }

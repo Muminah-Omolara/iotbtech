@@ -1,4 +1,3 @@
-import React from "react";
 import Button from "./Button";
 import { MdOutlineNavigateNext } from "react-icons/md";
 

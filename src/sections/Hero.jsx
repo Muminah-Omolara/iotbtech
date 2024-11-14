@@ -24,11 +24,11 @@ const Hero = () => {
                         <polygon points="0,5 1.6666666666666667,2.5 0,0 5,2.5" fill="#008080"></polygon>
                 </marker></defs>
         </svg>
-            <h2 className="text-xl mb-2 font-semibold text-tt-primary -mt-3">Hello,</h2>
-            <h1 className="text-tt-black text-3xl lg:text-5xl font-bold mb-8">
+            <h2 className="text-xl mb-2 font-semibold text-tt-primary -mt-3 text-left">Hello,</h2>
+            <h1 className="text-tt-black text-3xl lg:text-5xl font-bold mb-8 text-left">
                 Unlocking your potential with technological driven skills
             </h1>
-            <p className="text-xl text-tt-grey mb-6">
+            <p className="text-xl text-tt-grey mb-6 text-left">
                 Tektariq helps you develop critical hand on digital skills.
             </p>
             <div className="flex flex-col lg:flex-row justify-center lg:justify-start mt-9 mb-8 gap-5">

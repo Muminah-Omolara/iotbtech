@@ -1,6 +1,7 @@
 import Button from "./Button";
 import { MdOutlineNavigateNext } from "react-icons/md";
 
+// eslint-disable-next-line react/prop-types
 const ServiceWithImageCard = ({ title, description, body, linkTo, img }) => {
   return (
     <div className="flex bg-white shadow-lg rounded-lg p-6 max-w-4xl mx-auto">

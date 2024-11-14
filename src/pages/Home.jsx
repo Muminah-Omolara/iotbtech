@@ -1,12 +1,12 @@
 import Clients from "../sections/Clients";
-import Hero from "../sections/Hero";
+import HomeHero from "../sections/HomeHero";
 import ServicesOffer from "../sections/ServicesOffer";
 import WorkRealised from "../sections/WorkRealised";
 
 const Home = () => {
   return (
     <div>
-      <Hero />
+      <HomeHero />
       <Clients />
       <ServicesOffer />
       <WorkRealised />

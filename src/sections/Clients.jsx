@@ -1,23 +1,24 @@
-import { google, microsoft, spotify, tesla, tiktok, yassir } from "../assets/images"
-import ImagesComponent from "../components/ImagesComponent"
+import { mentorCompnies } from "../data/companies";
 
 const Clients = () => {
   return (
-    <div className="mx-auto max-w-5xl p-6 lg:p-0 mt-24">
-        <h2 className="text-tt-black text-lg font-bold mb-8">
-            Clients We helped
-        </h2>
-        <div className="grid grid-cols-3 sm:grid-cols-2 md:grid-cols-3
-            lg:grid-cols-6 gap-8 items-center justify-center">
-                <ImagesComponent src={microsoft} alt="microsoft logo" />
-                <ImagesComponent src={google} alt="google logo" />
-                <ImagesComponent src={spotify} alt="spotify logo" />
-                <ImagesComponent src={tesla} alt="tesla logo" />
-                <ImagesComponent src={yassir} alt="yassir logo" />
-                <ImagesComponent src={tiktok} alt="tiktok logo" />
+    <div className="py-8">
+      <div className="max-w-screen-xl mx-auto px-4 md:px-8">
+        <h3 className="font-semibold text-sm text-gray-600 text-center">
+          MENTORS FROM COMPANIES FROM AROUND THE WORLD
+        </h3>
+        <div className="mt-6">
+          <ul className="flex gap-x-10 gap-y-6 flex-wrap items-center justify-center md:gap-x-16">
+            {mentorCompnies.map((c) => (
+              <li key={c.name}>
+                <img src={c.logo} alt={c.name} className="w-32" />
+              </li>
+            ))}
+          </ul>
         </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Clients
+export default Clients;

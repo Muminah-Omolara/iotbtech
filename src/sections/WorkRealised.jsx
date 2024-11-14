@@ -1,7 +1,8 @@
 import WorkImages from "../components/WorkImages"
-import { adocImg, bookingImg, delexImg, homeleyImg, webApp } from "../assets/images"
+// import { adocImg, bookingImg, delexImg, homeleyImg, webApp } from "../assets/images"
 import Button from "../components/Button";
 import { MdOutlineNavigateNext } from "react-icons/md";
+import workImages from "../data/workimages";
 
 const WorkRealised = () => {
   return (
@@ -13,13 +14,25 @@ const WorkRealised = () => {
 
         <div className="flex flex-col lg:flex-row md:flex-row items-center gap-10">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
-                <WorkImages imgSrc={delexImg} imgTitle="UI/UX" imgText="Delix Relay" />
-                <WorkImages imgSrc={webApp} imgTitle="Web App Development" imgText="Cookie" />
-                <WorkImages imgSrc={bookingImg} imgTitle="UI/UX Design" imgText="Booking.com" />
-                <WorkImages imgSrc={homeleyImg} imgTitle="UI/UX Design" imgText="Homley" />
+                {workImages.slice(0,4).map((image) => (
+                    <WorkImages 
+                        key={image.imgText}
+                        imgSrc={image.imgSrc}
+                        imgTitle={image.imgTitle}
+                        imgText={image.imgText}
+                    />
+                ))}
             </div>
+
             <div>
-                <WorkImages imgSrc={adocImg} imgTitle="UI/UX Design" imgText="ADOC" />
+                {workImages.slice(4).map((image) => (
+                    <WorkImages 
+                        key={image.imgText}
+                        imgSrc={image.imgSrc}
+                        imgTitle={image.imgTitle}
+                        imgText={image.imgText}
+                    />
+                ))}
             </div>
         </div>
         <div className="flex items-center justify-center mt-12 mb-10">

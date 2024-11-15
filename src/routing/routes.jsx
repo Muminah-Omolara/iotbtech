@@ -13,6 +13,9 @@ import TeamCard from "../components/TeamCard";
 import TestimonialCard from "../components/TestimonialCard";
 import Login from "../pages/Authentication/Login";
 import ComponentTest from "../pages/ComponentTest";
+import Register from "../pages/Authentication/Register";
+import Forgot_Password from "../pages/Authentication/ForgotPassword";
+import SetPassword from "../pages/Authentication/SetPassword";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -24,6 +27,9 @@ const router = createBrowserRouter(
       <Route path="/services" element={<Services />} />
       <Route path="/team" element={<TeamCard />} /> 
       <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Register/>} />
+      <Route path="/forgetpassword" element={<Forgot_Password/>} />
+      <Route path="/setpassword" element={<SetPassword/>} />
       <Route path="/testimonial" element={<TestimonialCard />} />
       <Route path="/component-test" element={<ComponentTest />} />
     </Route>,

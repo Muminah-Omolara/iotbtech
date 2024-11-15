@@ -8,10 +8,11 @@ import ForgotPassword from "./pages/Authentication/ForgotPassword";
 import SetPassword from "./pages/Authentication/SetPassword";
 
 function App() {
-  return <div className="font-sans">
-    <RouterProvider router={router} />
-   
-    </div>;
+  return(
+    <div>
+      <RouterProvider router={router} />
+    </div>
+  ) 
 }
 
 export default App;

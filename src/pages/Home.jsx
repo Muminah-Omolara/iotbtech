@@ -1,11 +1,17 @@
 import TeamCard from "../components/TeamCard";
 import Login from "./Authentication/Login";
+import Clients from "../sections/Clients";
+import HomeHero from "../sections/HomeHero";
+import ServicesOffer from "../sections/ServicesOffer";
+import WorkRealised from "../sections/WorkRealised";
 
 const Home = () => {
   return (
     <div>
-      <h1 className="text-3xl font-bold underline text-tt-primary">Hello world! This is our HOME here</h1>
-      
+      <HomeHero />
+      <Clients />
+      <ServicesOffer />
+      <WorkRealised />
     </div>
   );
 };

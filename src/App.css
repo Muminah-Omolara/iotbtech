@@ -1,0 +1,11 @@
+/* CSS Hexagon using clip-path */
+/* .clip-hexagon {
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    border-radius: 50px;
+}
+*/
+
+.rounded-hexagon {
+    mask-image: radial-gradient(circle at 50% 50%, transparent 0%, transparent 40%, black 45%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}

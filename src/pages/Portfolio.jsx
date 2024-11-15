@@ -1,6 +1,12 @@
+import ProjectPortfolioCard from "../components/ProjectPortfolioCard"
+import ProjectPortfolioHero from "../components/ProjectPortfolioHero"
+
 const Portfolio = () => {
   return (
-    <div>Portfolio Page</div>
+    <div>
+      <ProjectPortfolioHero />
+      <ProjectPortfolioCard />
+    </div>
   )
 }
 

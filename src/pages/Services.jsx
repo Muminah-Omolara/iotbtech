@@ -1,6 +1,7 @@
+
 const Services = () => {
   return (
-    <div>Services Page</div>
+    <div>Services</div>
   )
 }
 

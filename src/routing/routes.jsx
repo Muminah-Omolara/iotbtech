@@ -28,8 +28,8 @@ const router = createBrowserRouter(
       <Route path="/team" element={<TeamCard />} /> 
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register/>} />
-      <Route path="/forgetpassword" element={<Forgot_Password/>} />
-      <Route path="/setpassword" element={<SetPassword/>} />
+      <Route path="/forget-password" element={<Forgot_Password/>} />
+      <Route path="/set-password" element={<SetPassword/>} />
       <Route path="/testimonial" element={<TestimonialCard />} />
       <Route path="/component-test" element={<ComponentTest />} />
     </Route>,

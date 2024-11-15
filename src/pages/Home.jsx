@@ -1,3 +1,5 @@
+import TeamCard from "../components/TeamCard";
+import Login from "./Authentication/Login";
 import Clients from "../sections/Clients";
 import HomeHero from "../sections/HomeHero";
 import ServicesOffer from "../sections/ServicesOffer";

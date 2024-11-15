@@ -9,6 +9,9 @@ import Contact from "../pages/Contact";
 import Home from "../pages/Home";
 import Portfolio from "../pages/Portfolio";
 import Services from "../pages/Services";
+import TeamCard from "../components/TeamCard"; 
+import TestimonialCard from "../components/TestimonialCard";
+import Login from "../pages/Authentication/Login";
 import ComponentTest from "../pages/ComponentTest";
 
 const router = createBrowserRouter(
@@ -19,6 +22,9 @@ const router = createBrowserRouter(
       <Route path="/portfolio" element={<Portfolio />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/services" element={<Services />} />
+      <Route path="/team" element={<TeamCard />} /> 
+      <Route path="/login" element={<Login />} />
+      <Route path="/testimonial" element={<TestimonialCard />} />
       <Route path="/component-test" element={<ComponentTest />} />
     </Route>,
   ),

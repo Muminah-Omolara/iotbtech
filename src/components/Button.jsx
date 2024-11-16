@@ -12,6 +12,7 @@ const Button = ({ text, type="solid", icon}) => {
       className={`flex items-center justify-center space-x-2 ${buttonStyle}`}>
         <span>{text}</span>
         {icon && <span>{icon}</span>}
+        
     </button>
   )
 }

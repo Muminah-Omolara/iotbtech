@@ -7,7 +7,7 @@ export default {
         
         'custom-w': '100%', 
         'md-custom-w': '80%', 
-        'lg-custom-w': '70%', 
+        // 'lg-custom-w': '70%', 
         'custom-pt': '1rem', 
         'custom-pl': '1rem', 
         'custom-pr': '1rem', 

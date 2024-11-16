@@ -42,7 +42,7 @@ const TeamCard = () => {
   };
 
   return (
-    <div className="custom-container sm:px-4 lg:px-[163px] px-[1rem]">
+    <div className="mx-auto custom-container items-center w-auto max-w-5xl px-4 py-4 lg:px-0 lg:py-0">
       <p className="p-4 sm:p-6 text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-tt-primary text-left sm:text-left">
         The Team
       </p>

@@ -1,9 +1,10 @@
 import React from 'react';
 import ForgotPassword from '../../assets/forgotpassword.jpg';
+import Input from '../../components/Input';
 
 function Forgot_Password() {
   return (
-    <div className="custom-container sm:px-4 lg:px-[163px] px-[1rem] gap-9 flex flex-col md:flex-row justify-center items-center min-h-screen bg-white">
+    <div className="mx-auto w-auto max-w-5xl px-4 py-4 lg:px-0 lg:py-2 sm:px-4 gap-9 flex flex-col md:flex-row justify-center items-center min-h-screen">
       <div className="w-full md:w-1/2 order-1 md:order-1">
         <img
           src={ForgotPassword}
@@ -17,11 +18,9 @@ function Forgot_Password() {
         <h2 className="text-3xl font-bold leading-snug text-left pb-6">Forget your Password?</h2>
         <p>Don’t worry, happens to all of us. Enter your email below to recover your password</p>
         <form action="">
-          <input
-            type="email"
-            placeholder="Enter Your Email"
-            className="w-full p-3 mb-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-tt-primary focus:border-tt-primary"
-          />
+          <Input type="email" placeholder="Enter Your Email" />
+
+        
 
           <button className="w-full p-3 bg-tt-primary text-white rounded-md hover:bg-tt-primary transition duration-300">
             Submit
@@ -29,7 +28,7 @@ function Forgot_Password() {
 
           <p className="mt-4 text-gray-700">
             Remembered your password?{' '}
-            <a href="SignUp" className="text-tt-primary hover:underline">
+            <a href="Login" className="text-tt-primary hover:underline">
               Go Back to Login
             </a>
           </p>

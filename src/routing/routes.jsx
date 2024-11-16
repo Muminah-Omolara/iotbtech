@@ -16,6 +16,7 @@ import ComponentTest from "../pages/ComponentTest";
 import Register from "../pages/Authentication/Register";
 import Forgot_Password from "../pages/Authentication/ForgotPassword";
 import SetPassword from "../pages/Authentication/SetPassword";
+import ContactUs from "../components/ContactUs";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -31,6 +32,7 @@ const router = createBrowserRouter(
       <Route path="/forget-password" element={<Forgot_Password/>} />
       <Route path="/set-password" element={<SetPassword/>} />
       <Route path="/testimonial" element={<TestimonialCard />} />
+      <Route path="/contact-us" element={<ContactUs/>} />
       <Route path="/component-test" element={<ComponentTest />} />
     </Route>,
   ),

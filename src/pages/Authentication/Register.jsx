@@ -1,4 +1,4 @@
-import register from '../../assets/Register.png';
+import register from '../../assets/register.png';
 
 function Register() {
   return (

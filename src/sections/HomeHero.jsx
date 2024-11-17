@@ -20,7 +20,7 @@ const Hero = () => {
           version="1.1"
           // eslint-disable-next-line react/no-unknown-property
           xmlns:xlink="http://www.w3.org/1999/xlink"
-          xmlns:svgjs="http://svgjs.dev/svgjs"
+          // xmlns:svgjs="http://svgjs.dev/svgjs"
           viewBox="0 0 800 800"
           className="hidden lg:block absolute -left-[120px] w-[400px] h-[400px] lg:w-[520px] lg:h-[380px] z-0"
         >
@@ -54,13 +54,13 @@ const Hero = () => {
             </marker>
           </defs>
         </svg>
-        <h2 className="text-xl mb-2 font-semibold text-tt-primary -mt-3">
+        <h2 className="text-xl text-left mb-2 font-semibold text-tt-primary -mt-3">
           Hello,
         </h2>
-        <h1 className="text-tt-black text-3xl lg:text-5xl font-bold mb-8">
+        <h1 className="text-tt-black text-left text-3xl lg:text-5xl font-bold mb-8">
           Unlocking your potential with technological driven skills
         </h1>
-        <p className="text-xl text-tt-grey mb-6">
+        <p className="text-xl text-tt-grey mb-6 text-left">
           Tektariq helps you develop critical hand on digital skills.
         </p>
         <div className="flex flex-col lg:flex-row justify-center lg:justify-start mt-9 mb-8 gap-5">

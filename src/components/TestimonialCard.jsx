@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import profile1 from '../assets/Profile1.png';
 import profile2 from '../assets/Profile2.png';
 import profile3 from '../assets/Profile3.png';
@@ -46,10 +46,10 @@ const TestimonialCard = () => {
   };
 
   return (
-    <div className="bg-[#A0A4AB1A] pb-6 pt-6 md:pb-custom-pb md:pt-custom-pt">
-      <div className="custom-container sm:px-4 lg:px-[163px] px-[1rem]">
+    <div className="bg-[#A0A4AB1A] pb-6 pt-6 md:pb-custom-pb md:pt-custom-pt mb-24">
+      <div className="mx-auto max-w-5xl p-6 lg:p-0 mt-24">
         <div className="w-full">
-          <p className="text-2xl font-bold mb-4 text-tt-primary">Testimonial</p>
+          <p className="text-lg font-bold mb-4 text-tt-primary">Testimonial</p>
           <h2 className="text-3xl font-bold leading-snug text-left">
             You still hesitate about working with us? <br className="hidden md:block" /> Check what they say about us
           </h2>

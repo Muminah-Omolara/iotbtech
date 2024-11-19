@@ -9,7 +9,7 @@ const Services = () => {
       <OurProcess />
       <ServiceWithImage />
     </div>
-  )
-}
+  );
+};
 
-export default Services
+export default Services;

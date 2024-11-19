@@ -21,6 +21,9 @@ export default {
         "tt-black": "#0E0E2C",
         "tt-grey": "#A0A4AB",
         "tt-white": "#FFFFFF",
+      },
+      fontFamily: {
+        sans: ['Poppins', 'sans-serif']
       }
     },
   },

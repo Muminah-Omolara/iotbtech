@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import profile1 from '../assets/Profile1.png';
 import profile2 from '../assets/Profile2.png';
 import profile3 from '../assets/Profile3.png';
@@ -54,7 +54,6 @@ const TestimonialCard = () => {
             You still hesitate about working with us? <br className="hidden md:block" /> Check what they say about us
           </h2>
         </div>
-
         <div className="mt-8 flex flex-col items-center">
           <div className={`flex flex-row gap-6 ${isMobile ? 'flex-col' : ''}`}>
             {visibleProfiles.map((profile, index) => (
@@ -67,7 +66,6 @@ const TestimonialCard = () => {
               />
             ))}
           </div>
-
           <div className="flex justify-center items-center gap-6 pt-4">
             <button
               onClick={handlePrev}

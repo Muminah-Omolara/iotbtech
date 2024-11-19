@@ -16,25 +16,26 @@ import ComponentTest from "../pages/ComponentTest";
 import Register from "../pages/Authentication/Register";
 import Forgot_Password from "../pages/Authentication/ForgotPassword";
 import SetPassword from "../pages/Authentication/SetPassword";
-import ContactUs from "../components/ContactUs";
+import NotFound from "../pages/NotFound";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<PageLayout />}>
-      <Route index element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/portfolio" element={<Portfolio />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="/services" element={<Services />} />
-      <Route path="/team" element={<TeamCard />} /> 
-      <Route path="/login" element={<Login />} />
-      <Route path="/register" element={<Register/>} />
-      <Route path="/forget-password" element={<Forgot_Password/>} />
-      <Route path="/set-password" element={<SetPassword/>} />
-      <Route path="/testimonial" element={<TestimonialCard />} />
-      <Route path="/contact-us" element={<ContactUs/>} />
-      <Route path="/component-test" element={<ComponentTest />} />
-    </Route>,
+    <>
+      <Route path="/" element={<PageLayout />} errorElement={<NotFound/>  }>
+        <Route index element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/team" element={<TeamCard />} /> 
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register/>} />
+        <Route path="/forget-password" element={<Forgot_Password/>} />
+        <Route path="/set-password" element={<SetPassword/>} />
+        <Route path="/testimonial" element={<TestimonialCard />} />
+        <Route path="/component-test" element={<ComponentTest />} />
+      </Route>
+    </>,
   ),
 );
 

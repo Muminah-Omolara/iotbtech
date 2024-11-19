@@ -1,6 +1,5 @@
-import React from 'react';
-import register from '../../assets/Register.png';
 import Input from '../../components/Input';
+import register from '../../assets/register.png';
 
 function Register() {
   return (

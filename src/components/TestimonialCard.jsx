@@ -46,15 +46,14 @@ const TestimonialCard = () => {
   };
 
   return (
-    <div className="bg-[#A0A4AB1A] pb-6 pt-6 md:pb-custom-pb md:pt-custom-pt mb-24">
-      <div className="mx-auto max-w-5xl p-6 lg:p-0 mt-24">
-        <div className="w-full">
-          <p className="text-lg font-bold mb-4 text-tt-primary">Testimonial</p>
+    <div className="bg-[#A0A4AB1A]  mx-auto pb-6 pt-6 md:pb-custom-pb md:pt-custom-pt">
+      <div className="mx-auto custom-container items-center w-auto max-w-5xl px-4 py-4 lg:px-0 lg:py-0 ">
+        <div className="w-full max-w-5xl">
+          <p className="text-2xl font-bold mb-4 text-tt-primary">Testimonial</p>
           <h2 className="text-3xl font-bold leading-snug text-left">
             You still hesitate about working with us? <br className="hidden md:block" /> Check what they say about us
           </h2>
         </div>
-
         <div className="mt-8 flex flex-col items-center">
           <div className={`flex flex-row gap-6 ${isMobile ? 'flex-col' : ''}`}>
             {visibleProfiles.map((profile, index) => (
@@ -67,7 +66,6 @@ const TestimonialCard = () => {
               />
             ))}
           </div>
-
           <div className="flex justify-center items-center gap-6 pt-4">
             <button
               onClick={handlePrev}

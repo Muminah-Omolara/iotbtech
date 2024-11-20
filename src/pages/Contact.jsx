@@ -17,6 +17,7 @@ function Contact() {
            
             <form action="">
                 <label htmlFor="">Your Name</label>
+                
                 <Input type="text" placeholder="Your Full Name" />
                 <label htmlFor="">Your Email</label>
                 <Input type="email" placeholder="Your email" />

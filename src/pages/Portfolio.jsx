@@ -1,7 +1,7 @@
 import ProjectPortfolioCard from "../components/ProjectPortfolioCard"
 import ProjectPortfolioHero from "../components/ProjectPortfolioHero"
 import ProjectStats from "../sections/ProjectStats"
-import TestimonialCard from "../components/TestimonialCard"
+import Testimonials from "../sections/Testimonials"
 
 const Portfolio = () => {
   return (
@@ -9,7 +9,7 @@ const Portfolio = () => {
       <ProjectPortfolioHero />
       <ProjectStats />
       <ProjectPortfolioCard />
-      <TestimonialCard />
+      <Testimonials />
     </div>
   )
 }

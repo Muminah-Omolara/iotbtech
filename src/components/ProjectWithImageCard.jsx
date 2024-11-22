@@ -2,9 +2,12 @@ import Button from "./Button";
 import { MdOutlineNavigateNext } from "react-icons/md";
 
 // eslint-disable-next-line react/prop-types
-const ServiceWithImageCard = ({ title, description, body, linkTo, img }) => {
+const ProjectWithImageCard = ({ title, description, body, linkTo, img, inverseOrder }) => {
+  // add inverseOrder as a prop and do if flex direction is true, the inverse will be done
+  // if even number, it should be inverse
   return (
-    <div className="flex flex-col lg:flex-row md:flex-row mb-5 bg-white rounded-lg p-6 max-w-4xl mx-auto">
+    <div className={`flex flex-col lg:flex-row md:flex-row mb-5 bg-white ${inverseOrder ? "lg:flex-row-reverse gap-8" : ""}
+    rounded-lg p-6 max-w-4xl mx-auto`}>
       <div className="flex-1 pr-6">
         <p className="text-tt-primary font-semibold mb-4">{title}</p>
         <h2 className="text-2xl font-semibold text-tt-black mb-2">
@@ -31,4 +34,4 @@ const ServiceWithImageCard = ({ title, description, body, linkTo, img }) => {
   );
 };
 
-export default ServiceWithImageCard;
+export default ProjectWithImageCard;

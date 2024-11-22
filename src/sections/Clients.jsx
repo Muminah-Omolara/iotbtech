@@ -8,7 +8,7 @@ const Clients = () => {
           MENTORS FROM COMPANIES FROM AROUND THE WORLD
         </h3>
         <div className="mt-6">
-          <ul className="flex gap-x-10 gap-y-6 flex-wrap items-center justify-center md:gap-x-16">
+          <ul className="flex gap-x-32 gap-y-6 flex-wrap items-center justify-center md:gap-x-16">
             {mentorCompnies.map((c) => (
               <li key={c.name}>
                 <img src={c.logo} alt={c.name} className="w-32" />

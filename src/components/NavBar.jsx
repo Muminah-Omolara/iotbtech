@@ -11,110 +11,59 @@ const NavBar = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+  const navigation = [
+    { title: "Home", path: "/" },
+    { title: "Who we are?", path: "/about" },
+    { title: "Our Services", path: "/services" },
+    { title: "Our Projects", path: "/portfolio" },
+    { title: "Contact Us", path: "/contact" },
+  ];
+
   return (
-    <header className="mx-auto flex justify-between items-center w-full max-w-5xl px-8 py-4 lg:px-0 lg:py-0 ">
-      <div className="w-[120px] ">
-        <img src={Logo} alt="tektariq-logo" />
-      </div>
-      <div>
-        <ul className="hidden md:flex text-xl p-5 ">
-          <li
-            onClick={() => {
-              setIsMenuOpen(false);
-              window.scrollTo(0, 0);
-            }}
-          >
-            <NavLink
-              to="/"
-              className={({ isActive }) =>
-                isActive
-                  ? "text-tt-black mr-3 border-b-2 border-tt-primary hover:text-tt-primary"
-                  : "text-tt-grey-600"
-              }
+    <nav className="bg-white w-full border-b md:border-0 md:static">
+      <div className="items-center px-4 max-w-screen-xl mx-auto md:flex md:px-8">
+        <div className="flex items-center justify-between py-3 md:py-5 md:block">
+          <NavLink to="/">
+            <img src={Logo} alt="tektariq-logo" className="max-w-24" />
+          </NavLink>
+
+          <div className="md:hidden">
+            <button
+              className="text-gray-700 outline-none p-2 rounded-md focus:border-gray-400 focus:border"
+              onClick={toggleMenu}
             >
-              Home
-            </NavLink>
-            <NavLink
-              to="/about"
-              className="text-tt-grey mr-3  transition-colors hover:text-tt-primary text-md font-medium leading-6"
-            >
-              Who we are ?
-            </NavLink>
-            <NavLink
-              to="/services"
-              className="text-tt-grey mr-3 text-md transition-colors hover:text-tt-primary font-medium leading-6"
-            >
-              Our services
-            </NavLink>
-            <NavLink
-              to="/portfolio"
-              className="text-tt-grey mr-3 text-md transition-colors hover:text-tt-primary font-medium leading-6"
-            >
-              Our projects
-            </NavLink>
-            <NavLink
-              to="/contact"
-              className="text-tt-grey mr-3 text-md transition-colors hover:text-tt-primary font-medium leading-6"
-            >
-              Contact us
-            </NavLink>
-          </li>
-        </ul>
-      </div>
-      <div className="hidden xl:flex md:flex">
-        <Button text="Get Started" />
-      </div>
-      <div
-        onClick={toggleMenu}
-        className="xl:hidden block items-center focus:outline-none cursor-pointer"
-      >
-        <span className="text-4xl font-extrabold">
-          <img src={Hamburger} alt="hamburger" />
-        </span>
-      </div>
-      <div
-        className={`fixed top-0 right-0 w-1/3 h-[350px] bg-tt-primary shadow-lg transition-transform ${
-          isMenuOpen ? "translate-x-0" : "translate-x-full"
-        }`}
-      >
-        <div className="flex justify-end p-4">
-          <button onClick={toggleMenu} className="text-5xl text-white">
-            <IoIosClose />
-          </button>
+              {isMenuOpen ? (
+                <IoIosClose />
+              ) : (
+                <img src={Hamburger} alt="open menu" />
+              )}
+            </button>
+          </div>
         </div>
-        <ul
-          className={`absolute xl:hidden top-20 left-0 w-full text-white flex flex-col
-          items-start px-6 gap-6 font-semibold text-lg transform transition-transform ${
-            isMenuOpen ? "opacity-100" : "opacity-0"
-          }`}
-          style={{ transition: "transform 0.3s ease, opacity 0.3s ease" }}
+        <div
+          className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${isMenuOpen ? "block" : "hidden"}`}
         >
-          <li
-            className="flex flex-col cursor-pointer text-white transition-all"
-            onClick={() => {
-              setIsMenuOpen(false);
-              window.scrollTo(0, 0);
-            }}
-          >
-            <NavLink to="/" className="mb-5">
-              Home
-            </NavLink>
-            <NavLink to="/about" className="mb-5">
-              Who we are ?
-            </NavLink>
-            <NavLink to="/services" className="mb-5">
-              Our services
-            </NavLink>
-            <NavLink to="/portfolio" className="mb-5">
-              Our projects
-            </NavLink>
-            <NavLink to="/contact" className="mb-5">
-              Contact us
-            </NavLink>
-          </li>
-        </ul>
+          <ul className="justify-center items-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+            {navigation.map((item, idx) => {
+              return (
+                <li
+                  key={idx}
+                  className="text-tt-black hover:text-tt-primary flex flex-col"
+                >
+                  <NavLink to={item.path} ><span className="">{item.title}</span></NavLink>
+                  {/* <span className="w-8 border-tt-primary border-b-2"></span> */}
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+        <div className="hidden md:inline-block">
+          <NavLink to="/contact">
+            <Button text="Get Started" />
+          </NavLink>
+        </div>
       </div>
-    </header>
+    </nav>
   );
 };
 

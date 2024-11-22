@@ -1,8 +1,8 @@
 import Process from "../components/Process"
+import VectorUp from "../assets/icons/VectorUp.svg"
+import VectorDown from "../assets/icons/VectorDown.svg"
+import processCards from "../data/processCards"
 import ProcessCard from "../components/ProcessCard"
-import pppointedDown from "../assets/icons/pppointedDown.svg"
-import pppointedUp from "../assets/icons/pppointedUp.svg"
-
 
 const OurProcess = () => {
   return (
@@ -12,20 +12,23 @@ const OurProcess = () => {
         title="Our Working Process help you to get the best from our team skill" 
         description="We offer a variaty of services to help you to grow and build your brand and help you with developing your Products"/>
         </div>
-        <div className="flex absolute left-[500px] top-[550px] lg:items-center lg:justify-center mt-10">
-           <img src={pppointedDown} alt="" className="md:block hidden w-72"/>
+        <div className="flex flex-col justify-center items-center gap-8">
+        <div className="flex justify-center items-center -mb-20">
+           <img src={VectorDown} alt="" className="md:block hidden"/>
            </div>
-        <div className="flex flex-col lg:flex-row lg:px-32 lg:gap-6 ">
-        <ProcessCard index="01" title="Web Development" description="Web development helps create fast, user-friendly web applications with modern frameworks, ensuring a seamless user experience across devices."/>
-        <ProcessCard index="01" title="Web Development" description="Web development helps create fast, user-friendly web applications with modern frameworks, ensuring a seamless user experience across devices."/>
-        <ProcessCard index="01" title="Web Development" description="Web development helps create fast, user-friendly web applications with modern frameworks, ensuring a seamless user experience across devices."/>
-        <ProcessCard index="01" title="Web Development" description="Web development helps create fast, user-friendly web applications with modern frameworks, ensuring a seamless user experience across devices."/>
+<div className="flex flex-wrap flex-col lg:flex-row md:flex-row gap-3 items-stretch justify-center w-full">
+        {processCards.map((s) => (
+          <ProcessCard 
+          key={s.title}
+          index={s.index} 
+          title={s.title} 
+          description={s.description} />
+        ))}
+      </div>
+        <div className="flex justify-center items-center -mt-16 gap-16 lg:gap-64">
+           <img src={VectorUp} alt=""  className="md:block hidden"/>
+          <img src={VectorUp} alt="" className="md:block hidden"/> 
         </div>
-        <div className="absolute -bottom-[550px] left-80 flex flex-row lg:gap-96 lg:items-center lg:justify-center">
-          <div className="flex flex-row items-center gap-20">
-           <img src={pppointedUp} alt=""  className="md:block hidden w-72 "/>
-          <img src={pppointedUp} alt="" className="md:block hidden w-72"/> 
-          </div>
         </div>
         
     </div>

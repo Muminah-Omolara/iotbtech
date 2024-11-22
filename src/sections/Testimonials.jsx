@@ -71,8 +71,8 @@ const Testimonials = () => {
   };
 
   return (
-    <div className="bg-[#A0A4AB1A]  mx-auto pb-6 pt-6 md:pb-custom-pb md:pt-custom-pt">
-      <div className="mx-auto custom-container items-center w-auto max-w-5xl px-4 py-4 lg:px-0 lg:py-0 ">
+    <div className="bg-tt-grey bg-opacity-10 px-4 sm:px-6 lg:px-8 py-10">
+      <div className="mx-auto items-center max-w-screen-xl">
         <div className="w-full max-w-5xl">
           <p className="text-2xl font-bold mb-4 text-tt-primary">Testimonial</p>
           <h2 className="text-3xl font-bold leading-snug text-left">

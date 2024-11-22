@@ -17,7 +17,7 @@ import "../App.css";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-between p-6 lg:p-16 max-w-6xl mx-auto lg:mt-5 mt-14 ">
+    <div className="flex flex-col lg:flex-row items-center justify-between p-6 lg:p-16 max-w-screen-xl mx-auto lg:mt-5 mt-14 ">
       <div className="lg:w-1/2 text-center lg:text-left relative">
         <div className="justify-center items-stretch" >
           <img

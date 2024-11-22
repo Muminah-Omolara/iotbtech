@@ -67,7 +67,7 @@ const Footer = () => {
       <footer className=" bg-tt-grey bg-opacity-10 text-tt-black text-opacity-80 px-4 py-8 md:px-8">
         <div className="max-w-screen-xl mx-auto flex flex-col mt-10 space-y-6 justify-between items-start lg:flex-row md:space-y-0 md:mt-0">
           <div className="max-w-xs">
-            <img src={Logo} alt="tektariq-logo" className="w-24" />
+            <img src={Logo} alt="tektariq-logo" className="max-w-24" />
             <p className="leading-relaxed mt-2 text-[15px]">
               Lorem Ipsum has been the industry standard dummy text ever since
               the 1500s.

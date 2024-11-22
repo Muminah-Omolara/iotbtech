@@ -11,181 +11,59 @@ const NavBar = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+  const navigation = [
+    { title: "Home", path: "/" },
+    { title: "Who we are?", path: "/about" },
+    { title: "Our Services", path: "/services" },
+    { title: "Our Projects", path: "/portfolio" },
+    { title: "Contact Us", path: "/contact" },
+  ];
 
   return (
-    <header className="mx-auto flex justify-between items-center w-full max-w-5xl px-8 py-4 lg:px-0 lg:py-0">
+    <nav className="bg-white w-full border-b md:border-0 md:static">
+      <div className="items-center px-4 max-w-screen-xl mx-auto md:flex md:px-8">
+        <div className="flex items-center justify-between py-3 md:py-5 md:block">
+          <NavLink to="/">
+            <img src={Logo} alt="tektariq-logo" className="max-w-24" />
+          </NavLink>
 
-      <div className="w-[120px]">
-        <img src={Logo} alt="tektariq-logo" />
-      </div>
-      <div>
-      <ul className="hidden md:flex text-[16px] gap-9 p-5">
-  <li>
-    <NavLink
-      to="/"
-      className={({ isActive }) =>
-        `mr-3 relative inline-block ${
-          isActive
-            ? "text-tt-black after:content-[''] after:absolute after:left-1  after:w-[30px] after:h-[3px] after:bg-tt-primary after:bottom-0"
-            : "text-tt-grey"
-        } transition-colors hover:text-tt-primary`
-      }
-    >
-      Home
-    </NavLink>
-    <NavLink
-      to="/about"
-      className={({ isActive }) =>
-        `mr-3 relative inline-block ${
-          isActive
-            ? "text-tt-black after:content-[''] after:absolute after:left-1 after:w-[30px] after:h-[3px] after:bg-tt-primary after:bottom-0"
-            : "text-tt-grey"
-        } transition-colors hover:text-tt-primary`
-      }
-    >
-      Who we are?
-    </NavLink>
-    <NavLink
-      to="/services"
-      className={({ isActive }) =>
-        `mr-3 relative inline-block ${
-          isActive
-            ? "text-tt-black after:content-[''] after:absolute after:left-1 after:w-[30px] after:h-[3px] after:bg-tt-primary after:bottom-0"
-            : "text-tt-grey"
-        } transition-colors hover:text-tt-primary`
-      }
-    >
-      Our services
-    </NavLink>
-    <NavLink
-      to="/portfolio"
-      className={({ isActive }) =>
-        `mr-3 relative inline-block ${
-          isActive
-            ? "text-tt-black after:content-[''] after:absolute after:left-1 after:w-[30px] after:h-[3px] after:bg-tt-primary after:bottom-0"
-            : "text-tt-grey"
-        } transition-colors hover:text-tt-primary`
-      }
-    >
-      Our projects
-    </NavLink>
-    <NavLink
-      to="/contact"
-      className={({ isActive }) =>
-        `mr-3 relative inline-block ${
-          isActive
-            ? "text-tt-black after:content-[''] after:absolute after:left-1  after:w-[30px] after:h-[3px] after:bg-tt-primary after:bottom-0"
-            : "text-tt-grey"
-        } transition-colors hover:text-tt-primary`
-      }
-    >
-      Contact us
-    </NavLink>
-  </li>
-</ul>
-
-      </div>
-
-      {/* Button Section */}
-      <div className="hidden xl:flex md:flex">
-        <Button text="Get Started" />
-      </div>
-
-      {/* Hamburger Icon for Mobile */}
-      <div
-        onClick={toggleMenu}
-        className="xl:hidden flex items-center focus:outline-none cursor-pointer"
-      >
-        <span className="text-4xl font-extrabold">
-          <img src={Hamburger} alt="hamburger" />
-        </span>
-      </div>
-
-      {/* Mobile Navigation Menu */}
-      <div
-        className={`fixed top-0 right-0 w-3/4 h-[350px] bg-tt-primary shadow-lg transition-transform ${
-          isMenuOpen ? "translate-x-0" : "translate-x-full"
-        }`}
-      >
-        <div className="flex justify-end p-4">
-          <button onClick={toggleMenu} className="text-5xl text-white">
-            <IoIosClose />
-          </button>
+          <div className="md:hidden">
+            <button
+              className="text-gray-700 outline-none p-2 rounded-md focus:border-gray-400 focus:border"
+              onClick={toggleMenu}
+            >
+              {isMenuOpen ? (
+                <IoIosClose />
+              ) : (
+                <img src={Hamburger} alt="open menu" />
+              )}
+            </button>
+          </div>
         </div>
-        <ul className="flex flex-col justify-center items-start px-6 gap-4 font-semibold text-lg text-white mt-6">
-          <li onClick={() => setIsMenuOpen(false)}>
-            <NavLink
-              to="/"
-              className={({ isActive }) =>
-                `block pb-2 ${
-                  isActive
-                    ? "border-b-4 border-white"
-                    : "text-gray-200 hover:text-gray-50"
-                }`
-              }
-            >
-              Home
-            </NavLink>
-          </li>
-          <li onClick={() => setIsMenuOpen(false)}>
-            <NavLink
-              to="/about"
-              className={({ isActive }) =>
-                `block pb-2 ${
-                  isActive
-                    ? "border-b-4 border-white"
-                    : "text-gray-200 hover:text-gray-50"
-                }`
-              }
-            >
-              Who we are?
-            </NavLink>
-          </li>
-          <li onClick={() => setIsMenuOpen(false)}>
-            <NavLink
-              to="/services"
-              className={({ isActive }) =>
-                `block pb-2 ${
-                  isActive
-                    ? "border-b-4 border-white"
-                    : "text-gray-200 hover:text-gray-50"
-                }`
-              }
-            >
-              Our services
-            </NavLink>
-          </li>
-          <li onClick={() => setIsMenuOpen(false)}>
-            <NavLink
-              to="/portfolio"
-              className={({ isActive }) =>
-                `block pb-2 ${
-                  isActive
-                    ? "border-b-4 border-white"
-                    : "text-gray-200 hover:text-gray-50"
-                }`
-              }
-            >
-              Our projects
-            </NavLink>
-          </li>
-          <li onClick={() => setIsMenuOpen(false)}>
-            <NavLink
-              to="/contact"
-              className={({ isActive }) =>
-                `block pb-2 ${
-                  isActive
-                    ? "border-b-4 border-white"
-                    : "text-gray-200 hover:text-gray-50"
-                }`
-              }
-            >
-              Contact us
-            </NavLink>
-          </li>
-        </ul>
+        <div
+          className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${isMenuOpen ? "block" : "hidden"}`}
+        >
+          <ul className="justify-center items-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+            {navigation.map((item, idx) => {
+              return (
+                <li
+                  key={idx}
+                  className="text-tt-black hover:text-tt-primary flex flex-col"
+                >
+                  <NavLink to={item.path} ><span className="">{item.title}</span></NavLink>
+                  {/* <span className="w-8 border-tt-primary border-b-2"></span> */}
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+        <div className="hidden md:inline-block">
+          <NavLink to="/contact">
+            <Button text="Get Started" />
+          </NavLink>
+        </div>
       </div>
-    </header>
+    </nav>
   );
 };
 

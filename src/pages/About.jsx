@@ -1,14 +1,14 @@
 import Aboutus from "../sections/Aboutus";
-import TeamCard from "../components/TeamCard"
-import TestimonialCard from "../components/TestimonialCard"
+import Testimonials from "../sections/Testimonials";
+
 
 const About = () => {
-  return <div className="">
-    <Aboutus/>
-    <TeamCard/>
-    <TestimonialCard/>
-
-  </div>;
+  return (
+    <div className="">
+      <Aboutus/>
+      <Testimonials />
+    </div>
+  );
 };
 
 export default About;

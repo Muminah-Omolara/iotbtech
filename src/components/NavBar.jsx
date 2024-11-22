@@ -11,69 +11,99 @@ const NavBar = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
   return (
-    <header className="mx-auto flex justify-between items-center w-full max-w-5xl px-8 py-4 lg:px-0 lg:py-0 ">
-      <div className="w-[120px] ">
+    <header className="mx-auto flex justify-between items-center w-full max-w-5xl px-8 py-4 lg:px-0 lg:py-0">
+
+      <div className="w-[120px]">
         <img src={Logo} alt="tektariq-logo" />
       </div>
       <div>
-        <ul className="hidden md:flex text-xl p-5 ">
-          <li
-            onClick={() => {
-              setIsMenuOpen(false);
-              window.scrollTo(0, 0);
-            }}
-          >
-            <NavLink
-              to="/"
-              className={({ isActive }) =>
-                isActive
-                  ? "text-tt-black mr-3 border-b-2 border-tt-primary hover:text-tt-primary"
-                  : "text-tt-grey-600"
-              }
-            >
-              Home
-            </NavLink>
-            <NavLink
-              to="/about"
-              className="text-tt-grey mr-3  transition-colors hover:text-tt-primary text-md font-medium leading-6"
-            >
-              Who we are ?
-            </NavLink>
-            <NavLink
-              to="/services"
-              className="text-tt-grey mr-3 text-md transition-colors hover:text-tt-primary font-medium leading-6"
-            >
-              Our services
-            </NavLink>
-            <NavLink
-              to="/portfolio"
-              className="text-tt-grey mr-3 text-md transition-colors hover:text-tt-primary font-medium leading-6"
-            >
-              Our projects
-            </NavLink>
-            <NavLink
-              to="/contact"
-              className="text-tt-grey mr-3 text-md transition-colors hover:text-tt-primary font-medium leading-6"
-            >
-              Contact us
-            </NavLink>
-          </li>
-        </ul>
+      <ul className="hidden md:flex text-[16px] gap-9 p-5">
+  <li>
+    <NavLink
+      to="/"
+      className={({ isActive }) =>
+        `mr-3 relative inline-block ${
+          isActive
+            ? "text-tt-black after:content-[''] after:absolute after:left-1  after:w-[30px] after:h-[3px] after:bg-tt-primary after:bottom-0"
+            : "text-tt-grey"
+        } transition-colors hover:text-tt-primary`
+      }
+    >
+      Home
+    </NavLink>
+    <NavLink
+      to="/about"
+      className={({ isActive }) =>
+        `mr-3 relative inline-block ${
+          isActive
+            ? "text-tt-black after:content-[''] after:absolute after:left-1 after:w-[30px] after:h-[3px] after:bg-tt-primary after:bottom-0"
+            : "text-tt-grey"
+        } transition-colors hover:text-tt-primary`
+      }
+    >
+      Who we are?
+    </NavLink>
+    <NavLink
+      to="/services"
+      className={({ isActive }) =>
+        `mr-3 relative inline-block ${
+          isActive
+            ? "text-tt-black after:content-[''] after:absolute after:left-1 after:w-[30px] after:h-[3px] after:bg-tt-primary after:bottom-0"
+            : "text-tt-grey"
+        } transition-colors hover:text-tt-primary`
+      }
+    >
+      Our services
+    </NavLink>
+    <NavLink
+      to="/portfolio"
+      className={({ isActive }) =>
+        `mr-3 relative inline-block ${
+          isActive
+            ? "text-tt-black after:content-[''] after:absolute after:left-1 after:w-[30px] after:h-[3px] after:bg-tt-primary after:bottom-0"
+            : "text-tt-grey"
+        } transition-colors hover:text-tt-primary`
+      }
+    >
+      Our projects
+    </NavLink>
+    <NavLink
+      to="/contact"
+      className={({ isActive }) =>
+        `mr-3 relative inline-block ${
+          isActive
+            ? "text-tt-black after:content-[''] after:absolute after:left-1  after:w-[30px] after:h-[3px] after:bg-tt-primary after:bottom-0"
+            : "text-tt-grey"
+        } transition-colors hover:text-tt-primary`
+      }
+    >
+      Contact us
+    </NavLink>
+  </li>
+</ul>
+
       </div>
+
+      {/* Button Section */}
       <div className="hidden xl:flex md:flex">
         <Button text="Get Started" />
       </div>
+
+      {/* Hamburger Icon for Mobile */}
       <div
         onClick={toggleMenu}
-        className="xl:hidden block items-center focus:outline-none cursor-pointer"
+        className="xl:hidden flex items-center focus:outline-none cursor-pointer"
       >
         <span className="text-4xl font-extrabold">
           <img src={Hamburger} alt="hamburger" />
         </span>
       </div>
+
+      {/* Mobile Navigation Menu */}
       <div
-        className={`fixed top-0 right-0 w-1/3 h-[350px] bg-tt-primary shadow-lg transition-transform ${
+        className={`fixed top-0 right-0 w-3/4 h-[350px] bg-tt-primary shadow-lg transition-transform ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -82,33 +112,74 @@ const NavBar = () => {
             <IoIosClose />
           </button>
         </div>
-        <ul
-          className={`absolute xl:hidden top-20 left-0 w-full text-white flex flex-col
-          items-start px-6 gap-6 font-semibold text-lg transform transition-transform ${
-            isMenuOpen ? "opacity-100" : "opacity-0"
-          }`}
-          style={{ transition: "transform 0.3s ease, opacity 0.3s ease" }}
-        >
-          <li
-            className="flex flex-col cursor-pointer text-white transition-all"
-            onClick={() => {
-              setIsMenuOpen(false);
-              window.scrollTo(0, 0);
-            }}
-          >
-            <NavLink to="/" className="mb-5">
+        <ul className="flex flex-col justify-center items-start px-6 gap-4 font-semibold text-lg text-white mt-6">
+          <li onClick={() => setIsMenuOpen(false)}>
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                `block pb-2 ${
+                  isActive
+                    ? "border-b-4 border-white"
+                    : "text-gray-200 hover:text-gray-50"
+                }`
+              }
+            >
               Home
             </NavLink>
-            <NavLink to="/about" className="mb-5">
-              Who we are ?
+          </li>
+          <li onClick={() => setIsMenuOpen(false)}>
+            <NavLink
+              to="/about"
+              className={({ isActive }) =>
+                `block pb-2 ${
+                  isActive
+                    ? "border-b-4 border-white"
+                    : "text-gray-200 hover:text-gray-50"
+                }`
+              }
+            >
+              Who we are?
             </NavLink>
-            <NavLink to="/services" className="mb-5">
+          </li>
+          <li onClick={() => setIsMenuOpen(false)}>
+            <NavLink
+              to="/services"
+              className={({ isActive }) =>
+                `block pb-2 ${
+                  isActive
+                    ? "border-b-4 border-white"
+                    : "text-gray-200 hover:text-gray-50"
+                }`
+              }
+            >
               Our services
             </NavLink>
-            <NavLink to="/portfolio" className="mb-5">
+          </li>
+          <li onClick={() => setIsMenuOpen(false)}>
+            <NavLink
+              to="/portfolio"
+              className={({ isActive }) =>
+                `block pb-2 ${
+                  isActive
+                    ? "border-b-4 border-white"
+                    : "text-gray-200 hover:text-gray-50"
+                }`
+              }
+            >
               Our projects
             </NavLink>
-            <NavLink to="/contact" className="mb-5">
+          </li>
+          <li onClick={() => setIsMenuOpen(false)}>
+            <NavLink
+              to="/contact"
+              className={({ isActive }) =>
+                `block pb-2 ${
+                  isActive
+                    ? "border-b-4 border-white"
+                    : "text-gray-200 hover:text-gray-50"
+                }`
+              }
+            >
               Contact us
             </NavLink>
           </li>

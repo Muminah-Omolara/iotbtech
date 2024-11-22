@@ -80,8 +80,8 @@ const Testimonials = () => {
             <br className="hidden md:block" /> Check what they say about us
           </h2>
         </div>
-        <div className="mt-8 flex flex-col items-center">
-          <div className={`flex flex-row gap-6 ${isMobile ? "flex-col" : ""}`}>
+        <div className="p-14 mt-8 flex flex-col items-center">
+          <div className={`flex flex-row gap-48 ${isMobile ? "flex-col" : ""}`}>
             {visibleProfiles.map((profile, index) => (
               <TestimonialCard
                 key={index}

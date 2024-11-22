@@ -11,7 +11,6 @@ const NavBar = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-  // Replace javascript:void(0) path with your path
   const navigation = [
     { title: "Home", path: "/" },
     { title: "Who we are?", path: "/about" },

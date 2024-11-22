@@ -1,6 +1,6 @@
 const TestimonialCard = ({ testimonial, image, name, portfolio }) => {
   return (
-    <div className=" text-left rounded-lg flex flex-col max-w-xs mx-auto">
+    <div className=" text-left rounded-lg flex flex-col mx-auto">
       <p className="font-normal text-base text-tt-grey pb-5">{testimonial}</p>
       <div className="flex flex-row gap-3">
         <div>

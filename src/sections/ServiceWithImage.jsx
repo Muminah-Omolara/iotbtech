@@ -4,7 +4,7 @@ import Rectangle from "../assets/icons/Rectangle.svg"
 
 const ServiceWithImage = () => {
   return (
-    <div className="flex flex-col mt-12 lg:mt-48 lg:flex-row mb-12 gap- lg:gap-48 mx-4 lg:mx-32">
+    <div className="flex flex-col lg:flex-row mb-12 gap- lg:gap-48 mx-4 lg:mx-32">
         <div className="flex ">
           <OurServiceWithImage
            title="Ui /Ux , Web Design" 

@@ -4,12 +4,12 @@ import services from "../data/services";
 const ServicesOffer = () => {
   return (
     <div className="mx-auto max-w-screen-xl sm:px-6 lg:px-8 py-10">
-      <h2 className="text-tt-primary text-lg font-bold mb-0 lg:mb-2">
+      <h2 className="text-tt-primary text-lg font-bold mb-0 lg:mb-2 px-5">
         The Services we Offer
       </h2>
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
         <div className="col-span-1 sm:col-span-2">
-          <h3 className="text-tt-black text-3xl font-bold mb-0 lg:mb-8 max-w-xl">
+          <h3 className="text-tt-black text-3xl font-bold mb-0 lg:mb-8 max-w-xl px-5">
             We offer a variaty of services to help you to grow and build your
             brand and help you with developing your Products
           </h3>

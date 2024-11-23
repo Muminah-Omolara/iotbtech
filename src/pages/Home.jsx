@@ -3,7 +3,8 @@ import HomeHero from "../sections/HomeHero";
 import ServicesOffer from "../sections/ServicesOffer";
 import WorkRealised from "../sections/WorkRealised";
 import Testimonials from "../sections/Testimonials";
-// import Project from "../components/Project"
+import ServiceWithImage from "../sections/ServiceWithImage";
+
 
 const Home = () => {
   return (
@@ -11,7 +12,7 @@ const Home = () => {
       <HomeHero />
       <Clients />
       <ServicesOffer />
-      {/* <Project /> */}
+      <ServiceWithImage />
       <WorkRealised />
       <Testimonials />
     </div>

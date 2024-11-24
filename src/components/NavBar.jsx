@@ -3,7 +3,7 @@ import Logo from "../assets/icons/tektariq.png";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import Button from "../components/Button";
-import { IoIosClose } from "react-icons/io";
+import { IoCloseSharp } from "react-icons/io5";
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,7 +33,7 @@ const NavBar = () => {
               onClick={toggleMenu}
             >
               {isMenuOpen ? (
-                <IoIosClose />
+                <IoCloseSharp />
               ) : (
                 <img src={Hamburger} alt="open menu" />
               )}
@@ -46,12 +46,17 @@ const NavBar = () => {
           <ul className="justify-center items-center space-y-8 md:flex md:space-x-6 md:space-y-0">
             {navigation.map((item, idx) => {
               return (
-                <li
-                  key={idx}
-                  className="text-tt-black hover:text-tt-primary flex flex-col"
-                >
-                  <NavLink to={item.path} ><span className="">{item.title}</span></NavLink>
-                  {/* <span className="w-8 border-tt-primary border-b-2"></span> */}
+                <li key={idx} className="text-tt-black flex flex-col">
+                  <NavLink
+                    to={item.path}
+                    className={({ isActive }) =>
+                      isActive
+                        ? "text-tt-primary relative before:content-[''] before:block before:absolute before:-bottom-1 before:left-0 before:w-6 before:h-1 before:border-b-2 before:border-tt-primary before:transition-all before:duration-300 before:ease-in-out hover:before:w-10"
+                        : "hover:text-tt-primary transition-all duration-300"
+                    }
+                  >
+                    <span className="">{item.title}</span>
+                  </NavLink>
                 </li>
               );
             })}

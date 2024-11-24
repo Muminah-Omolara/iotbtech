@@ -3,7 +3,7 @@ import {
   microsoft,
   stanbic,
   leatherback,
-  mtn,
+  // mtn,
   huawei,
 } from "../assets/images";
 
@@ -13,24 +13,25 @@ const mentorCompnies = [
     logo: huawei,
   },
   {
-    name: "Stanbic",
-    logo: stanbic,
+    name: "Microsoft",
+    logo: microsoft,
   },
-  {
-    name: "MTN",
-    logo: mtn,
-  },
+
+  // {
+  //   name: "MTN",
+  //   logo: mtn,
+  // },
   {
     name: "Leatherback",
     logo: leatherback,
   },
   {
-    name: "Flutterwave",
-    logo: flutterwave,
+    name: "Stanbic",
+    logo: stanbic,
   },
   {
-    name: "Microsoft",
-    logo: microsoft,
+    name: "Flutterwave",
+    logo: flutterwave,
   },
 ];
 

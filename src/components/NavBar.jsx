@@ -1,9 +1,9 @@
 import Hamburger from "../assets/images/Vector.png";
-import Logo from "../assets/icons/tektariq.png";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import Button from "../components/Button";
 import { IoCloseSharp } from "react-icons/io5";
+import TheLogo from "./Logo";
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,7 +24,7 @@ const NavBar = () => {
       <div className="items-center px-4 max-w-screen-xl mx-auto md:flex md:px-8">
         <div className="flex items-center justify-between py-3 md:py-5 md:block">
           <NavLink to="/">
-            <img src={Logo} alt="tektariq-logo" className="max-w-24" />
+            <TheLogo />
           </NavLink>
 
           <div className="md:hidden">

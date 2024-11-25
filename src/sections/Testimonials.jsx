@@ -1,10 +1,10 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
+import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
 import profile1 from "../assets/Profile1.png";
 import profile2 from "../assets/Profile2.png";
 import profile3 from "../assets/Profile3.png";
 import profile4 from "../assets/Profile4.png";
 import TestimonialCard from "../components/TestimonialCard";
-import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
 
 const Testimonials = () => {
   const profiles = [

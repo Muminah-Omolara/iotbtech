@@ -3,8 +3,8 @@ import { FaInstagram, FaWhatsapp, FaXTwitter } from "react-icons/fa6";
 import { GrSend } from "react-icons/gr";
 import { LuFacebook } from "react-icons/lu";
 import { NavLink } from "react-router-dom";
-import Logo from "../assets/icons/tektariq.png";
 import Copyright from "../components/Copyright";
+import TheLogo from "../components/Logo";
 
 const Footer = () => {
   const footerNavs = [
@@ -67,7 +67,7 @@ const Footer = () => {
       <footer className=" bg-tt-grey bg-opacity-10 text-tt-black text-opacity-80 px-4 py-8 md:px-8">
         <div className="max-w-screen-xl mx-auto flex flex-col mt-10 space-y-6 justify-between items-start lg:flex-row md:space-y-0 md:mt-0">
           <div className="max-w-xs">
-            <img src={Logo} alt="tektariq-logo" className="max-w-24" />
+            <TheLogo />
             <p className="leading-relaxed mt-2 text-[15px]">
               Lorem Ipsum has been the industry standard dummy text ever since
               the 1500s.

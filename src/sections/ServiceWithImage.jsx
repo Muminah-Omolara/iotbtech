@@ -25,7 +25,15 @@ const ServiceWithImage = () => {
         </div>
       </div>
     </div>
-  );
-};
-
+    <div className="flex lg:justify-end lg:items-end gap-6 mr-72 flex-row lg:mb-24">
+    <button className="text-tt-primary hidden sm:block">
+    <BsArrowLeftCircle size={28}/>
+    </button>
+    <button className="text-tt-primary hidden sm:block">
+    <BsArrowRightCircle size={28} />
+    </button>
+  </div>
+  </>
+  )
+}
 export default ServiceWithImage;

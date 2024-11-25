@@ -1,4 +1,4 @@
-import FaqItem from "./Faqitem";
+import FaqItem from "./FaqItem";
 
 const Faq = () => {
   return (

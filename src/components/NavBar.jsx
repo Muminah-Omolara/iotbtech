@@ -49,6 +49,7 @@ const NavBar = () => {
                 <li key={idx} className="text-tt-black flex flex-col">
                   <NavLink
                     to={item.path}
+                    onClick={toggleMenu}
                     className={({ isActive }) =>
                       isActive
                         ? "text-tt-primary relative before:content-[''] before:block before:absolute before:-bottom-1 before:left-0 before:w-6 before:h-1 before:border-b-2 before:border-tt-primary before:transition-all before:duration-300 before:ease-in-out hover:before:w-10"

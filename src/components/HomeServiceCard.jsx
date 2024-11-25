@@ -1,10 +1,10 @@
-import Button from "../components/Button";
+import Button from "./Button";
 import { MdOutlineNavigateNext } from "react-icons/md";
 
 // eslint-disable-next-line react/prop-types
 const ServiceCard = ({ title, description }) => {
   return (
-    <div className="shadow-sm rounded-lg p-2 w-full min-h-full flex flex-col justify-between items-start px-5">
+    <div className="shadow-sm rounded-lg py-2 w-full min-h-full flex flex-col justify-between items-start">
       <h2 className="text-2xl font-semibold text-tt-primary mb-4">{title}</h2>
       <p className="text-tt-grey mb-4">{description}</p>
       <Button

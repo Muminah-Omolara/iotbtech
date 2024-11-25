@@ -4,6 +4,8 @@ import Button from "../components/Button";
 import CustomInput from "../components/CustomInput";
 import CustomTextArea from "../components/CustomTextArea";
 import Testimonials from "../sections/Testimonials";
+import Faq from "../components/Faq";
+import ServiceWithImage from "../sections/ServiceWithImage";
 
 function Contact() {
   return (
@@ -14,7 +16,7 @@ function Contact() {
           alt="line"
           className="absolute w-full -left-10 -right-10 -z-10 hidden md:block"
         />
-        <div className="max-w-lg mx-auto mb-10 relative z-10 space-y-5">
+        <div className="max-w-lg mx-auto mb-10 space-y-5 relative z-10">
           <div>
             <p className="lg:text-center md: text-left font-bold text-tt-primary text-[22px]">
               Let's have a chat
@@ -56,6 +58,8 @@ function Contact() {
           </form>
         </div>
       </div>
+      <Faq />
+      <ServiceWithImage />
       <Testimonials />
     </div>
   );

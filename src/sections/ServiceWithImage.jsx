@@ -1,10 +1,12 @@
 import OurServiceWithImage from "../components/OurServiceWithImage"
 import Titik from "../assets/icons/Titik.svg"
 import Rectangle from "../assets/icons/Rectangle.svg"
+import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs"
 
 const ServiceWithImage = () => {
   return (
-    <div className="flex flex-row mt-12 justify-start lg:my-24 mb-24 gap-4 mx-4 lg:mx-auto max-w-7xl lg:justify-between lg:items-center w-full">
+    <>
+    <div className="flex flex-row mt-12 justify-start lg:mt-24 lg:mb-12 mb-24 gap-4 mx-4 lg:mx-auto max-w-7xl lg:justify-between lg:items-center w-full">
         <div className="flex flex-col lg:flex-row lg:mx-24 items-left w-3/4 ">
           <OurServiceWithImage
            title="Ui /Ux , Web Design" 
@@ -24,6 +26,15 @@ const ServiceWithImage = () => {
         </div>
         </div>
     </div>
+    <div className="flex lg:justify-end lg:items-end gap-6 mr-72 flex-row lg:mb-24">
+    <button className="text-tt-primary hidden sm:block">
+    <BsArrowLeftCircle size={28}/>
+    </button>
+    <button className="text-tt-primary hidden sm:block">
+    <BsArrowRightCircle size={28} />
+    </button>
+  </div>
+  </>
   )
 }
 

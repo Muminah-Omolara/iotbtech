@@ -18,12 +18,37 @@ function Register() {
           Register with Tektariq
         </h2>
         <form action="">
-          <Input type="text" placeholder="Enter Your Surname" />
-          <Input type="text" placeholder="Enter your Firstname" />
-          <Input type="number" placeholder="Enter Your Email" />
-          <Input type="number" placeholder="Enter Your Mobile Number" />
-          <Input type="password" placeholder="Enter Your Password" />
-          <Input type="password" placeholder="Confirm Your Password" />
+        <CustomInput
+              type="text"
+              placeholder="Mubarak"
+              label="First Name"
+              name="first-name"
+            />
+             <CustomInput
+              type="text"
+              placeholder="Salihu"
+              label="Surname"
+              name="surname"
+            />
+             <CustomInput
+              type="email"
+              placeholder="youremail@gmail.com"
+              label="Email"
+              name="email"
+            />
+             <CustomInput
+              type="password"
+              placeholder="New password"
+              label="Create a password"
+              name="password"
+            />
+             <CustomInput
+              type="password"
+              placeholder="Confirm Password"
+              label="Confirm password"
+              name="password"
+            />
+          
 
           <button className="w-full p-3 bg-tt-primary text-white rounded-md hover:bg-tt-primary transition duration-300">
             Register

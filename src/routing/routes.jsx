@@ -17,6 +17,7 @@ import Home from "../pages/Home";
 import NotFound from "../pages/NotFound";
 import Portfolio from "../pages/Portfolio";
 import Services from "../pages/Services";
+import Team from "../components/Teams";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -34,6 +35,7 @@ const router = createBrowserRouter(
         <Route path="/set-password" element={<SetPassword />} />
         <Route path="/testimonial" element={<TestimonialCard />} />
         <Route path="/component-test" element={<ComponentTest />} />
+        <Route path="/team" element={<Team />} />
         <Route path="/blog" element={<p>Coming soon</p>} />
       </Route>
     </>,

@@ -25,7 +25,12 @@ function Forgot_Password() {
           your password
         </p>
         <form action="">
-          <Input type="email" placeholder="Enter Your Email" />
+        <CustomInput
+              type="email"
+              placeholder="your-email@gmail.com"
+              label="Email"
+              name="email"
+            />
 
           <button className="w-full p-3 bg-tt-primary text-white rounded-md hover:bg-tt-primary transition duration-300">
             Submit

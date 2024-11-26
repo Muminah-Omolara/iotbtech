@@ -2,6 +2,7 @@ import Button from "../components/Button";
 import OurServices from "../components/OurServices";
 import { BsChatLeft } from "react-icons/bs";
 import { MdOutlineNavigateNext } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const OurService = () => {
   return (
@@ -17,13 +18,19 @@ const OurService = () => {
           desc="Check Our Projects"
         />
       </div>
-       <div className="justify-center items-center flex flex-row gap-8">
-        <Button text="Let's Talk" icon={<BsChatLeft />}  type="solid"/>
-        <div>
-       <Button text="Check Our Projects" type="outline"  icon={<MdOutlineNavigateNext />} />
-       
-       </div>
-      </div>
+  
+       <div className="flex flex-col lg:flex-row mx-auto justify-center lg:justify-center mt-9 mb-8 gap-5 -z-50">
+            <Link to="/contact">
+              <Button
+                text="Lets Talk"
+                type="solid"
+                icon={<BsChatLeft />}
+              />
+            </Link>
+            <Link to="/portfolio">
+              <Button text="Check our Services" type="outline" icon={<MdOutlineNavigateNext />} />
+            </Link>
+          </div>
     </div>
     </>
   );

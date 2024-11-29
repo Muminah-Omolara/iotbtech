@@ -35,7 +35,6 @@ const router = createBrowserRouter(
         <Route path="/set-password" element={<SetPassword />} />
         <Route path="/testimonial" element={<TestimonialCard />} />
         <Route path="/component-test" element={<ComponentTest />} />
-        <Route path="/team" element={<Team />} />
         <Route path="/blog" element={<p>Coming soon</p>} />
       </Route>
     </>,

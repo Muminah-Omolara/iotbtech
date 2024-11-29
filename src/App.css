@@ -5,7 +5,20 @@
 }
 */
 
-.rounded-hexagon {
+/* .rounded-hexagon {
     mask-image: radial-gradient(circle at 50% 50%, transparent 0%, transparent 40%, black 45%);
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-}
+} */
+
+@keyframes fadeInOut {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  .fadingText {
+    animation: fadeInOut 2s infinite; /* 2 seconds duration, infinite repetition */
+  }

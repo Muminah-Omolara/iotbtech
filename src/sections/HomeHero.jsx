@@ -14,6 +14,8 @@ import {
 } from "../assets/icons";
 import { heroImage } from "../assets/images";
 import "../App.css";
+import GreetingsComponent from "../components/GreetingsComponent";
+import BadgeComponent from "../components/BadgeComponent";
 
 const Hero = () => {
   return (
@@ -28,10 +30,10 @@ const Hero = () => {
         </div>
         <div className="space-y-6">
           <h2 className="text-xl text-left mb-2 font-semibold text-tt-primary -mt-3">
-            Hello,
+            <GreetingsComponent />
           </h2>
-          <h1 className="text-tt-black text-left text-3xl lg:text-5xl font-bold mb-8">
-            Unlocking your potential with technological driven skills
+          <h1 className="text-tt-black text-left text-3xl lg:text-5xl font-bold mb-8"> 
+            Unlocking your potential with technological driven skills <BadgeComponent />
           </h1>
           <p className="text-xl text-tt-grey mb-6 text-left">
             Tektariq helps you develop critical hand on digital skills.
@@ -70,23 +72,23 @@ const Hero = () => {
         <div className="hidden lg:block">
           <FloatingBox
             icon={uiUx}
-            text="UI/UX Design"
-            position="top-16 left-14"
+            text="Technology"
+            position="top-16 left-20"
           />
           <FloatingBox
             icon={cloudIcon}
-            text="Cloud Engineering"
-            position="top-32 right-6"
+            text="Faith"
+            position="top-32 right-24"
           />
           <FloatingBox
             icon={webIcon}
-            text="Web Development"
-            position="top-56 left-10"
+            text="Entreprenuership"
+            position="top-56 left-20"
           />
           <FloatingBox
             icon={colorPalette}
-            text="Graphics Design"
-            position="top-72 right-14"
+            text="Empowerment"
+            position="top-72 right-24"
           />
         </div>
       </div>

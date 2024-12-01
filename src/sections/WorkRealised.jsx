@@ -7,11 +7,11 @@ import workImages from "../data/workimages";
 const WorkRealised = () => {
   return (
     <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 py-10">
-      <h2 className="text-tt-primary text-lg font-bold mb-2">
+      <h2 className="text-tt-primary mb-3 text-xl md:text-2xl lg:text-3xl font-bold">
         The work we realised
       </h2>
-      <h3 className="text-tt-black text-3xl font-bold mb-8">
-        The work we did that made our <br /> Client happy and satisfied
+      <h3 className="text-tt-black text-3xl font-bold mb-8 max-w-2xl">
+        The work we did that made our Client happy and satisfied
       </h3>
 
       <div className="flex flex-col lg:flex-row md:flex-row items-center gap-10">

@@ -30,7 +30,7 @@ const GreetingsComponent = () => {
     }, [greeting])
     return (
         <div>
-            <h2 className="text-xl text-left mb-2 font-semibold text-tt-primary -mt-3">
+            <h2 className="text-left mb-2 -mt-3 text-tt-primary text-xl md:text-2xl lg:text-3xl font-bold">
                 {greeting}
             </h2>
         </div>

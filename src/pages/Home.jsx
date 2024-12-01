@@ -1,23 +1,19 @@
-import Clients from "../sections/Clients";
+import CompaniesLogoGrid from "../components/CompaniesLogoGrid";
+import Teams from "../components/Teams";
 import HomeHero from "../sections/HomeHero";
 import ServicesOffer from "../sections/HomeServicesOffer";
-import WorkRealised from "../sections/WorkRealised";
 import Testimonials from "../sections/Testimonials";
-import ServiceWithImage from "../sections/ServiceWithImage";
-import Team from "../components/Teams";
-
+import WorkRealised from "../sections/WorkRealised";
 
 const Home = () => {
   return (
     <div>
       <HomeHero />
-      <Clients />
+      <CompaniesLogoGrid />
       <ServicesOffer />
-      <Team />
-      <ServiceWithImage />
+      <Teams />
       <WorkRealised />
       <Testimonials />
-      
     </div>
   );
 };

@@ -9,8 +9,8 @@ import {
 
 const mentorCompnies = [
   {
-    name: "Huawei",
-    logo: huawei,
+    name: "Leatherback",
+    logo: leatherback,
   },
   {
     name: "Microsoft",
@@ -21,9 +21,10 @@ const mentorCompnies = [
   //   name: "MTN",
   //   logo: mtn,
   // },
+
   {
-    name: "Leatherback",
-    logo: leatherback,
+    name: "Huawei",
+    logo: huawei,
   },
   {
     name: "Stanbic",

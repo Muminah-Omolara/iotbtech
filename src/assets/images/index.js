@@ -1,4 +1,4 @@
-import microsoft from "./microsoft-logo.svg";
+import microsoft from "./microsoft-logo.png";
 import spotify from "./spotify.png";
 import tesla from "./tesla.png";
 import tiktok from "./tiktok.png";
@@ -14,7 +14,7 @@ import patternCircles from "./pattern_circles.png";
 import flutterwave from "./flutterwave-logo.svg";
 import stanbic from "./stanbic-ibtc-logo.svg";
 import mtn from "./mtn-logo.svg";
-import huawei from "./huawei-logo.svg";
+import huawei from "./huawei-logo.png";
 import leatherback from "./leatherback-logo.svg";
 import homeArrow from "./home-arrow-vector.svg"
 

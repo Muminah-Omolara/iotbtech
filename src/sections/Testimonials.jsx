@@ -75,7 +75,7 @@ const Testimonials = () => {
       <div className="mx-auto items-center max-w-screen-xl">
         <div className="w-full max-w-5xl">
           <p className="text-2xl font-bold mb-4 text-tt-primary">Testimonial</p>
-          <h2 className="text-3xl font-bold leading-snug text-left">
+          <h2 className="text-xl md:text-2xl lg:text-3xl font-bold mb-3 leading-snug text-left">
             You still hesitate about working with us?{" "}
             <br className="hidden md:block" /> Check what they say about us
           </h2>

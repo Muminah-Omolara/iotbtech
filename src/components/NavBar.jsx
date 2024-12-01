@@ -13,9 +13,9 @@ const NavBar = () => {
   };
   const navigation = [
     { title: "Home", path: "/" },
-    { title: "Who we are?", path: "/about" },
+    { title: "About Us", path: "/about" },
     { title: "Our Services", path: "/services" },
-    { title: "Our Projects", path: "/portfolio" },
+    { title: "Portfolio", path: "/portfolio" },
     { title: "Contact Us", path: "/contact" },
   ];
 

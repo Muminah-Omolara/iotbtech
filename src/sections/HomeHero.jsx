@@ -1,27 +1,27 @@
-import { Link } from "react-router-dom";
 import { MdOutlineNavigateNext } from "react-icons/md";
-import Button from "../components/Button";
-import ImagesComponent from "../components/ImageContainer";
-import FloatingBox from "../components/HomeFloatingSkills";
+import { Link } from "react-router-dom";
+import "../App.css";
 import {
   cloudIcon,
   colorPalette,
+  hexagon,
+  titik,
   uiUx,
   vector,
   webIcon,
-  titik,
-  hexagon,
 } from "../assets/icons";
 import { heroImage } from "../assets/images";
-import "../App.css";
+import Button from "../components/Button";
 import GreetingsComponent from "../components/GreetingsComponent";
-import BadgeComponent from "../components/BadgeComponent";
+import FloatingBox from "../components/HomeFloatingSkills";
+import ImagesComponent from "../components/ImageContainer";
+import IOTBBadge from "../components/IOTBBadge";
 
 const Hero = () => {
   return (
     <div className="flex flex-col lg:flex-row items-center justify-between p-6 lg:p-16 max-w-screen-xl mx-auto lg:mt-5 mt-14 ">
       <div className="lg:w-1/2 text-center lg:text-left relative">
-        <div className="justify-center items-stretch" >
+        <div className="justify-center items-stretch">
           <img
             src={vector}
             alt="vector arrow"
@@ -29,11 +29,12 @@ const Hero = () => {
           />
         </div>
         <div className="space-y-6">
-          <h2 className="text-xl text-left mb-2 font-semibold text-tt-primary -mt-3">
+          <h2 className="text-left mb-2 text-tt-primary -mt-3 text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold">
             <GreetingsComponent />
           </h2>
-          <h1 className="text-tt-black text-left text-3xl lg:text-5xl font-bold mb-8"> 
-            Unlocking your potential with technological driven skills <BadgeComponent />
+          <h1 className="text-tt-black text-left text-4xl md:text-5xl font-extrabold mb-8">
+            Unlocking your potential with technological driven skills{" "}
+            <IOTBBadge />
           </h1>
           <p className="text-xl text-tt-grey mb-6 text-left">
             Tektariq helps you develop critical hand on digital skills.

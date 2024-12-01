@@ -1,6 +1,6 @@
 import React from "react";
 import login from "../../assets/login.png";
-import Input from "../../components/CustomInput";
+import CustomInput from "../../components/CustomInput";
 
 function Login() {
   return (
@@ -19,9 +19,20 @@ function Login() {
         </h2>
 
         <form action="">
-          <Input type="text" placeholder="Enter Email" />
-          <Input type="password" placeholder="Enter Password" />
-
+        <CustomInput
+              type="text"
+              placeholder="youremail@gmail.com"
+              label="Enter Your Email"
+              name="email"
+            />
+            
+            <CustomInput
+              type="password"
+              placeholder="Password"
+              label="Enter Your Password"
+              name="password"
+            />
+ 
           <button className="w-full p-3 bg-tt-primary text-white rounded-md hover:bg-tt-primary transition duration-300">
             Login
           </button>

@@ -1,9 +1,12 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import TeamCard from "./TeamCard";
 import profile1 from "../assets/Profile1.png";
 import profile2 from "../assets/Profile2.png";
 import profile3 from "../assets/Profile3.png";
 import profile4 from "../assets/Profile4.png";
+import Rectangle from "../assets/icons/Rectangle.svg";
+import Titik from "../assets/icons/Titik.svg";
+
 import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
 
 const Team = () => {
@@ -14,85 +17,88 @@ const Team = () => {
     { image: profile4, name: "Dihia Numida", portfolio: "UI/UX Designer" },
   ];
 
-  const [isMobile, setIsMobile] = useState(false);
-  const [currentPage, setCurrentPage] = useState(0);
-  const profilesPerPage = 2;
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
-
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  const startIndex = currentPage * profilesPerPage;
-  const currentProfiles = profiles.slice(
-    startIndex,
-    startIndex + profilesPerPage,
-  );
-  const totalPages = Math.ceil(profiles.length / profilesPerPage);
+  const [currentProfileIndex, setCurrentProfileIndex] = useState(0);
 
   const handlePrev = () => {
-    setCurrentPage((prevPage) =>
-      prevPage > 0 ? prevPage - 1 : totalPages - 1,
+    setCurrentProfileIndex((prevIndex) =>
+      prevIndex > 0 ? prevIndex - 1 : profiles.length - 1
     );
   };
 
   const handleNext = () => {
-    setCurrentPage((prevPage) =>
-      prevPage < totalPages - 1 ? prevPage + 1 : 0,
+    setCurrentProfileIndex((prevIndex) =>
+      prevIndex < profiles.length - 1 ? prevIndex + 1 : 0
     );
   };
 
   return (
-    <div className="mx-auto custom-container items-center w-auto max-w-5xl px-4 py-4 lg:px-0 lg:py-0">
-      <p className="p-4 sm:p-6 text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-tt-primary text-left sm:text-left">
-        The Team
-      </p>
-      <div className="flex flex-col sm:flex-row p-4 gap-6 items-start">
-        <div className="w-full sm:w-1/3">
-          <h2 className="text-2xl sm:text-4xl font-bold leading-snug text-left sm:text-left">
-            Meet The Awesome and Creative Members of Our Team
-          </h2>
-        </div>
-        <div className="w-full sm:w-2/3">
-          <div
-            className={`grid ${isMobile ? "grid-cols-2" : "grid-cols-4"} gap-4`}
-          >
-            {(isMobile ? currentProfiles : profiles).map((profile, index) => (
-              <TeamCard
-                key={index}
-                image={profile.image}
-                name={profile.name}
-                portfolio={profile.portfolio}
-              />
-            ))}
+    <>
+      <div className="p-4 mt-12 mx-4 sm:mx-6 lg:mx-auto max-w-7xl leading-snug">
+        <p className="text-tt-primary text-left font-bold text-xl sm:text-2xl leading-snug">
+          The Team behind TechTariq
+        </p>
+        <div className="flex flex-col lg:flex-row lg:gap-56">
+          <div className="lg:w-1/2 leading-snug">
+            <h2 className="text-tt-black text-2xl sm:text-3xl font-bold mb-4 leading-snug">
+              A team of creatives who are excited to help you with your ideas
+            </h2>
+            <p className="text-tt-grey text-lg sm:text-xl leading-snug">
+              Our team of digital product creators and tech enthusiasts will
+              take your idea to the next level and help you bring your product
+              to life.
+            </p>
           </div>
 
-          {isMobile && (
-            <div className="flex justify-center items-center gap-6 pt-4">
-              <button
-                onClick={handlePrev}
-                disabled={startIndex === 0}
-                className="disabled:opacity-50 text-tt-primary"
-              >
-                <BsArrowLeftCircle size={28} />
-              </button>
-              <button
-                onClick={handleNext}
-                disabled={startIndex + profilesPerPage >= profiles.length}
-                className="disabled:opacity-50 text-tt-primary"
-              >
-                <BsArrowRightCircle size={28} />
-              </button>
+        <div className="relative flex flex-col items-left lg:w-1/2">
+            
+          <div className="relative flex lg:justify-center lg:items-center lg:w-1/2 mt-4">
+            <img
+              src={Titik}
+              alt=""
+              className=" left-10 absolute inset-0 w-[250px] h-[200px] object-cover z-10 hidden sm:block sm:items-left mx-8 lg:mt-10 "
+            />
+            <div className="lg:w-72 lg:h-72 sm:w-96 sm:h-96 bg-gray-100 border rounded-lg overflow-hidden z-10  mt-9">
+              <img
+                src={profiles[currentProfileIndex].image}
+                alt={profiles[currentProfileIndex].name}
+                className="w-full h-full object-cover"
+              />
             </div>
-          )}
-        </div>
+          </div>
+
+            <div className="text-left mt-4">
+              <h3 className="text-lg font-semibold">
+                {profiles[currentProfileIndex].name}
+              </h3>
+              <p className="text-sm text-gray-600">
+                {profiles[currentProfileIndex].portfolio}
+              </p>
+              <div className="justify-center items-center flex flex-row gap-8">
+        <button
+          onClick={handlePrev}
+          className="text-tt-primary hover:text-tt-black"
+          aria-label="Previous Profile"
+        >
+          <BsArrowLeftCircle size={28} />
+        </button>
+        <button
+          onClick={handleNext}
+          className="text-tt-primary hover:text-tt-black"
+          aria-label="Next Profile"
+        >
+          <BsArrowRightCircle size={28} />
+        </button>
       </div>
-    </div>
+            </div>
+
+          </div>
+        </div>
+        
+      
+      </div>
+      
+     
+    </>
   );
 };
 

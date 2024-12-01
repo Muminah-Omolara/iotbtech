@@ -17,6 +17,7 @@ import Home from "../pages/Home";
 import NotFound from "../pages/NotFound";
 import Portfolio from "../pages/Portfolio";
 import Services from "../pages/Services";
+import Team from "../components/Teams";
 
 const router = createBrowserRouter(
   createRoutesFromElements(

@@ -20,8 +20,19 @@ function SetPassword() {
           Set Password for your Tektariq Account
         </h2>
         <form action="">
-          <Input type="password" placeholder="Create a new password" />
-          <Input type="password" placeholder="Re-enter your password" />
+        <CustomInput
+              type="password"
+              placeholder="Create new password"
+              label="Create new password"
+              name="password"
+            />
+             <CustomInput
+              type="password"
+              placeholder="Re-enter your password"
+              label="Re-enter your password"
+              name="password"
+            />
+          
 
           <button className="w-full p-3 bg-tt-primary text-white rounded-md hover:bg-tt-primary transition duration-300">
             Set Password

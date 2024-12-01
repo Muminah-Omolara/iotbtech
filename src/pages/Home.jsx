@@ -4,6 +4,7 @@ import ServicesOffer from "../sections/HomeServicesOffer";
 import WorkRealised from "../sections/WorkRealised";
 import Testimonials from "../sections/Testimonials";
 import ServiceWithImage from "../sections/ServiceWithImage";
+import Team from "../components/Teams";
 
 
 const Home = () => {
@@ -12,9 +13,11 @@ const Home = () => {
       <HomeHero />
       <Clients />
       <ServicesOffer />
+      <Team />
       <ServiceWithImage />
       <WorkRealised />
       <Testimonials />
+      
     </div>
   );
 };

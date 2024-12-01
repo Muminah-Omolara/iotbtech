@@ -1,7 +1,7 @@
 # Tektariq
 
 **Tektariq** is a modern React app built with [Vite](https://vitejs.dev/).
-[Dev URL](https://tektariq-website.onrender.com/)
+- [Dev URL](https://tektariq-website.onrender.com/)
 
 ## Table of Contents
 

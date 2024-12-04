@@ -1,6 +1,7 @@
 import Button from "../components/Button";
 import { CiChat1 } from "react-icons/ci";
 import { RiArrowRightLine } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 const AboutUs = () => {
   return (
@@ -16,12 +17,17 @@ const AboutUs = () => {
         to grow their business,
       </p>
       <div className="flex mx-auto justify-center gap-4 mt-8 flex-col lg:flex-row">
-        <Button text="Let’s Talk" type="solid" icon={<CiChat1 />} />
-        <Button
-          text="Check our Services"
-          type="outline"
-          icon={<RiArrowRightLine />}
-        />
+        <Link to="/login" onClick={() => { window.scrollTo(0, 0); }}>
+          <Button text="Let’s Talk" type="solid" icon={<CiChat1 />} />
+        </Link>
+        <Link to="/services
+        " onClick={() => { window.scrollTo(0, 0); }}>
+          <Button
+            text="Check our Services"
+            type="outline"
+            icon={<RiArrowRightLine />}
+          />
+        </Link>
       </div>
     </div>
   );

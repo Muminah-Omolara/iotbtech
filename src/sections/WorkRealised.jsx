@@ -1,8 +1,8 @@
 import WorkImages from "../components/WorkImages";
-// import { adocImg, bookingImg, delexImg, homeleyImg, webApp } from "../assets/images"
 import Button from "../components/Button";
 import { MdOutlineNavigateNext } from "react-icons/md";
 import workImages from "../data/workimages";
+import { Link } from "react-router-dom";
 
 const WorkRealised = () => {
   return (
@@ -14,7 +14,7 @@ const WorkRealised = () => {
         The work we did that made our Client happy and satisfied
       </h3>
 
-      <div className="flex flex-col lg:flex-row md:flex-row items-center gap-10">
+      <div className="flex flex-col lg:flex-row md:flex-row justify-center gap-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
           {workImages.slice(0, 4).map((image) => (
             <WorkImages
@@ -38,11 +38,13 @@ const WorkRealised = () => {
         </div>
       </div>
       <div className="flex items-center justify-center mt-12 mb-10">
-        <Button
-          type="outline"
-          text="Explore More Projects"
-          icon={<MdOutlineNavigateNext />}
-        />
+        <Link to="/portfolio" onClick={() => { window.scrollTo(0, 0); }}>
+          <Button
+            type="outline"
+            text="Explore More Projects"
+            icon={<MdOutlineNavigateNext />}
+          />
+        </Link>
       </div>
     </div>
   );

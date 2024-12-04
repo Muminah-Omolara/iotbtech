@@ -2,6 +2,7 @@ import { MdOutlineChatBubbleOutline } from "react-icons/md"
 import Button from "../components/Button"
 import StatCard from "../components/StatCard"
 import stats from "../data/stats"
+import { Link } from "react-router-dom"
 
 
 
@@ -19,9 +20,13 @@ const ProjectStats = () => {
             ))}
         </div>
         <div className="flex flex-col lg:flex-row items-center mb-5 w-full lg:w-auto px-5 justify-center gap-3 order-5 lg:order-1">
-            <Button text="Let’s Talk" type="solid" icon={<MdOutlineChatBubbleOutline /> } />
+            <Link to="/login" onClick={() => { window.scrollTo(0, 0); }}>
+                <Button text="Let’s Talk" type="solid" icon={<MdOutlineChatBubbleOutline /> } />
+            </Link>
             <div className="lg:hidden w-full lg:w-auto">
-                <Button text="Check our services" type="outline" />
+                <Link to="/services" onClick={() => { window.scrollTo(0, 0); }}>
+                    <Button text="Check our services" type="outline" />
+                </Link>
             </div>
         </div>
     </div>

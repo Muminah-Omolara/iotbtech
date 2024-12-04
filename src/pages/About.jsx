@@ -1,4 +1,4 @@
-import Aboutus from "../sections/Aboutus";
+import AboutUs from "../sections/AboutUs";
 import ServiceWithImage from "../sections/ServiceWithImage";
 import Testimonials from "../sections/Testimonials";
 import ServiceTeamCard from "../components/ServiceTeamCard"
@@ -7,7 +7,7 @@ import ServiceTeamCard from "../components/ServiceTeamCard"
 const About = () => {
   return (
     <div className="">
-      <Aboutus/>
+      <AboutUs/>
       <ServiceWithImage />
       <ServiceTeamCard />
       <Testimonials />

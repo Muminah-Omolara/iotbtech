@@ -20,8 +20,7 @@ const AboutUs = () => {
         <Link to="/login" onClick={() => { window.scrollTo(0, 0); }}>
           <Button text="Let’s Talk" type="solid" icon={<CiChat1 />} />
         </Link>
-        <Link to="/services
-        " onClick={() => { window.scrollTo(0, 0); }}>
+        <Link to="/services" onClick={() => { window.scrollTo(0, 0); }}>
           <Button
             text="Check our Services"
             type="outline"

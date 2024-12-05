@@ -7,7 +7,7 @@ const WorkImages = ({ imgTitle, imgText, imgSrc }) => {
       <ImagesComponent
         src={imgSrc}
         alt={imgTitle}
-        className="mb-2 w-72 h-auto"
+        className="mb-2 w-[100%] lg:w-96 h-auto"
       />
       <h4 className="text-tt-primary font-medium text-sm">{imgTitle}</h4>
       <p className="text-tt-grey">{imgText}</p>

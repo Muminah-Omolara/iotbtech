@@ -40,14 +40,14 @@ const Hero = () => {
             Tektariq helps you develop critical hand on digital skills.
           </p>
           <div className="flex flex-col lg:flex-row mx-auto justify-center lg:justify-start mt-9 mb-8 gap-5 -z-50">
-            <Link to="/login">
+            <Link to="/login" onClick={() => { window.scrollTo(0, 0); }}>
               <Button
                 text="Enrol Today"
                 type="solid"
                 icon={<MdOutlineNavigateNext />}
               />
             </Link>
-            <Link to="/services">
+            <Link to="/services" onClick={() => { window.scrollTo(0, 0); }}>
               <Button text="Check our Services" type="outline" />
             </Link>
           </div>

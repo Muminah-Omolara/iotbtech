@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Button from "./Button";
 import { MdOutlineNavigateNext } from "react-icons/md";
 
@@ -7,11 +8,13 @@ const ServiceCard = ({ title, description }) => {
     <div className="shadow-sm rounded-lg py-2 w-full min-h-full flex flex-col justify-between items-start">
       <h2 className="text-2xl font-semibold text-tt-primary mb-4">{title}</h2>
       <p className="text-tt-grey mb-4">{description}</p>
-      <Button
-        type="outline"
-        text="Learn More"
-        icon={<MdOutlineNavigateNext />}
-      />
+      <Link to="about" onClick={() => { window.scrollTo(0, 0); }}>
+        <Button
+          type="outline"
+          text="Learn More"
+          icon={<MdOutlineNavigateNext />}
+        />
+      </Link>
     </div>
   );
 };

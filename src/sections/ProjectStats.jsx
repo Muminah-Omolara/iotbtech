@@ -8,9 +8,9 @@ import { Link } from "react-router-dom"
 
 const ProjectStats = () => {
   return (
-    <div className="flex flex-col items-center justify-center mt-5 max-w-5xl mx-auto">
+    <div className="flex flex-col items-center justify-center mt-8 max-w-5xl mx-auto">
         {/* flex gap-x-20 gap-y-6 mb-5 md:flex-col flex-wrap items-center justify-between px-10 md:gap-x-16 */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 mb-5 gap-x-32 lg:gap-x-20 gap-y-8 order-10 lg:order-1">
+        <div className="grid grid-cols-2 lg:grid-cols-4 mb-5 gap-x-20 gap-y-8 order-10 lg:order-1 px-5"> 
             {stats.map((stat) => (
                 <StatCard 
                     key={stat.title}

@@ -71,7 +71,7 @@ const Testimonials = () => {
             <button
               onClick={handleNext}
               disabled={startIndex + profilesPerPage >= profiles.length}
-              className="disabled:opacity-50 text-tt-primary"
+              className="disabled:opacity-50 text-tt-primary "
             >
               <BsArrowRightCircle size={28} />
             </button>

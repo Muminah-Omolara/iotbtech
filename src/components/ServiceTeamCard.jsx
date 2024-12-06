@@ -1,19 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import TeamProfile from './ServiceTeamProfile';
-import profile1 from '../assets/Profile1.png';
-import profile2 from '../assets/Profile2.png';
-import profile3 from '../assets/Profile3.png';
-import profile4 from '../assets/Profile4.png';
+import profiles from '../data/profiles';
 import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
 
 const TeamCard = () => {
-  const profiles = [
-    { image: profile1, name: 'Jamila Smail', portfolio: 'Co-Founder' },
-    { image: profile2, name: 'Farouk Dari', portfolio: 'Full Stack Developer' },
-    { image: profile3, name: 'Aksel Juba', portfolio: 'Graphic Designer' },
-    { image: profile4, name: 'Dihia Numida', portfolio: 'UI/UX Designer' },
-  ];
-
+ 
   const [isMobile, setIsMobile] = useState(false);
   const [currentPage, setCurrentPage] = useState(0);
   const profilesPerPage = 2;
@@ -52,7 +43,7 @@ const TeamCard = () => {
           </h2>
         </div>
         <div className="w-full sm:w-2/3">
-          <div className={`grid ${isMobile ? 'grid-cols-2' : 'grid-cols-4'} gap-4`}>
+          <div className={` transition-transform duration-700 ease-in-out grid ${isMobile ? 'grid-cols-2' : 'grid-cols-4'} gap-4`}>
             {(isMobile ? currentProfiles : profiles).map((profile, index) => (
               <TeamProfile
                 key={index}

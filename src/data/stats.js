@@ -1,32 +1,32 @@
 const stats = [
     {
-        title: "Number of tracks we have",
+        title: "Tracks",
         value: "4"
     },
     {
-        title: "Number of mentors",
+        title: "Mentors",
         value: "10"
     },
     {
-        title: "Number of projects",
+        title: "Projects",
         value: "4"
     },
     {
-        title: "Number of cohorts",
+        title: "Cohorts",
         value: "3"
     },
     {
-        title: "Number of students",
-        value: "56"
+        title: "Trainees",
+        value: "50 +"
     },
     {
-        title: "Number of seminars/webinars",
-        value: "10"
+        title: "Seminars/Webinars",
+        value: "10 +"
     },
-    {
-        title: "Number of speakers we have",
-        value: "10"
-    },
+    // {
+    //     title: "Number of speakers we have",
+    //     value: "10"
+    // },
 ]
 
-export default stats
+export default stats;

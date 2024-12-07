@@ -5,7 +5,7 @@ import CustomInput from "../components/CustomInput";
 import CustomTextArea from "../components/CustomTextArea";
 import Testimonials from "../sections/Testimonials";
 import Faq from "../components/Faq";
-import ServiceWithImage from "../sections/ServiceWithImage";
+import ServicesList from "../sections/ServicesList.jsx";
 
 function Contact() {
   return (
@@ -59,7 +59,7 @@ function Contact() {
         </div>
       </div>
       <Faq />
-      <ServiceWithImage />
+      <ServicesList />
       <Testimonials />
     </div>
   );

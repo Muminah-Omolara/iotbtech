@@ -6,7 +6,7 @@ import ServiceTeamCard from "../components/ServiceTeamCard"
 
 const About = () => {
   return (
-    <div className="">
+    <div>
       <AboutUs/>
       <ServiceWithImage />
       <ServiceTeamCard />

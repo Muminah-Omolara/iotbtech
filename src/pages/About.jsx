@@ -1,14 +1,13 @@
 import AboutUs from "../sections/AboutUs";
-import ServiceWithImage from "../sections/ServiceWithImage";
+import ServicesList from "../sections/ServicesList.jsx";
 import Testimonials from "../sections/Testimonials";
 import ServiceTeamCard from "../components/ServiceTeamCard"
-
 
 const About = () => {
   return (
     <div>
       <AboutUs/>
-      <ServiceWithImage />
+      <ServicesList />
       <ServiceTeamCard />
       <Testimonials />
     </div>

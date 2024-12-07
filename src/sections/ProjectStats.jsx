@@ -20,7 +20,7 @@ const ProjectStats = () => {
             ))}
         </div>
         <div className="flex flex-col lg:flex-row items-center mb-5 w-full lg:w-auto px-5 justify-center gap-3 order-5 lg:order-1">
-            <Link to="/login" onClick={() => { window.scrollTo(0, 0); }}>
+            <Link to="/contact" onClick={() => { window.scrollTo(0, 0); }}>
                 <Button text="Let’s Talk" type="solid" icon={<MdOutlineChatBubbleOutline /> } />
             </Link>
             <div className="lg:hidden w-full lg:w-auto">

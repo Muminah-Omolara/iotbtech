@@ -1,14 +1,14 @@
 import OurService from "../sections/OurService";
 import OurProcess from "../sections/OurProcess";
-import ServiceWithImage from "../sections/ServiceWithImage";
+import ServicesList from "../sections/ServicesList.jsx";
 import Testimonials from "../sections/Testimonials";
 
 const Services = () => {
   return (
-    <div className=" justify-center items-center w-auto">
+    <div className="space-y-24">
       <OurService />
       <OurProcess />
-      <ServiceWithImage />
+      <ServicesList />
       <Testimonials />
     </div>
   );

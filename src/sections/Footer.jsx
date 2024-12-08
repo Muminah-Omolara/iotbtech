@@ -50,7 +50,7 @@ const Footer = () => {
         },
         {
           href: "javascript:void()",
-          name: "09034425688, 07065829170",
+          name: "+2349034425688 / +2347065829170",
           icon: <FaWhatsapp />,
         },
         {
@@ -69,14 +69,14 @@ const Footer = () => {
           <div className="max-w-xs">
             <TheLogo />
             <p className="leading-relaxed mt-2 text-[15px]">
-            We're IOTB Tech, a fast-rising tech academy, on a mission to liberate lives. 
+              We&apos;re IOTB TECH, a fast-rising tech academy, on a mission to librate lives.
             </p>
           </div>
 
           {footerNavs.map((item, idx) => (
             <ul className="space-y-4" key={idx}>
               <h4 className="text-tt-black font-medium">{item.label}</h4>
-              {item.items.map((el, idx) => (
+              {item.items.map((el) => (
                 <li key={el.name}>
                   <NavLink
                     href={el.href}

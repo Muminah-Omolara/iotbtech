@@ -1,23 +1,20 @@
-import profile1 from "../assets/Profile1.png";
-import profile2 from "../assets/Profile2.png";
-import profile3 from "../assets/Profile3.png";
-import profile4 from "../assets/Profile4.png";
-import profile from "../assets/images/user.png"
+
+import profile from "../assets/icons/avatar.svg"
 
 const profiles = [
     {
       testimonial:
         "Being a beneficiary of the IOTB Tech community as a web development student was a life changing opportunity for me. The mentorship, support, networking and diverse opportunities that I received was so vast that I look forward to the day I start giving back to the community.  I'm grateful for the opportunity and pray to be able to give back and contribute to the community soonest",
       image: profile,
-      name: "Jimoh Ridoullahi (Cohort 2)",
-      portfolio: "Web Developer",
+      name: "Jimoh Ridoullahi ",
+      portfolio: "Web Developer (Cohort 2)",
     },
     {
       testimonial:
         "Being part of the IOTB Techpreneur community as a cloud engineering student has been a game-changer for me. The support, guidance, and networking opportunities I've received have not only enhanced my technical skills but also boosted my confidence as a future tech leader. I'm grateful for the experience and look forward to continuing to grow and contribute to the community",
       image: profile,
-      name: "Rufai Mubarak (Cohort 2)",
-      portfolio: "Cloud Engineer",
+      name: "Rufai Mubarak ",
+      portfolio: "Cloud Engineer (Cohort 2)",
     },
     {
       testimonial:

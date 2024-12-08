@@ -62,14 +62,14 @@ const TeamCard = () => {
              disabled={startIndex === 0}
              className="disabled:opacity-50"
            >
-             <img src={BsArrowLeftCircle} alt="Previous" />
+             <BsArrowLeftCircle size={28} />
            </button>
            <button
              onClick={handleNext}
              disabled={startIndex + profilesPerPage >= profiles.length}
              className="disabled:opacity-50"
            >
-             <img src={BsArrowRightCircle} alt="Next" />
+             <BsArrowRightCircle size={28} />
            </button>
          </div>
           )}

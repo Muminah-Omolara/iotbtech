@@ -2,7 +2,6 @@ import { useState } from "react";
 import profiles from "../data/profiles";
 import TeamCard from "./TeamCard";
 
-import Rectangle from "../assets/icons/Rectangle.svg";
 import Titik from "../assets/icons/Titik.svg";
 
 import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
@@ -42,19 +41,19 @@ const Team = () => {
             </p>
           </div>
 
-        <div className="relative flex flex-col items-left lg:w-1/2">
+        <div className="relative flex flex-col items-center lg:w-1/2">
             
-          <div className="relative flex lg:justify-center lg:items-center lg:w-1/2 mt-4">
+          <div className="relative flex lg:justify-center lg:items-center sm:items-center lg:w-1/2 mt-2">
             <img
               src={Titik}
               alt=""
-              className=" left-10 absolute inset-0 w-[250px] h-[200px] object-cover z-10 hidden sm:block sm:items-left mx-8 lg:mt-10 "
+              className=" left-10 absolute inset-0 w-[250px] h-[200px] object-cover z-10 hidden sm:block sm:items-left mx-16 lg:mt-2 "
             />
             <div className="lg:w-72 lg:h-72 sm:w-96 sm:h-96 bg-gray-100 border rounded-lg overflow-hidden z-10  mt-9">
               <img
                 src={profiles[currentProfileIndex].image}
                 alt={profiles[currentProfileIndex].name}
-                className="w-full h-full object-cover"
+                className="w-72 h-72 object-cover sm:w-fit"
               />
             </div>
           </div>

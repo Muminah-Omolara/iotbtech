@@ -1,8 +1,8 @@
 const ProjectPortfolioHero = () => {
   return (
-    <div className="flex p-6 max-w-5xl mx-auto mt-10">
+    <div className="flex p-6 max-w-5xl mx-auto">
       <div className="text-left lg:text-center">
-        <h2 className="text-xl mb-2 font-semibold text-tt-primary -mt-3">
+        <h2 className="text-xl lg:text-2xl mb-2 font-bold text-tt-primary -mt-3">
           Our Projects
         </h2>
         <h1 className="text-tt-black text-2xl font-bold">

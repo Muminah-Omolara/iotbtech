@@ -19,7 +19,7 @@ function Contact() {
         <div className="max-w-lg mx-auto mb-10 space-y-5 relative z-10">
           <div>
             <p className="lg:text-center md: text-left font-bold text-tt-primary text-[22px]">
-              Let's have a chat
+              Let&apos;s have a chat
             </p>
             <h1 className="lg:text-center md: text-left font-bold text-tt-black text-[30px]">
               An expert at your services

@@ -50,12 +50,12 @@ const Footer = () => {
         },
         {
           href: "javascript:void()",
-          name: "2348123456789",
+          name: "09034425688, 07065829170",
           icon: <FaWhatsapp />,
         },
         {
           href: "javascript:void()",
-          name: "tektariq@yahoo.com",
+          name: "iotbtechprenuer@gmail.com",
           icon: <FaRegEnvelope />,
         },
       ],

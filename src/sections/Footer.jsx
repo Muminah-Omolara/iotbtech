@@ -1,4 +1,4 @@
-import { FaRegEnvelope } from "react-icons/fa";
+import { FaPhoneAlt, FaRegEnvelope } from "react-icons/fa";
 import { FaInstagram, FaWhatsapp, FaXTwitter } from "react-icons/fa6";
 import { GrSend } from "react-icons/gr";
 import { LuFacebook } from "react-icons/lu";
@@ -45,8 +45,8 @@ const Footer = () => {
         },
         {
           href: "javascript:void()",
-          name: "@TekTariq",
-          icon: <FaXTwitter />,
+          name: "+2347065829170",
+          icon: <FaPhoneAlt />,
         },
         {
           href: "javascript:void()",

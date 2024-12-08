@@ -6,6 +6,7 @@ import profile5 from "../assets/images/Oyedeji_MS.jpg";
 import profile6 from "../assets/images/Rofiat_Atinuke_Adebakin.jpg";
 import profile7 from "../assets/images/Rokeeb_Abdul.jpg";
 import profile8 from "../assets/images/Sueliman_Olusokun.jpg";
+import profile9 from "../assets/images/Hassan_Yaya.jpeg";
 
 
 const profiles = [
@@ -16,6 +17,7 @@ const profiles = [
     { image: profile5, name: "Oyedeji Adekunle Shuaraudeen", portfolio: "Product Designer - Freelance"},
     { image: profile2, name: "Odewole Abdullahi Adewale", portfolio: "Brand Designer - ResearchGains"},
     { image: profile8, name: "Sulaiman Olusokun", portfolio: "Program Analyst - Federal Medical Center"},
+    { image: profile9, name: "Hassan Yahya", portfolio: "Fullstack Developer"},
     { image: profile7, name: "Rokeeb Abdul", portfolio: "Product Designer - Uvise Tech"},
   ];
 

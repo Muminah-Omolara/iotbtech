@@ -69,8 +69,7 @@ const Footer = () => {
           <div className="max-w-xs">
             <TheLogo />
             <p className="leading-relaxed mt-2 text-[15px]">
-              Lorem Ipsum has been the industry standard dummy text ever since
-              the 1500s.
+            We're IOTB Tech, a fast-rising tech academy, on a mission to liberate lives. 
             </p>
           </div>
 

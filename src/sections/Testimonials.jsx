@@ -1,42 +1,10 @@
 import { useEffect, useState } from "react";
 import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
-import profile1 from "../assets/Profile1.png";
-import profile2 from "../assets/Profile2.png";
-import profile3 from "../assets/Profile3.png";
-import profile4 from "../assets/Profile4.png";
+import profiles from "../data/testimonial";
 import TestimonialCard from "../components/TestimonialCard";
 
 const Testimonials = () => {
-  const profiles = [
-    {
-      testimonial:
-        "Our team of digital product creators and Tech Bring Skilled will take your idea to the next level and help you with your product",
-      image: profile1,
-      name: "Jamila Smail",
-      portfolio: "Co-Founder",
-    },
-    {
-      testimonial:
-        "Our team of digital product creators and Tech Bring Skilled will take your idea to the next level and help you with your product",
-      image: profile2,
-      name: "Farouk Dari",
-      portfolio: "Full Stack Developer",
-    },
-    {
-      testimonial:
-        "Our team of digital product creators and Tech Bring Skilled will take your idea to the next level and help you with your product",
-      image: profile3,
-      name: "Aksel Juba",
-      portfolio: "Graphic Designer",
-    },
-    {
-      testimonial:
-        "Our team of digital product creators and Tech Bring Skilled will take your idea to the next level and help you with your product",
-      image: profile4,
-      name: "Dihia Numida",
-      portfolio: "UI/UX Designer",
-    },
-  ];
+  
 
   const [startIndex, setStartIndex] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
@@ -103,7 +71,7 @@ const Testimonials = () => {
             <button
               onClick={handleNext}
               disabled={startIndex + profilesPerPage >= profiles.length}
-              className="disabled:opacity-50 text-tt-primary"
+              className="disabled:opacity-50 text-tt-primary "
             >
               <BsArrowRightCircle size={28} />
             </button>

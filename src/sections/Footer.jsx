@@ -50,12 +50,12 @@ const Footer = () => {
         },
         {
           href: "javascript:void()",
-          name: "2348123456789",
+          name: "09034425688, 07065829170",
           icon: <FaWhatsapp />,
         },
         {
           href: "javascript:void()",
-          name: "tektariq@yahoo.com",
+          name: "iotbtechprenuer@gmail.com",
           icon: <FaRegEnvelope />,
         },
       ],
@@ -69,8 +69,7 @@ const Footer = () => {
           <div className="max-w-xs">
             <TheLogo />
             <p className="leading-relaxed mt-2 text-[15px]">
-              Lorem Ipsum has been the industry standard dummy text ever since
-              the 1500s.
+            We're IOTB Tech, a fast-rising tech academy, on a mission to liberate lives. 
             </p>
           </div>
 

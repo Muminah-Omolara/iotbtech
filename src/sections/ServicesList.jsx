@@ -3,30 +3,20 @@ import {BsArrowLeftCircle, BsArrowRightCircle} from "react-icons/bs";
 import OurServiceWithImage from "../components/OurServiceWithImage";
 import {Stacks} from "../data/Stacks";
 
-console.log("Stacks data:", Stacks);
-// import Rectangle from "../assets/icons/Rectangle.svg";
 
 const ServicesList = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Handlers for navigation
   const handlePrevious = () => {
-    setCurrentIndex((prevIndex) =>{
-      const newIndex = prevIndex > 0 ? prevIndex - 1 : Stacks.length - 1;
-      console.log("Previous button clicked. New Index:", newIndex);
-      return newIndex;
-    }
+    setCurrentIndex((prevIndex) =>
+      prevIndex > 0 ? prevIndex - 1 : Stacks.length - 1
       
     );
   };
 
   const handleNext = () => {
-    setCurrentIndex((prevIndex) =>{
-      const newIndex = prevIndex < Stacks.length - 1 ? prevIndex + 1 : 0;
-      console.log("Next button clicked. New Index:", newIndex);
-      return newIndex;
-    }
-      
+    setCurrentIndex((prevIndex) =>
+      prevIndex < Stacks.length - 1 ? prevIndex + 1 : 0
     );
   };
 
@@ -41,11 +31,11 @@ const ServicesList = () => {
                         img={Stacks[currentIndex].image}
                     />
                 </div>
-                 <div className="flex justify-end gap-6 pt-8 pr-12">
-                    <button onClick={handlePrevious} className="text-tt-primary ">
+                 <div className="flex lg:justify-end justify-center gap-6 pt-8 pr-24">
+                    <button onClick={handlePrevious} aria-label="Previous Service" className="text-tt-primary ">
                         <BsArrowLeftCircle size={28}/> 
                     </button>
-                    <button onClick={handleNext} className="text-tt-primary ">
+                    <button onClick={handleNext} aria-label="Next Service" className="text-tt-primary ">
                         <BsArrowRightCircle size={28}/> 
                     </button>
                 </div>

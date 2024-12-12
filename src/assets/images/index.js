@@ -17,6 +17,10 @@ import mtn from "./mtn-logo.svg";
 import huawei from "./huawei-logo.png";
 import leatherback from "./leatherback-logo.svg";
 import homeArrow from "./home-arrow-vector.svg"
+import Backend from "./Backend.png";
+import Devops from "./Devops.png";
+import Graphics from "./Graphics.png";
+import Product from "./Product.png"
 
 export {
   microsoft,
@@ -37,5 +41,9 @@ export {
   stanbic,
   mtn,
   huawei,
-  homeArrow
+  homeArrow,
+  Backend,
+  Devops,
+  Graphics,
+  Product,
 };

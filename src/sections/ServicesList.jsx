@@ -31,7 +31,7 @@ const ServicesList = () => {
                         img={Stacks[currentIndex].image}
                     />
                 </div>
-                 <div className="flex lg:justify-end justify-center gap-6 pt-8 pr-24">
+                 <div className="flex lg:justify-end justify-center gap-6 pt-8 lg:pr-24">
                     <button onClick={handlePrevious} aria-label="Previous Service" className="text-tt-primary ">
                         <BsArrowLeftCircle size={28}/> 
                     </button>

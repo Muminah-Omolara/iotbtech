@@ -15,7 +15,7 @@ const ServicesOffer = () => {
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 justify-center">
         {services.map((s) => (
-          <ServiceCard key={s.id} title={s.title} description={s.body} />
+          <ServiceCard key={s.id} img={s.image} title={s.title} description={s.body} />
         ))}
       </div>
     </div>

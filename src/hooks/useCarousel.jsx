@@ -49,7 +49,7 @@ const useCarousel = (items, itemsPerView) => {
     }
   };
 
-  return { currentIndex, handlePrev, handleNext, visibleItems };
+  return { currentIndex, endIndex,  handlePrev, handleNext, visibleItems };
 };
 
 export default useCarousel;

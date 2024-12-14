@@ -1,13 +1,11 @@
 import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
 import OurServiceWithImage from "../components/OurServiceWithImage";
-import { stacks } from "../data/Stacks";
+import { stacks } from "../data/stacks";
 import useCarousel from "../hooks/useCarousel";
 
 const ServicesList = () => {
-  const { currentIndex, visibleItems, handleNext, handlePrev } = useCarousel(
-    stacks,
-    { lg: 1, sm: 1 },
-  );
+  const { currentIndex, endIndex, visibleItems, handleNext, handlePrev } =
+    useCarousel(stacks, { lg: 1, sm: 1 });
 
   return (
     <div className="px-4 sm:px-6 lg:px-8 ">
@@ -25,15 +23,17 @@ const ServicesList = () => {
         <div className="flex lg:justify-end justify-center gap-6 pt-8 lg:pr-24">
           <button
             onClick={handlePrev}
-            aria-label="Previous Service"
-            className="text-tt-primary "
+            aria-label="Previous"
+            className="text-tt-primary cursor-pointer disabled:opacity-50"
+            disabled={currentIndex === 0}
           >
             <BsArrowLeftCircle size={28} />
           </button>
           <button
             onClick={handleNext}
-            aria-label="Next Service"
-            className="text-tt-primary "
+            aria-label="Next"
+            className="text-tt-primary cursor-pointer disabled:opacity-50"
+            disabled={endIndex >= stacks.length}
           >
             <BsArrowRightCircle size={28} />
           </button>

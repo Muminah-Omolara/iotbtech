@@ -16,11 +16,12 @@ import stanbic from "./stanbic-ibtc-logo.svg";
 import mtn from "./mtn-logo.svg";
 import huawei from "./huawei-logo.png";
 import leatherback from "./leatherback-logo.svg";
-import homeArrow from "./home-arrow-vector.svg"
-import Backend from "./Backend.png";
-import Devops from "./Devops.png";
-import Graphics from "./Graphics.png";
-import Product from "./Product.png"
+import homeArrow from "./home-arrow-vector.svg";
+import frontendDevelopment from "./frontend-dev.svg";
+import backendDevelopment from "./backend-dev.svg";
+import devops from "./cloud-devops.svg";
+import graphicsDesign from "./graphics-design.svg";
+import productDesign from "./product-design.svg";
 
 export {
   microsoft,
@@ -42,8 +43,9 @@ export {
   mtn,
   huawei,
   homeArrow,
-  Backend,
-  Devops,
-  Graphics,
-  Product,
+  frontendDevelopment,
+  backendDevelopment,
+  devops,
+  graphicsDesign,
+  productDesign,
 };

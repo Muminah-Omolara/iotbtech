@@ -1,29 +1,45 @@
-import {BsArrowLeftCircle, BsArrowRightCircle} from "react-icons/bs";
+import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
 import OurServiceWithImage from "../components/OurServiceWithImage";
-import Rectangle from "../assets/icons/Rectangle.svg";
+import { stacks } from "../data/stacks";
+import useCarousel from "../hooks/useCarousel";
 
 const ServicesList = () => {
-    return (
-        <div className="px-4 sm:px-6 lg:px-8 my-20">
-            <div className="max-w-screen-xl mx-auto">
-                <div className="">
-                    <OurServiceWithImage
-                        title="Ui /Ux , Web Design"
-                        img={Rectangle}
-                        description="With a team of the best Digital Product Designer In the world at your hand ,
-                        their goal is to create usefull andeasy to use products for you potentials users"
-                    />
-                </div>
-                <div className="flex justify-end items-center gap-6 pt-4">
-                    <button className="text-tt-primary hidden sm:block">
-                        <BsArrowLeftCircle size={28}/>
-                    </button>
-                    <button className="text-tt-primary hidden sm:block">
-                        <BsArrowRightCircle size={28}/>
-                    </button>
-                </div>
-            </div>
+  const { currentIndex, endIndex, visibleItems, handleNext, handlePrev } =
+    useCarousel(stacks, { lg: 1, sm: 1 });
+
+  return (
+    <div className="px-4 sm:px-6 lg:px-8 ">
+      <div className="lg:max-w-7xl mx-auto ">
+        <div className="">
+          {visibleItems.map((item, idx) => (
+            <OurServiceWithImage
+              key={idx}
+              title={item.title}
+              description={item.description}
+              img={item.image}
+            />
+          ))}
         </div>
-    );
+        <div className="flex lg:justify-end justify-center gap-6 pt-8 lg:pr-24">
+          <button
+            onClick={handlePrev}
+            aria-label="Previous"
+            className="text-tt-primary cursor-pointer disabled:opacity-50"
+            disabled={currentIndex === 0}
+          >
+            <BsArrowLeftCircle size={28} />
+          </button>
+          <button
+            onClick={handleNext}
+            aria-label="Next"
+            className="text-tt-primary cursor-pointer disabled:opacity-50"
+            disabled={endIndex >= stacks.length}
+          >
+            <BsArrowRightCircle size={28} />
+          </button>
+        </div>
+      </div>
+    </div>
+  );
 };
 export default ServicesList;

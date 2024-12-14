@@ -1,48 +1,45 @@
-import { useState } from "react";
-import {BsArrowLeftCircle, BsArrowRightCircle} from "react-icons/bs";
+import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
 import OurServiceWithImage from "../components/OurServiceWithImage";
-import {Stacks} from "../data/Stacks";
-
+import { stacks } from "../data/Stacks";
+import useCarousel from "../hooks/useCarousel";
 
 const ServicesList = () => {
-    const [currentIndex, setCurrentIndex] = useState(0);
+  const { currentIndex, visibleItems, handleNext, handlePrev } = useCarousel(
+    stacks,
+    { lg: 1, sm: 1 },
+  );
 
-  const handlePrevious = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex > 0 ? prevIndex - 1 : Stacks.length - 1
-      
-    );
-  };
-
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex < Stacks.length - 1 ? prevIndex + 1 : 0
-    );
-  };
-
-    return (
-        <div className="px-4 sm:px-6 lg:px-8 ">
-            <div className="lg:max-w-7xl mx-auto ">
-                <div className="">
-                    <OurServiceWithImage
-                        key={currentIndex}
-                        title={Stacks[currentIndex].title}
-                        description={Stacks[currentIndex].description}
-                        img={Stacks[currentIndex].image}
-                    />
-                </div>
-                 <div className="flex lg:justify-end justify-center gap-6 pt-8 lg:pr-24">
-                    <button onClick={handlePrevious} aria-label="Previous Service" className="text-tt-primary ">
-                        <BsArrowLeftCircle size={28}/> 
-                    </button>
-                    <button onClick={handleNext} aria-label="Next Service" className="text-tt-primary ">
-                        <BsArrowRightCircle size={28}/> 
-                    </button>
-                </div>
-
-                
-            </div>
+  return (
+    <div className="px-4 sm:px-6 lg:px-8 ">
+      <div className="lg:max-w-7xl mx-auto ">
+        <div className="">
+          {visibleItems.map((item, idx) => (
+            <OurServiceWithImage
+              key={idx}
+              title={item.title}
+              description={item.description}
+              img={item.image}
+            />
+          ))}
         </div>
-    );
+        <div className="flex lg:justify-end justify-center gap-6 pt-8 lg:pr-24">
+          <button
+            onClick={handlePrev}
+            aria-label="Previous Service"
+            className="text-tt-primary "
+          >
+            <BsArrowLeftCircle size={28} />
+          </button>
+          <button
+            onClick={handleNext}
+            aria-label="Next Service"
+            className="text-tt-primary "
+          >
+            <BsArrowRightCircle size={28} />
+          </button>
+        </div>
+      </div>
+    </div>
+  );
 };
 export default ServicesList;

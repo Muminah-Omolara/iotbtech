@@ -5,7 +5,7 @@ import {Link} from "react-router-dom";
 
 const OurService = () => {
     return (
-        <div className="px-4 md:px-8">
+        <div className="px-4 md:px-8 mb-8">
             <div className="max-w-screen-xl mx-auto flex-col items-center justify-center text-left lg:text-center space-y-6">
                 <h2 className="text-tt-primary text-xl md:text-2xl lg:text-3xl font-bold">
                     Our Services

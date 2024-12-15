@@ -1,25 +1,20 @@
 import { useState } from "react";
-import profiles from "../data/profiles";
-import TeamCard from "./TeamCard";
-
+import profiles from "../data/team";
 import Titik from "../assets/icons/Titik.svg";
-
 import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
 
 const Team = () => {
-
-
   const [currentProfileIndex, setCurrentProfileIndex] = useState(0);
 
   const handlePrev = () => {
     setCurrentProfileIndex((prevIndex) =>
-      prevIndex > 0 ? prevIndex - 1 : profiles.length - 1
+      prevIndex > 0 ? prevIndex - 1 : profiles.length - 1,
     );
   };
 
   const handleNext = () => {
     setCurrentProfileIndex((prevIndex) =>
-      prevIndex < profiles.length - 1 ? prevIndex + 1 : 0
+      prevIndex < profiles.length - 1 ? prevIndex + 1 : 0,
     );
   };
 
@@ -41,22 +36,21 @@ const Team = () => {
             </p>
           </div>
 
-        <div className="relative flex flex-col items-center lg:w-1/2">
-            
-          <div className="relative flex lg:justify-center lg:items-center sm:items-center lg:w-1/2 mt-2">
-            <img
-              src={Titik}
-              alt=""
-              className=" left-10 absolute inset-0 w-[250px] h-[200px] object-cover z-10 hidden sm:block sm:items-left mx-16 lg:mt-2 "
-            />
-            <div className="lg:w-72 lg:h-72 sm:w-96 sm:h-96 bg-gray-100 border rounded-lg overflow-hidden z-10  mt-9">
+          <div className="relative flex flex-col items-center lg:w-1/2">
+            <div className="relative flex lg:justify-center lg:items-center sm:items-center lg:w-1/2 mt-2">
               <img
-                src={profiles[currentProfileIndex].image}
-                alt={profiles[currentProfileIndex].name}
-                className="w-72 h-72 object-cover sm:w-fit"
+                src={Titik}
+                alt=""
+                className=" left-10 absolute inset-0 w-[250px] h-[200px] object-cover z-10 hidden sm:block sm:items-left mx-16 lg:mt-2 "
               />
+              <div className="lg:w-72 lg:h-72 sm:w-96 sm:h-96 bg-gray-100 border rounded-lg overflow-hidden z-10  mt-9">
+                <img
+                  src={profiles[currentProfileIndex].image}
+                  alt={profiles[currentProfileIndex].name}
+                  className="w-72 h-72 object-cover sm:w-fit"
+                />
+              </div>
             </div>
-          </div>
 
             <div className="text-left mt-4">
               <h3 className="text-lg font-semibold">
@@ -65,31 +59,26 @@ const Team = () => {
               <p className="text-sm text-gray-600">
                 {profiles[currentProfileIndex].portfolio}
               </p>
-              <div className="justify-center items-center flex flex-row gap-8">
-        <button
-          onClick={handlePrev}
-          className="text-tt-primary hover:text-tt-black"
-          aria-label="Previous Profile"
-        >
-          <BsArrowLeftCircle size={28} />
-        </button>
-        <button
-          onClick={handleNext}
-          className="text-tt-primary hover:text-tt-black"
-          aria-label="Next Profile"
-        >
-          <BsArrowRightCircle size={28} />
-        </button>
-      </div>
+              <div className="justify-center items-center flex gap-8 mt-4">
+                <button
+                  onClick={handlePrev}
+                  className="text-tt-primary hover:text-tt-black"
+                  aria-label="Previous Profile"
+                >
+                  <BsArrowLeftCircle size={28} />
+                </button>
+                <button
+                  onClick={handleNext}
+                  className="text-tt-primary hover:text-tt-black"
+                  aria-label="Next Profile"
+                >
+                  <BsArrowRightCircle size={28} />
+                </button>
+              </div>
             </div>
-
           </div>
         </div>
-        
-      
       </div>
-      
-     
     </>
   );
 };

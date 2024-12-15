@@ -10,7 +10,7 @@ const ServicesList = () => {
   return (
     <div className="px-4 sm:px-6 lg:px-8 ">
       <div className="lg:max-w-7xl mx-auto ">
-        <div className="">
+        <div>
           {visibleItems.map((item, idx) => (
             <OurServiceWithImage
               key={idx}
@@ -20,7 +20,7 @@ const ServicesList = () => {
             />
           ))}
         </div>
-        <div className="flex lg:justify-end justify-center gap-6 pt-8 lg:pr-24">
+        <div className="flex lg:justify-end justify-center gap-6 pt-8">
           <button
             onClick={handlePrev}
             aria-label="Previous"

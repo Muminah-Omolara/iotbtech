@@ -9,7 +9,7 @@ const OurServiceWithImage = ({ title, description, img }) => {
         </h2>
 
         <h1 className="text-tt-black font-bold text-4xl">{title}</h1>
-        <p className="text-tt-grey text-lg max-w-2xl">{description}</p>
+        <p className="text-tt-grey text-md max-w-2xl">{description}</p>
       </div>
       <div className="relative max-w-[350px] h-[352px] bg-tt-white">
         <img

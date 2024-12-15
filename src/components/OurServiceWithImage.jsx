@@ -2,7 +2,7 @@ import { titik } from "../assets/icons";
 
 const OurServiceWithImage = ({ title, description, img }) => {
   return (
-    <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-5 transition-opacity transition-all duration-250 ease-in-out">
+    <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-5 transition-all duration-250 ease-in-out">
       <div className="flex flex-col space-y-6">
         <h2 className="text-tt-primary lg:text-left text-left text-xl md:text-2xl lg:text-3xl font-bold">
           Our Services
@@ -11,7 +11,7 @@ const OurServiceWithImage = ({ title, description, img }) => {
         <h1 className="text-tt-black font-bold text-4xl">{title}</h1>
         <p className="text-tt-grey text-md max-w-2xl">{description}</p>
       </div>
-      <div className="relative max-w-[350px] h-[352px] bg-tt-white">
+      <div className="relative max-w-[350px] h-[352px] bg-tt-white md:mr-20">
         <img
           src={img}
           alt="the things we do"

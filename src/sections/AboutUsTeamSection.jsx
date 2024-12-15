@@ -1,7 +1,7 @@
 import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
 import team from "../data/team";
 import useCarousel from "../hooks/useCarousel";
-import TeamProfile from "./ServiceTeamProfile";
+import AboutUsTeamcard from "../components/AboutUsTeamCard";
 
 const TeamCard = () => {
   const { currentIndex, endIndex, visibleItems, handleNext, handlePrev } =
@@ -16,9 +16,9 @@ const TeamCard = () => {
         Meet The Awesome and Creative Members of Our Team
       </h2>
 
-      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-5 mt-5 w-full">
+      <div className="grid gap-8 grid-cols-2 lg:grid-cols-5 mt-5 w-full">
         {visibleItems.map((profile, index) => (
-          <TeamProfile
+          <AboutUsTeamcard
             key={index}
             image={profile.image}
             name={profile.name}

@@ -8,7 +8,7 @@ const CompaniesLogoGrid = () => {
           MENTORS FROM COMPANIES FROM AROUND THE WORLD
         </h3>
         <div className="mt-6">
-          <ul className="flex gap-y-6 flex-wrap items-center justify-between [&>*]:pr-12 lg:divide-x">
+          <ul className="flex gap-y-6 flex-wrap items-center justify-between lg:divide-x">
             {mentorCompnies.map((c) => (
               <li key={c.name}>
                 <img src={c.logo} alt={c.name} className="w-32" />

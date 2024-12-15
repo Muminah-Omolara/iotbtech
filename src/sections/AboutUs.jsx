@@ -11,7 +11,7 @@ const AboutUs = () => {
                 <h2 className="text-tt-black text-3xl font-bold mb-0 lg:mb-8">
                     What we do is what make us Who we are
                 </h2>
-                <p className="text-tt-grey text-base lg:text-xl text-justify">
+                <p className="text-tt-grey text-base lg:text-md text-justify">
                     The IOTB TECH Fellowship is a yearly program that focuses on training beginners in selected tech fields
                     for a period of six months. The fellowship program, an initiative of the International Organization of
                     Tijaniyyah Brotherhood (IOTB) - the largest alumni body of TIMSAN organization focused on empowering

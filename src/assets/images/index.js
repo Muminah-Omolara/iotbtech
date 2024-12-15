@@ -1,59 +1,28 @@
-import microsoft from "./microsoft-logo.png";
-import spotify from "./spotify.png";
-import tesla from "./tesla.png";
-import tiktok from "./tiktok.png";
-import yassir from "./yassir.png";
-import google from "./google.png";
-import heroImage from "./heroImage.png";
-import adocImg from "./adoc.png";
-import bookingImg from "./booking.png";
-import delexImg from "./delex.png";
-import homeleyImg from "./homley.png";
-import webApp from "./webApp.png";
-import patternCircles from "./pattern_circles.png";
-import flutterwave from "./flutterwave-logo.svg";
-import stanbic from "./stanbic-ibtc-logo.svg";
-import mtn from "./mtn-logo.svg";
-import huawei from "./huawei-logo.png";
-import leatherback from "./leatherback-logo.svg";
-import homeArrow from "./home-arrow-vector.svg";
-import frontendDevelopment from "./frontend-dev.svg";
-import backendDevelopment from "./backend-dev.svg";
-import devops from "./cloud-devops.svg";
-import graphicsDesign from "./graphics-design.svg";
-import productDesign from "./product-design.svg";
-import devOps from "./devOps.webp";
-import graphic from "./graphic.avif";
-import frontend from "./frontend.webp";
-import backend from "./backend.webp";
-
-export {
-  microsoft,
-  spotify,
-  tesla,
-  tiktok,
-  yassir,
-  google,
-  heroImage,
-  adocImg,
-  bookingImg,
-  delexImg,
-  homeleyImg,
-  webApp,
-  patternCircles,
-  leatherback,
-  flutterwave,
-  stanbic,
-  mtn,
-  huawei,
-  homeArrow,
-  frontendDevelopment,
-  backendDevelopment,
-  devops,
-  graphicsDesign,
-  graphic,
-  devOps,
-  frontend,
-  backend,
-  productDesign
-};
+export { default as microsoft } from "./microsoft-logo.png";
+export { default as spotify } from "./spotify.png";
+export { default as tesla } from "./tesla.png";
+export { default as tiktok } from "./tiktok.png";
+export { default as yassir } from "./yassir.png";
+export { default as google } from "./google.png";
+export { default as heroImage } from "./heroImage.png";
+export { default as adocImg } from "./adoc.png";
+export { default as bookingImg } from "./booking.png";
+export { default as delexImg } from "./delex.png";
+export { default as homeleyImg } from "./homley.png";
+export { default as webApp } from "./webApp.png";
+export { default as patternCircles } from "./pattern_circles.png";
+export { default as flutterwave } from "./flutterwave-logo.svg";
+export { default as stanbic } from "./stanbic-ibtc-logo.svg";
+export { default as mtn } from "./mtn-logo.svg";
+export { default as huawei } from "./huawei-logo.png";
+export { default as leatherback } from "./leatherback-logo.svg";
+export { default as homeArrow } from "./home-arrow-vector.svg";
+export { default as frontendDevelopment } from "./frontend-dev.svg";
+export { default as backendDevelopment } from "./backend-dev.svg";
+export { default as devops } from "./cloud-devops.svg";
+export { default as graphicsDesign } from "./graphics-design.svg";
+export { default as productDesign } from "./product-design.svg";
+export { default as devOps } from "./devOps.webp";
+export { default as graphic } from "./graphic.avif";
+export { default as frontend } from "./frontend.webp";
+export { default as backend } from "./backend.webp";

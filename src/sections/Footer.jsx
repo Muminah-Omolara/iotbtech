@@ -1,5 +1,5 @@
 import { FaPhoneAlt, FaRegEnvelope } from "react-icons/fa";
-import { FaInstagram, FaWhatsapp, FaXTwitter } from "react-icons/fa6";
+import { FaInstagram, FaWhatsapp } from "react-icons/fa6";
 import { GrSend } from "react-icons/gr";
 import { LuFacebook } from "react-icons/lu";
 import { NavLink } from "react-router-dom";
@@ -69,15 +69,16 @@ const Footer = () => {
           <div className="max-w-xs">
             <TheLogo />
             <p className="leading-relaxed mt-2 text-[15px]">
-              We&apos;re IOTB TECH, a fast-rising tech academy, on a mission to librate lives.
+              We&apos;re IOTB TECH, a fast-rising tech academy, on a mission to
+              librate lives.
             </p>
           </div>
 
           {footerNavs.map((item, idx) => (
             <ul className="space-y-4" key={idx}>
               <h4 className="text-tt-black font-medium">{item.label}</h4>
-              {item.items.map((el) => (
-                <li key={el.name}>
+              {item.items.map((el, idx) => (
+                <li key={el.name + idx}>
                   <NavLink
                     href={el.href}
                     className="hover:underline hover:text-tt-primary"

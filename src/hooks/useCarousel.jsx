@@ -26,18 +26,11 @@ const useCarousel = (items, itemsPerView) => {
   // Calculate the end index for displayed items
   const endIndex = Math.min(currentIndex + itemsToShow, totalItems);
 
-  console.log("currentIdx", currentIndex);
-  console.log("itemsToShow", itemsToShow);
-
-  console.log("endIdx" ,endIndex);
-
   // Slice the visible items
   const visibleItems = items.slice(currentIndex, endIndex);
 
   // Handlers for navigation
-  const handlePrev = () => {
-    console.log(visibleItems);
-    
+  const handlePrev = () => {    
     if (currentIndex > 0) {
       setCurrentIndex(currentIndex - itemsToShow);
     }

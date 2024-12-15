@@ -1,42 +1,11 @@
-import { useEffect, useState } from "react";
 import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
-import profiles from "../data/testimonial";
 import TestimonialCard from "../components/TestimonialCard";
+import testimonials from "../data/testimonials";
+import useCarousel from "../hooks/useCarousel";
 
 const Testimonials = () => {
-  
-
-  const [startIndex, setStartIndex] = useState(0);
-  const [isMobile, setIsMobile] = useState(false);
-  const profilesPerPage = isMobile ? 1 : 2;
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
-
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  const visibleProfiles = profiles.slice(
-    startIndex,
-    startIndex + profilesPerPage,
-  );
-  const totalPages = Math.ceil(profiles.length / profilesPerPage);
-
-  const handleNext = () => {
-    if (startIndex + profilesPerPage < profiles.length) {
-      setStartIndex(startIndex + profilesPerPage);
-    }
-  };
-
-  const handlePrev = () => {
-    if (startIndex - profilesPerPage >= 0) {
-      setStartIndex(startIndex - profilesPerPage);
-    }
-  };
+  const { currentIndex, endIndex, visibleItems, handleNext, handlePrev } =
+    useCarousel(testimonials, { lg: 2, sm: 1 });
 
   return (
     <div className="bg-tt-grey bg-opacity-10 px-4 sm:px-6 lg:px-8 py-10">
@@ -48,29 +17,29 @@ const Testimonials = () => {
             <br className="hidden md:block" /> Check what they say about us
           </h2>
         </div>
-        <div className="p-14 mt-8 flex flex-col items-center">
-          <div className={`flex flex-row gap-48 ${isMobile ? "flex-col" : ""}`}>
-            {visibleProfiles.map((profile, index) => (
+        <div className="mt-4 flex flex-col items-center">
+          <div className={`flex flex-row gap-20`}>
+            {visibleItems.map((profile, index) => (
               <TestimonialCard
                 key={index}
-                testimonial={profile.testimonial}
+                quote={profile.quote}
                 image={profile.image}
                 name={profile.name}
-                portfolio={profile.portfolio}
+                title={profile.title}
               />
             ))}
           </div>
           <div className="flex justify-center items-center gap-6 pt-4">
             <button
               onClick={handlePrev}
-              disabled={startIndex === 0}
+              disabled={currentIndex === 0}
               className="disabled:opacity-50 text-tt-primary"
             >
               <BsArrowLeftCircle size={28} />
             </button>
             <button
               onClick={handleNext}
-              disabled={startIndex + profilesPerPage >= profiles.length}
+              disabled={endIndex >= testimonials.length}
               className="disabled:opacity-50 text-tt-primary "
             >
               <BsArrowRightCircle size={28} />

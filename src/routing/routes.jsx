@@ -4,8 +4,6 @@ import {
   createRoutesFromElements,
 } from "react-router-dom";
 import AppLayout from "../components/AppLayout";
-import TeamCard from "../components/TeamCard";
-import TestimonialCard from "../components/TestimonialCard";
 import About from "../pages/About";
 import Forgot_Password from "../pages/Authentication/ForgotPassword";
 import Login from "../pages/Authentication/Login";

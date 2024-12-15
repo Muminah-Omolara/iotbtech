@@ -1,7 +1,7 @@
 import WorkImages from "../components/WorkImages";
 import Button from "../components/Button";
 import { MdOutlineNavigateNext } from "react-icons/md";
-import workImages from "../data/workimages";
+import workImages from "../data/workImages";
 import { Link } from "react-router-dom";
 
 const WorkRealised = () => {

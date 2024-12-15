@@ -26,3 +26,5 @@ export { default as devOps } from "./devOps.webp";
 export { default as graphic } from "./graphic.avif";
 export { default as frontend } from "./frontend.webp";
 export { default as backend } from "./backend.webp";
+export { default as tektariqWebsite } from "./tektariq-website.png";
+export { default as profolioFrontend } from "./profolio-frontend.png";

@@ -15,7 +15,7 @@ const team = [
   {
     image: profile1,
     name: "Ibn Ahmad Abdurrahman Kishky",
-    portfolio: "Cloud Solutions Architect, Huawei",
+    portfolio: "Cloud Solutions Architect",
   },
   {
     image: profile3,

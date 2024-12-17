@@ -20,27 +20,27 @@ const team = [
   {
     image: profile3,
     name: "Akeem Muhyideen Folahan",
-    portfolio: "Cloud Engineer, Stanbic IBTC",
+    portfolio: "Cloud Engineer",
   },
   {
     image: profile6,
     name: "Rofiat Atinuke Adebakin",
-    portfolio: "Teaching service commission, Teaching",
+    portfolio: "Teaching service commission",
   },
   {
     image: profile4,
     name: "Muhammad Awwal Adewuyi",
-    portfolio: "Automation Engineer, Huawei",
+    portfolio: "Automation Engineer",
   },
   {
     image: abdulkareemMustafa,
     name: "Abdulkareem Mustapha",
-    portfolio: "Project manager/Cloud Administrator, Freelance",
+    portfolio: "Project manager/Cloud Administrator",
   },
   {
     image: profile5,
     name: "Oyedeji Adekunle Shuaraudeen",
-    portfolio: "Product Designer, Freelance",
+    portfolio: "Product Designer",
   },
   {
     image: salahudeenAisha,
@@ -50,23 +50,23 @@ const team = [
   {
     image: profile2,
     name: "Odewole Abdullahi Adewale",
-    portfolio: "Brand Designer, ResearchGains",
+    portfolio: "Brand Designer",
   },
   {
     image: profile8,
     name: "Sulaiman Olusokun",
-    portfolio: "Program Analyst, Federal Medical Center",
+    portfolio: "Program Analyst",
   },
   { image: profile9, name: "Hassan Yahya", portfolio: "Full-Stack Developer" },
   {
     image: profile7,
     name: "Rokeeb Abdul",
-    portfolio: "Product Designer, Uvise Tech",
+    portfolio: "Product Designer",
   },
   {
     image: ibraheemSemiat,
     name: "Ibraheem Semiat",
-    portfolio: "Project manager, IOTB Tech",
+    portfolio: "Project manager",
   },
 ];
 

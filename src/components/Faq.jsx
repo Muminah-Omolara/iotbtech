@@ -2,7 +2,7 @@ import FaqItem from "./FaqItem";
 import faqList from "../data/faqList";
 const Faq = () => {
   return (
-    <div className="flex flex-col lg:flex-row max-w-screen-xl mx-auto gap-10 px-4 sm:px-6 lg:px-5 py-10 ">
+    <div className="flex flex-col lg:flex-row max-w-screen-xl mx-auto gap-10 px-4 sm:px-6 lg:px-5 py-10 mb-10">
         <div className="flex-1 mt-[200px]">
           <p className=" text-tt-primary font-bold text-xl">FAQ</p>
           <p className="font-bold text-4xl text-tt-black leading-2 mt-[30px]">

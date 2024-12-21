@@ -1,7 +1,5 @@
-import React from "react";
 import setpassword from "../../assets/setpassword.jpg";
-
-import Input from "../../components/CustomInput";
+import CustomInput from "../../components/CustomInput";
 
 function SetPassword() {
   return (
@@ -20,19 +18,18 @@ function SetPassword() {
           Set Password for your Tektariq Account
         </h2>
         <form action="">
-        <CustomInput
-              type="password"
-              placeholder="Create new password"
-              label="Create new password"
-              name="password"
-            />
-             <CustomInput
-              type="password"
-              placeholder="Re-enter your password"
-              label="Re-enter your password"
-              name="password"
-            />
-          
+          <CustomInput
+            type="password"
+            placeholder="Create new password"
+            label="Create new password"
+            name="password"
+          />
+          <CustomInput
+            type="password"
+            placeholder="Re-enter your password"
+            label="Re-enter your password"
+            name="password"
+          />
 
           <button className="w-full p-3 bg-tt-primary text-white rounded-md hover:bg-tt-primary transition duration-300">
             Set Password

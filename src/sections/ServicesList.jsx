@@ -8,7 +8,7 @@ const ServicesList = () => {
     useCarousel(stacks, { lg: 1, sm: 1 });
 
   return (
-    <div className="px-4 sm:px-6 lg:px-8 ">
+    <div className="px-4 sm:px-6 lg:px-8 py-6 ">
       <div className="lg:max-w-7xl mx-auto ">
         <div>
           {visibleItems.map((item, idx) => (
@@ -20,7 +20,7 @@ const ServicesList = () => {
             />
           ))}
         </div>
-        <div className="flex lg:justify-end justify-center gap-6 pt-8">
+        <div className="flex lg:justify-end justify-center gap-6 pt-4">
           <button
             onClick={handlePrev}
             aria-label="Previous"

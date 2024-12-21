@@ -1,8 +1,8 @@
-import WorkImages from "../components/WorkImages";
-import Button from "../components/Button";
 import { MdOutlineNavigateNext } from "react-icons/md";
-import workImages from "../data/workImages";
 import { Link } from "react-router-dom";
+import Button from "../components/Button";
+import WorkImages from "../components/WorkImages";
+import workImages from "../data/workImages";
 
 const WorkRealised = () => {
   return (
@@ -14,31 +14,25 @@ const WorkRealised = () => {
         The work we did that made our Client happy and satisfied
       </h3>
 
-      <div className="flex flex-col lg:flex-row md:flex-row justify-center gap-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
-          {workImages.slice(0, 4).map((image) => (
+      <div className="flex flex-col md:flex-row flex-wrap justify-between">
+        {workImages.map((image) => (
+          <a href={image.href} key={image.imgText}>
             <WorkImages
               key={image.imgText}
               imgSrc={image.imgSrc}
               imgTitle={image.imgTitle}
               imgText={image.imgText}
             />
-          ))}
-        </div>
-
-        <div>
-          {workImages.slice(4).map((image) => (
-            <WorkImages
-              key={image.imgText}
-              imgSrc={image.imgSrc}
-              imgTitle={image.imgTitle}
-              imgText={image.imgText}
-            />
-          ))}
-        </div>
+          </a>
+        ))}
       </div>
       <div className="flex items-center justify-center mt-12 mb-10">
-        <Link to="/portfolio" onClick={() => { window.scrollTo(0, 0); }}>
+        <Link
+          to="/portfolio"
+          onClick={() => {
+            window.scrollTo(0, 0);
+          }}
+        >
           <Button
             type="outline"
             text="Explore More Projects"

@@ -1,4 +1,4 @@
-import Input from "../../components/CustomInput";
+import CustomInput from "../../components/CustomInput";
 import register from "../../assets/register.png";
 
 function Register() {
@@ -18,37 +18,36 @@ function Register() {
           Register with Tektariq
         </h2>
         <form action="">
-        <CustomInput
-              type="text"
-              placeholder="Mubarak"
-              label="First Name"
-              name="first-name"
-            />
-             <CustomInput
-              type="text"
-              placeholder="Salihu"
-              label="Surname"
-              name="surname"
-            />
-             <CustomInput
-              type="email"
-              placeholder="youremail@gmail.com"
-              label="Email"
-              name="email"
-            />
-             <CustomInput
-              type="password"
-              placeholder="New password"
-              label="Create a password"
-              name="password"
-            />
-             <CustomInput
-              type="password"
-              placeholder="Confirm Password"
-              label="Confirm password"
-              name="password"
-            />
-          
+          <CustomInput
+            type="text"
+            placeholder="Mubarak"
+            label="First Name"
+            name="first-name"
+          />
+          <CustomInput
+            type="text"
+            placeholder="Salihu"
+            label="Surname"
+            name="surname"
+          />
+          <CustomInput
+            type="email"
+            placeholder="youremail@gmail.com"
+            label="Email"
+            name="email"
+          />
+          <CustomInput
+            type="password"
+            placeholder="New password"
+            label="Create a password"
+            name="password"
+          />
+          <CustomInput
+            type="password"
+            placeholder="Confirm Password"
+            label="Confirm password"
+            name="password"
+          />
 
           <button className="w-full p-3 bg-tt-primary text-white rounded-md hover:bg-tt-primary transition duration-300">
             Register

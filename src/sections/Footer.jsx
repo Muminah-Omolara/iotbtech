@@ -12,15 +12,15 @@ const Footer = () => {
       label: "About",
       items: [
         {
-          href: "javascript:void()",
+          href: "/about",
           name: "About Us",
         },
         {
-          href: "javascript:void()",
+          href: "/blogs",
           name: "Blog",
         },
         {
-          href: "javascript:void()",
+          href: "/about",
           name: "Team",
         },
         {
@@ -44,7 +44,7 @@ const Footer = () => {
           icon: <FaInstagram />,
         },
         {
-          href: "javascript:void()",
+          href: "tel:+2347065829170",
           name: "+2347065829170",
           icon: <FaPhoneAlt />,
         },
@@ -54,8 +54,8 @@ const Footer = () => {
           icon: <FaWhatsapp />,
         },
         {
-          href: "javascript:void()",
-          name: "iotbtechprenuer@gmail.com",
+          href: "mailto:tektariq@yahoo.com",
+          name: "tektariq@yahoo.com",
           icon: <FaRegEnvelope />,
         },
       ],
@@ -80,7 +80,7 @@ const Footer = () => {
               {item.items.map((el, idx) => (
                 <li key={el.name + idx}>
                   <NavLink
-                    href={el.href}
+                    to={el.href}
                     className="hover:underline hover:text-tt-primary"
                   >
                     {el.icon ? (

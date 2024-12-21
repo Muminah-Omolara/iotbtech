@@ -1,13 +1,12 @@
-import React from "react";
-import ForgotPassword from "../../assets/forgotpassword.jpg";
-import Input from "../../components/CustomInput";
+import ForgotPasswordImg from "../../assets/forgotpassword.jpg";
+import CustomInput from "../../components/CustomInput";
 
-function Forgot_Password() {
+function ForgotPassword() {
   return (
     <div className="mx-auto w-auto max-w-5xl px-4 py-4 lg:px-0 lg:py-2 sm:px-4 gap-9 flex flex-col md:flex-row justify-center items-center min-h-screen">
       <div className="w-full md:w-1/2 order-1 md:order-1">
         <img
-          src={ForgotPassword}
+          src={ForgotPasswordImg}
           alt="ForgotPassword illustration"
           className="w-full h-auto object-cover rounded-md"
         />
@@ -25,12 +24,12 @@ function Forgot_Password() {
           your password
         </p>
         <form action="">
-        <CustomInput
-              type="email"
-              placeholder="your-email@gmail.com"
-              label="Email"
-              name="email"
-            />
+          <CustomInput
+            type="email"
+            placeholder="your-email@gmail.com"
+            label="Email"
+            name="email"
+          />
 
           <button className="w-full p-3 bg-tt-primary text-white rounded-md hover:bg-tt-primary transition duration-300">
             Submit
@@ -48,4 +47,4 @@ function Forgot_Password() {
   );
 }
 
-export default Forgot_Password;
+export default ForgotPassword;

@@ -3,9 +3,9 @@ import line from "../assets/images/line.svg";
 import Button from "../components/Button";
 import CustomInput from "../components/CustomInput";
 import CustomTextArea from "../components/CustomTextArea";
-import Testimonials from "../sections/Testimonials";
 import Faq from "../components/Faq";
 import ServicesList from "../sections/ServicesList.jsx";
+import Testimonials from "../sections/Testimonials";
 
 function Contact() {
   return (

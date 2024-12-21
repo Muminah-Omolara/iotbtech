@@ -9,7 +9,6 @@ const TeamProfile = ({ image, name, portfolio }) => {
           alt=""
           className="absolute sm:left-36 inset-0 w-[80px] h-[80px] object-cover z-10 hidden sm:block sm:justify-center sm:items-center"
         />
-
         <img
           src={image}
           alt=""

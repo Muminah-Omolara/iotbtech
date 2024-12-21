@@ -1,7 +1,5 @@
 import {
-  adocImg,
   bookingImg,
-  homeleyImg,
   profolioFrontend,
   tektariqWebsite,
 } from "../assets/images";
@@ -11,26 +9,19 @@ const workImages = [
     imgSrc: profolioFrontend,
     imgTitle: "Web Development",
     imgText: "Profolio",
+    href: "javascript:void()",
   },
   {
     imgSrc: tektariqWebsite,
     imgTitle: "Web Development",
     imgText: "Tektariq Website",
+    href: "/",
   },
   {
     imgSrc: bookingImg,
     imgTitle: "UI/UX Design",
     imgText: "Booking.com",
-  },
-  {
-    imgSrc: homeleyImg,
-    imgTitle: "UI/UX Design",
-    imgText: "Homley",
-  },
-  {
-    imgSrc: adocImg,
-    imgTitle: "UI/UX Design",
-    imgText: "ADOC",
+    href: "javascript:void()",
   },
 ];
 

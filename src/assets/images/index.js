@@ -26,3 +26,4 @@ export { default as frontend } from "./frontend.webp";
 export { default as backend } from "./backend.webp";
 export { default as tektariqWebsite } from "./tektariq-website.png";
 export { default as profolioFrontend } from "./profolio-frontend.png";
+export { default as iotbTech } from "./iotb_tech.png";

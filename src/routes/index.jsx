@@ -17,6 +17,7 @@ import Home from "../pages/Home";
 import NotFound from "../pages/NotFound";
 import Portfolio from "../pages/Portfolio";
 import Services from "../pages/Services";
+import FellowRegistration from "../pages/auth/FellowRegistration";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -27,6 +28,7 @@ const router = createBrowserRouter(
         <Route path="/register" element={<Register />} />
         <Route path="/forget-password" element={<ForgotPassword />} />
         <Route path="/set-password" element={<SetPassword />} />
+        <Route path="/fellows/registration" element={<FellowRegistration />} />
       </>
 
       {/* Website pages */}

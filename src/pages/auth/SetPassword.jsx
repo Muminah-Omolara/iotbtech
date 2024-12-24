@@ -15,7 +15,7 @@ function SetPassword() {
       <div className="w-full md:w-1/2 bg-white rounded-lg flex flex-col items-center md:items-start order-2 md:order-2">
         <p className="text-2xl font-bold mb-4 text-tt-primary">Set Password</p>
         <h2 className="text-3xl font-bold leading-snug text-left pb-6">
-          Set Password for your Tektariq Account
+          Set Password for your IOTBTECH Account
         </h2>
         <form action="">
           <CustomInput

@@ -14,7 +14,7 @@ const workImages = [
   {
     imgSrc: tektariqWebsite,
     imgTitle: "Web Development",
-    imgText: "Tektariq Website",
+    imgText: "IOTB Website",
     href: "/",
   },
   {

@@ -9,8 +9,8 @@ const ServicesOffer = () => {
       </h2>
       <div className="col-span-1 lg:col-span-2">
         <h3 className="text-tt-black text-3xl font-bold mb-0 lg:mb-8 max-w-screen-lg">
-          We offer a variaty of services to help you to grow and build your
-          brand and help you with developing your Products
+        Here at IOTB TECH, we offer holistic trainings that helps you achieve your goals of skills  development and professional breakthrough.
+
         </h3>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 justify-center">

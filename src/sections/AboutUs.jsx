@@ -11,27 +11,21 @@ const AboutUs = () => {
           About Us
         </h3>
         <h2 className="text-tt-black text-3xl font-bold mb-0 lg:mb-8">
-          What we do is what make us Who we are
+          What we do is what makes us who we are. 
         </h2>
         <p className="text-tt-grey text-base lg:text-md text-justify">
-          The IOTB TECH Fellowship is a yearly program that focuses on training
-          beginners in selected tech fields for a period of six months. The
-          fellowship program, an initiative of the International Organization of
-          Tijaniyyah Brotherhood (IOTB) - the largest alumni body of TIMSAN
-          organization focused on empowering the Nigerian youths (irregardless
-          of backgrounds and affiliations) with in-demand tech skills in a bid
-          to chart a defined career trajectory for interested and dedicated
-          individuals in the Tech ecosystem.
-          <br />
-          Currently, we train our fellos in graphic design, product design,
-          full-stack web development, and cloud engineering tech stacks. The
-          training involves instructor-led sessions, hands-on learning as well
-          as project work upon completion of the training. As part of our
-          programs, we also have a webinar series that focuses on soft skills
-          training and expert insight sessions for each learning track. These
-          sessions cumulatively will contribute to the overall success of the
-          fellows of IOTB TECH and their subsequent integration into the career
-          spaces as qualified professionals in their respectives niches.
+        The IOTB TECH Fellowship is a yearly program designed to train beginners in selected tech fields 
+        over a six-month period. As an initiative of the International Organization of Tijaniyyah Brotherhood 
+        (IOTB)—the largest alumni body of the TIMSAN organization—our mission is to empower Nigerian youths, 
+        regardless of backgrounds or affiliations, with in-demand tech skills, helping them build defined career 
+        paths in the tech ecosystem.  
+        <br />
+        We currently train fellows in graphic design, product design, full-stack web development, and cloud 
+        engineering. The program blends instructor-led sessions, hands-on practical learning, and impactful 
+        project work. To ensure holistic development, we also host a webinar series focusing on soft skills 
+        and expert insights tailored to each learning track. These initiatives collectively prepare our fellows 
+        for seamless integration into their respective career paths as skilled and confident professionals.
+
         </p>
         <div className="flex mx-auto justify-center gap-4 flex-col lg:flex-row">
           <Link

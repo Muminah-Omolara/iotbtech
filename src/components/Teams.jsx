@@ -22,7 +22,7 @@ const Team = () => {
     <>
       <div className="p-4 mt-12 mx-4 sm:mx-6 lg:mx-auto max-w-7xl leading-snug">
         <p className="text-tt-primary text-left font-bold text-xl sm:text-2xl leading-snug">
-          The Team behind TechTariq
+          The Team behind IOTBTECH
         </p>
         <div className="flex flex-col lg:flex-row lg:gap-56">
           <div className="lg:w-1/2 leading-snug">

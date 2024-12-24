@@ -1,7 +1,7 @@
-import profile1 from "../assets/images/Abdurrahman_Kishky.jpg";
+import profile1 from "../assets/images/kishky.png";
 import profile2 from "../assets/images/Odewole_Abdullahi.jpg";
 import profile3 from "../assets/images/Akeem_MD.jpg";
-import profile4 from "../assets/images/Muhammad_Awwal_Adewuyi.jpg";
+import profile4 from "../assets/images/Almajiri.png";
 import profile5 from "../assets/images/Oyedeji_MS.jpg";
 import profile6 from "../assets/images/Rofiat_Atinuke_Adebakin.jpg";
 import profile7 from "../assets/images/Rokeeb_Abdul.jpg";
@@ -30,7 +30,7 @@ const team = [
   {
     image: profile4,
     name: "Muhammad Awwal Adewuyi",
-    portfolio: "Automation Engineer",
+    portfolio: "Software Engineer (Remove Huawei)",
   },
   {
     image: abdulkareemMustafa,

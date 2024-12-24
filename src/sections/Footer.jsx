@@ -35,12 +35,12 @@ const Footer = () => {
       items: [
         {
           href: "javascript:void()",
-          name: "@TekTariq",
+          name: "@IOTBTECH",
           icon: <LuFacebook />,
         },
         {
           href: "javascript:void()",
-          name: "@TekTariq",
+          name: "@IOTBTECH",
           icon: <FaInstagram />,
         },
         {
@@ -54,8 +54,8 @@ const Footer = () => {
           icon: <FaWhatsapp />,
         },
         {
-          href: "mailto:tektariq@yahoo.com",
-          name: "tektariq@yahoo.com",
+          href: "mailto:iotbtech@yahoo.com",
+          name: "iotbtech@yahoo.com",
           icon: <FaRegEnvelope />,
         },
       ],

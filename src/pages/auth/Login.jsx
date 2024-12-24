@@ -14,7 +14,7 @@ function Login() {
       <div className="w-full md:w-1/2 bg-white rounded-lg flex flex-col items-center md:items-start">
         <p className="text-2xl font-bold mb-4 text-tt-primary">Login</p>
         <h2 className="text-3xl font-bold leading-snug text-left pb-6">
-          Login to Tektariq
+          Login to IOTBTECH
         </h2>
 
         <form action="">

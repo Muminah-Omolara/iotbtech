@@ -20,7 +20,8 @@ const FellowRegistration = () => {
         yearOfExperience: "",
         priorTechExperience: "",
         cohort: "",
-        gender: "Male"
+        gender: "Male",
+        stateOfOrigin: ""
     })
     const handleInputChange = (e) => {
         const { name, value } = e.target
@@ -108,23 +109,23 @@ const FellowRegistration = () => {
                     onChange={handleInputChange}
                     required={false}
                 />
-                <SelectOptions label="States" options={stateLists} onChange={handleInputChange} name="states" />
+                <SelectOptions label="States" options={stateLists} onChange={handleInputChange} name="stateOfOrigin" />
                 <h3 className="text-2xl text-tt-black">Occupations</h3>
-                <CustomInput 
-                    type="number"
-                    placeholder="Enter your answer"
-                    label="Years of Experience"
-                    name="yearOfExperience"
-                    value={formData.yearOfExperience}
-                    onChange={handleInputChange}
-                    required={true}
-                />
                 <CustomInput 
                     type="text"
                     placeholder="Enter your answer"
                     label="Prior Tech Experience"
                     name="priorTechExperience"
                     value={formData.priorTechExperience}
+                    onChange={handleInputChange}
+                    required={true}
+                />
+                <CustomInput 
+                    type="number"
+                    placeholder="Enter your answer"
+                    label="Years of Experience"
+                    name="yearOfExperience"
+                    value={formData.yearOfExperience}
                     onChange={handleInputChange}
                     required={true}
                 />

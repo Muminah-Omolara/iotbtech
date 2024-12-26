@@ -19,12 +19,11 @@ const FellowRegistration = () => {
     phoneNumber: "",
     altPhoneNumber: "",
     dob: "",
-    yearOfExperience: "",
     occupation: "",
     cohort: 4,
     gender: "Male",
     stateOfOrigin: "",
-    programme: null,
+    programme: "null",
   });
 
   const [error, setError] = useState(null);
@@ -39,8 +38,6 @@ const FellowRegistration = () => {
     e.preventDefault();
     const data = {
       ...formData,
-      cohort: 4,
-      yearOfExperience: parseInt(formData.yearOfExperience),
       dob: new Date(formData.dob).toISOString(),
     };
 
@@ -50,7 +47,7 @@ const FellowRegistration = () => {
       alert("Registration successful, click OK to proceed");
     } catch (e) {
       setError(e.message);
-      alert(error);
+      alert(e.mesage || error);
     }
   };
   return (
@@ -67,8 +64,8 @@ const FellowRegistration = () => {
             Register for the next cohort
           </h2>
           <p className="text-base text-tt-black">
-            Kindly complete this form and proceed to apply for the cohort. We
-            will email your form print-out after submission.
+            Kindly complete this form and proceed to apply for the cohort.
+            Fields marked with * are required
           </p>
         </div>
         <form onSubmit={handleSubmit} className="space-y-4">
@@ -141,7 +138,7 @@ const FellowRegistration = () => {
             name="dob"
             value={formData.dob}
             onChange={handleInputChange}
-            required={false}
+            required={true}
           />
           <SelectOptions
             label="States"
@@ -149,22 +146,12 @@ const FellowRegistration = () => {
             onChange={handleInputChange}
             name="stateOfOrigin"
           />
-          <h3 className="text-2xl text-tt-black">Occupations</h3>
           <CustomInput
             type="text"
             placeholder="Enter your answer"
             label="Occupation"
             name="occupation"
             value={formData.occupation}
-            onChange={handleInputChange}
-            required={true}
-          />
-          <CustomInput
-            type="number"
-            placeholder="Enter your answer"
-            label="Years of Experience"
-            name="yearOfExperience"
-            value={formData.yearOfExperience}
             onChange={handleInputChange}
             required={true}
           />

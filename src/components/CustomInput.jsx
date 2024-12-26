@@ -13,7 +13,7 @@ const CustomInput = ({
     <div>
       {label && (
         <label htmlFor={name} className="font-medium">
-          {label}
+          {label} {required && "*"}
         </label>
       )}
       <input

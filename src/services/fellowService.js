@@ -1,4 +1,4 @@
-import { apiClient } from "./apiClient";
+import { apiClient } from "../utils/apiClient";
 
 const URL = "https://tektariq-api.onrender.com/api/v1/fellows";
 

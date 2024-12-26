@@ -1,3 +1,8 @@
+import { FaRegEnvelope } from "react-icons/fa";
+import { FaInstagram, FaWhatsapp } from "react-icons/fa6";
+import { LuFacebook } from "react-icons/lu";
+import { FaXTwitter } from "react-icons/fa6";
+
 const footerNavs = [
   {
     label: "About",

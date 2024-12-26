@@ -1,14 +1,11 @@
+import Button from "../components/Button";
+import { MdOutlineNavigateNext } from "react-icons/md";
 
- import Button from "../components/Button";
- import { MdOutlineNavigateNext } from "react-icons/md";
-
-
- const ComponentTest = () => {
-
+const ComponentTest = () => {
   return (
     <div>
-   <h1>Test your components on this page</h1>
-     <div>
+      <h1>Test your components on this page</h1>
+      <div>
         <h2>Buttons</h2>
         <div>
           <Button
@@ -22,8 +19,9 @@
             icon={<MdOutlineNavigateNext />}
           />
         </div>
-       </div> 
-       </div>
-  )
- }
- export default ComponentTest;
+      </div>
+    </div>
+  );
+};
+
+export default ComponentTest;

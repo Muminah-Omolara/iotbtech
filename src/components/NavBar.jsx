@@ -64,7 +64,7 @@ const NavBar = () => {
           </ul>
         </div>
         <div className="hidden md:inline-block">
-          <NavLink to="/contact">
+          <NavLink to="/fellows/registration">
             <Button text="Get Started" />
           </NavLink>
         </div>

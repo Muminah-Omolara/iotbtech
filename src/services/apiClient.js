@@ -13,7 +13,7 @@ export const apiClient = {
         const response = await fetch(url, options)
         if (!response.ok) {
             const error = await response.json()
-            throw new Error(error.message || "An error occured while makeing API request")
+            throw new Error(error.message || "An error occured while making API request")
         }
         return response.json()
     },

@@ -1,14 +1,14 @@
-import Button from "../components/Button";
-import { MdOutlineNavigateNext } from "react-icons/md";
-import { apiClient } from "../services/apiClient";
 
-const ComponentTest = () => {
-  const fellows = apiClient.get("https://tektariq-api.onrender.com/api/v1/fellows", {})
-  console.log(fellows)
+ import Button from "../components/Button";
+ import { MdOutlineNavigateNext } from "react-icons/md";
+
+
+ const ComponentTest = () => {
+
   return (
     <div>
-      <h1>Test your components on this page</h1>
-      <div>
+   <h1>Test your components on this page</h1>
+     <div>
         <h2>Buttons</h2>
         <div>
           <Button
@@ -22,9 +22,8 @@ const ComponentTest = () => {
             icon={<MdOutlineNavigateNext />}
           />
         </div>
-      </div>
-    </div>
-  );
-};
-
-export default ComponentTest;
+       </div> 
+       </div>
+  )
+ }
+ export default ComponentTest;

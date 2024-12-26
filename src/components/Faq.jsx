@@ -10,8 +10,8 @@ const Faq = () => {
           Here are Some Answer For Frequntly asked Questions
         </p>
         <p className="font-semibold text-xl text-tt-grey">
-          We got alot of Message With the same Questions so here are some fast
-          answer for populare Question
+          We got alot of message with the same questions, so here are some fast
+          answers for popular questions
         </p>
       </div>
       <div className="text-tt-primary flex-1">

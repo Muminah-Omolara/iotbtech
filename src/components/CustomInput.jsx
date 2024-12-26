@@ -1,5 +1,14 @@
 // eslint-disable-next-line react/prop-types
-const CustomInput = ({ name, type, label, placeholder, required, value, onChange }) => {
+const CustomInput = ({
+  name,
+  type,
+  label,
+  placeholder,
+  required,
+  value,
+  onChange,
+  disabled,
+}) => {
   return (
     <div>
       {label && (
@@ -10,6 +19,7 @@ const CustomInput = ({ name, type, label, placeholder, required, value, onChange
       <input
         type={type}
         required={required}
+        disabled={disabled}
         placeholder={placeholder}
         name={name}
         value={value}

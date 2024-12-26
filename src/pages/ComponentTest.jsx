@@ -1,7 +1,10 @@
 import Button from "../components/Button";
 import { MdOutlineNavigateNext } from "react-icons/md";
+import { apiClient } from "../services/apiClient";
 
 const ComponentTest = () => {
+  const fellows = apiClient.get("https://tektariq-api.onrender.com/api/v1/fellows", {})
+  console.log(fellows)
   return (
     <div>
       <h1>Test your components on this page</h1>

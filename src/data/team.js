@@ -30,7 +30,7 @@ const team = [
   {
     image: profile4,
     name: "Muhammad Awwal Adewuyi",
-    portfolio: "Software Engineer (Remove Huawei)",
+    portfolio: "Software Engineer",
   },
   {
     image: abdulkareemMustafa,

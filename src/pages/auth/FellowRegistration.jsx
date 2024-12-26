@@ -44,7 +44,9 @@ const FellowRegistration = () => {
     try {
       await fellowService.createFellow(data);
       navigate("/", { replace: true });
-      alert("Registration successful, click OK to proceed");
+      alert(
+        "Registration successful! The admission team will reachout to you shortly on the next steps. Click OK to proceed",
+      );
     } catch (e) {
       setError(e.message);
       alert(e.mesage || error);

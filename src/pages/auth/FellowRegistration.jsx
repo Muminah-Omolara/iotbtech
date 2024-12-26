@@ -6,7 +6,7 @@ import line from "../../assets/images/line.svg";
 import { iotbTech } from "../../assets/images"
 import Button from "../../components/Button"
 import { useState } from "react"
-import stateLists from "../../data/StateLists";
+import stateLists from "../../data/stateLists";
 
 const FellowRegistration = () => {
     const [ formData, setFormData ] = useState({

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { iotbTech } from "../../assets/images";
 import line from "../../assets/images/line.svg";
+import Alert from "../../components/Alert";
 import Button from "../../components/Button";
 import CustomInput from "../../components/CustomInput";
 import SelectOptions from "../../components/SelectOptions";
@@ -11,6 +12,7 @@ import stateLists from "../../data/stateLists";
 import { fellowService } from "../../services";
 
 const FellowRegistration = () => {
+  const [notification, setNotification] = useState(null);
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -25,10 +27,7 @@ const FellowRegistration = () => {
     stateOfOrigin: "",
     programme: "null",
   });
-
-  const [error, setError] = useState(null);
   const navigate = useNavigate();
-
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
@@ -43,17 +42,30 @@ const FellowRegistration = () => {
 
     try {
       await fellowService.createFellow(data);
-      navigate("/", { replace: true });
-      alert(
-        "Registration successful! The admission team will reachout to you shortly on the next steps. Click OK to proceed",
-      );
+      setNotification((prev) => ({
+        ...prev,
+        type: "success",
+        message:
+          "Registration successful! The admission team will reachout to you shortly on the next steps.",
+      }));
+      setTimeout(() => {
+        navigate("/", { replace: true });
+      }, 5000);
     } catch (e) {
-      setError(e.message);
-      alert(e.mesage || error);
+      setNotification((prev) => ({
+        ...prev,
+        type: "error",
+        message: `Registration failed! ${e.message}.`,
+      }));
+
+      console.log(notification);
     }
   };
   return (
     <div className="mx-auto leading-snug max-w-screen-xl px-4 sm:px-6 lg:px-8 py-10">
+      {notification && (
+        <Alert type={notification.type} message={notification.message} />
+      )}
       <img
         src={line}
         alt=""

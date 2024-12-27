@@ -25,7 +25,7 @@ const FellowRegistration = () => {
     cohort: 4,
     gender: "Male",
     stateOfOrigin: "",
-    programme: "null",
+    programme: "",
   });
   const navigate = useNavigate();
   const handleInputChange = (e) => {

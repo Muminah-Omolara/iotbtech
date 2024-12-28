@@ -10,6 +10,7 @@ import profile9 from "../assets/images/Hassan_Yaya.jpeg";
 import ibraheemSemiat from "../assets/images/ibraheem-semiat.jpg";
 import salahudeenAisha from "../assets/images/salahudeen-aisha.jpg";
 import abdulkareemMustafa from "../assets/images/abdulkareem-mustafa.jpg";
+import rarebreed from "../assets/images/rarebreed.jpg"
 
 const team = [
   {
@@ -67,6 +68,11 @@ const team = [
     image: ibraheemSemiat,
     name: "Ibraheem Semiat",
     portfolio: "Project manager",
+  },
+  {
+    image: rarebreed,
+    name: "Adepoju Abdulquadri",
+    portfolio: "Computer Technician/Cloud Administrator",
   },
 ];
 

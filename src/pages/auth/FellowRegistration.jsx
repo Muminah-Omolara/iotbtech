@@ -73,7 +73,7 @@ const FellowRegistration = () => {
         alt=""
         className="absolute w-full -left-10 -right-10 -bottom-44 -z-10 hidden md:block"
       />
-      <div className="max-w-2xl mx-auto mb-10 space-y-5 relative z-50">
+      <div className="max-w-2xl mx-auto mb-10 space-y-5 relative z-10">
         <img src={iotbTech} alt="iotb" className="w-96 mx-auto" />
         <div className="text-left lg:text-center">
           <h2 className="text-tt-primary text-2xl font-bold">

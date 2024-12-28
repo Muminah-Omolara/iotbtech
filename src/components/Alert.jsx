@@ -1,7 +1,6 @@
 import { FaCheckCircle } from "react-icons/fa";
 import { FaCircleInfo } from "react-icons/fa6";
 import { MdCancel } from "react-icons/md";
-import { IoClose } from "react-icons/io5";
 
 const Alert = ({ type, message }) => {
   const styles =

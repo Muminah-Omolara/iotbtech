@@ -13,6 +13,7 @@ import { fellowService } from "../../services";
 
 const FellowRegistration = () => {
   const [notification, setNotification] = useState(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -34,6 +35,7 @@ const FellowRegistration = () => {
   };
 
   const handleSubmit = async (e) => {
+    setIsSubmitting(true);
     e.preventDefault();
     const data = {
       ...formData,
@@ -57,9 +59,9 @@ const FellowRegistration = () => {
         type: "error",
         message: `Registration failed! ${e.message}.`,
       }));
-
-      console.log(notification);
     }
+
+    setIsSubmitting(false);
   };
   return (
     <div className="mx-auto leading-snug max-w-screen-xl px-4 sm:px-6 lg:px-8 py-10">
@@ -189,7 +191,10 @@ const FellowRegistration = () => {
           />
 
           <div className="flex justify-center items-center">
-            <Button text="Submit" />
+            <Button
+              text={isSubmitting ? "Submitting..." : "Submit"}
+              disabled={isSubmitting}
+            />
           </div>
         </form>
       </div>

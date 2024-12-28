@@ -11,8 +11,7 @@ export const apiClient = {
       options.body = JSON.stringify(body);
     }
     const response = await fetch(url, options);
-    console.log(response);
-    
+
     if (!response.ok) {
       const error = await response.json();
       throw new Error(

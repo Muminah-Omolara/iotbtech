@@ -11,6 +11,15 @@ import tektariq from "./iotbtech.svg";
 import tektariq_logo from "./tektariq_logo.png";
 import uiUx from "./ui_ux.png";
 import webIcon from "./webicon.png";
+import skill from "./skills.svg";
+import training from "./training.svg";
+import webinar from "./webinar.svg";
+import personal from "./personal-skill.svg";
+import online from "./online-course.svg";
+import live from "./live-class.svg";
+import certificate from "./certificate.svg";
+import cert from "./cert.svg";
+import classes from "./classes.svg"
 
 export {
   ServiceIcon,
@@ -26,4 +35,13 @@ export {
   uiUx,
   vector,
   webIcon,
+  cert,
+  certificate,
+  webinar,
+  live,
+  online,
+  personal,
+  training,
+  skill,
+  classes,
 };

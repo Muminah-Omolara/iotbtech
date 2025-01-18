@@ -1,5 +1,6 @@
-import Button from "../components/Button";
-import { MdOutlineNavigateNext } from "react-icons/md";
+ import Button from "../components/Button";
+ import { MdOutlineNavigateNext } from "react-icons/md";
+
 
 const ComponentTest = () => {
   return (

@@ -31,6 +31,7 @@ const router = createBrowserRouter(
         <Route path="/forget-password" element={<ForgotPassword />} />
         <Route path="/set-password" element={<SetPassword />} />
         <Route path="/fellows/registration" element={<FellowRegistration />} />
+        <Route path="/registration-login" element={<RegistrationLogin />} />
       </>
 
       {/* Website pages */}

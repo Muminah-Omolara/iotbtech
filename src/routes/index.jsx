@@ -19,7 +19,7 @@ import Portfolio from "../pages/Portfolio";
 import Services from "../pages/Services";
 import FellowRegistration from "../pages/auth/FellowRegistration";
 import Dashboard from "../pages/Dashboard";
-import RegistrationLogin from "../pages/auth/RegistrationLogin";
+import Admission from "../pages/Admission";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -42,6 +42,9 @@ const router = createBrowserRouter(
         <Route path="/contact" element={<Contact />} />
         <Route path="/services" element={<Services />} />
         <Route path="/component-test" element={<ComponentTest />} />
+       
+       {/* Admission Homepage */}
+        <Route path="/admission" element={<Admission />} />
    
       </Route>
 

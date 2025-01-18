@@ -3,7 +3,7 @@ import Sidebar from "../components/Sidebar";
 import DashboardNavBar from "../components/DashboardNavBar";
 
 function Dashboard() {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
@@ -54,8 +54,8 @@ function Dashboard() {
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
               <div className="bg-white p-6 rounded-xl shadow-md">
-                <h2 className="text-lg font-semibold text-gray-800">Fellow ID</h2>
-                <p className="text-2xl font-extrabold">IOTB/2025/FEL/0001</p>
+                <h2 className="text-lg font-semibold text-gray-800">Application ID</h2>
+                <p className="text-2xl font-extrabold">IOTB/2025/APP/0001</p>
               </div>
               
               <div className="bg-white p-6 rounded-xl shadow-md">

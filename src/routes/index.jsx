@@ -18,6 +18,7 @@ import NotFound from "../pages/NotFound";
 import Portfolio from "../pages/Portfolio";
 import Services from "../pages/Services";
 import FellowRegistration from "../pages/auth/FellowRegistration";
+import AdmissionHomepage from "../pages/AdmissionHomepage";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -39,6 +40,7 @@ const router = createBrowserRouter(
         <Route path="/contact" element={<Contact />} />
         <Route path="/services" element={<Services />} />
         <Route path="/component-test" element={<ComponentTest />} />
+        <Route path="/admission" element={<AdmissionHomepage />} />
       </Route>
 
       {/* Blog pages */}

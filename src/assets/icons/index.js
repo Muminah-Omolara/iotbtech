@@ -19,7 +19,11 @@ import online from "./online-course.svg";
 import live from "./live-class.svg";
 import certificate from "./certificate.svg";
 import cert from "./cert.svg";
-import classes from "./classes.svg"
+import classes from "./classes.svg";
+import cloud from "./cloud.svg";
+import web from "./web.svg";
+import graphic from "./graphic.svg";
+import product from "./product.svg"
 
 export {
   ServiceIcon,
@@ -44,4 +48,8 @@ export {
   training,
   skill,
   classes,
+  cloud,
+  product,
+  graphic,
+  web,
 };

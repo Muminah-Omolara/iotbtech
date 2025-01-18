@@ -4,12 +4,12 @@ import benefits from '../data/benefits';
 
 const Program = () => {
   return (
-    <div className="my-20 lg:mb-24 lg:mt-12 py-10 bg-tt-grey bg-opacity-10 flex flex-row lg:justify-center lg:items-center ">
+    <div className=" lg:gap-10 w-full flex flex-row lg:px-4 px-4 mb-24 pb-4 bg-tt-grey bg-opacity-10 lg:flex lg:flex-row lg:justify-center lg:items-center ">
      
-      <div className="gap-10 ">
-      <div className=" lg:pl-10 px-4">
-      <h1 className="text-xl font-bold">Program Benefits</h1>
-      </div> 
+      <div className=" lg:w-2/4 py-4 lg:pr-20 ">
+      <div className="lg:justify-center">
+      <h1 className="text-2xl font-bold pl-4">Program Benefits</h1>
+      </div>
        {benefits.map((benefits)=>(
         <ProgramBenefit 
         icon={benefits.icon}
@@ -18,8 +18,9 @@ const Program = () => {
         />
         
        ))}
+       
        </div>
-       <div className="w-auto  mt-4">
+       <div className=" lg:w-1/3 mt-4 lg:mr-32">
         <img src={hairyGuy} alt="picture" className="rounded hidden md:block"/>
       </div>
     </div>

@@ -18,13 +18,13 @@ const benefits = [
         icon: skill,
     },
     {
-        title: "Hands On Training And Career Preparation",
+        title: "Hands On Training",
         desc: "We give hands on project to make student work on project with their colleagues to prepare them for future work experience. ",
         icon: training,
     },
     {
         title: "Certifications",
-        desc: "Our certificate can be used to apply for inernship and jobs in the market world. ",
+        desc: "Our certificate can be used to apply for internship and jobs in the market world. ",
         icon: certificate,
     },
 ];

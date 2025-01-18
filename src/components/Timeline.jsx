@@ -2,7 +2,7 @@
 const Timeline = ({title, desc,icon}) => {
   return (
 
-        <div className=" gap-4">
+        <div className="">
             <div className="flex flex-row px-4 gap-4">
             
             <div className="w-12 flex-shrink-0 ">

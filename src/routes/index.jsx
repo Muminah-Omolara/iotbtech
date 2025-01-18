@@ -19,6 +19,7 @@ import Portfolio from "../pages/Portfolio";
 import Services from "../pages/Services";
 import FellowRegistration from "../pages/auth/FellowRegistration";
 import Dashboard from "../pages/Dashboard";
+import RegistrationLogin from "../pages/auth/RegistrationLogin";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -30,6 +31,7 @@ const router = createBrowserRouter(
         <Route path="/forget-password" element={<ForgotPassword />} />
         <Route path="/set-password" element={<SetPassword />} />
         <Route path="/fellows/registration" element={<FellowRegistration />} />
+        <Route path="/registration-login" element={<RegistrationLogin />} />
       </>
 
       {/* Website pages */}

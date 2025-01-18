@@ -30,3 +30,4 @@ export { default as iotbTech } from "./iotb_tech.png";
 export {default as admissionImage} from "./Group.png";
 export {default as man} from "./Man-laptop.png";
 export {default as hairyGuy} from "./hairy-guy.png"
+export { default as loginImg } from "./login_img.jpg"

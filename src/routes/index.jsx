@@ -1,26 +1,22 @@
-import {
-  Route,
-  createBrowserRouter,
-  createRoutesFromElements,
-} from "react-router-dom";
-import AppLayout from "../components/AppLayout";
-import About from "../pages/About";
-import ForgotPassword from "../pages/auth/ForgotPassword";
-import Login from "../pages/auth/Login";
-import Register from "../pages/auth/Register";
-import SetPassword from "../pages/auth/SetPassword";
-import PostDetails from "../pages/blog/PostDetails";
-import PostListing from "../pages/blog/PostListing";
-import ComponentTest from "../pages/ComponentTest";
-import Contact from "../pages/Contact";
-import Home from "../pages/Home";
-import NotFound from "../pages/NotFound";
-import Portfolio from "../pages/Portfolio";
-import Services from "../pages/Services";
-import FellowRegistration from "../pages/auth/FellowRegistration";
-import Dashboard from "../pages/Dashboard";
-import Admission from "../pages/Admission";
-import ProfilePage from "../components/Profile";
+import { Route, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
+import AppLayout from '../components/AppLayout';
+import About from '../pages/About';
+import ForgotPassword from '../pages/auth/ForgotPassword';
+import Login from '../pages/auth/Login';
+import Register from '../pages/auth/Register';
+import SetPassword from '../pages/auth/SetPassword';
+import PostDetails from '../pages/blog/PostDetails';
+import PostListing from '../pages/blog/PostListing';
+import ComponentTest from '../pages/ComponentTest';
+import Contact from '../pages/Contact';
+import Home from '../pages/Home';
+import NotFound from '../pages/NotFound';
+import Portfolio from '../pages/Portfolio';
+import Services from '../pages/Services';
+import FellowRegistration from '../pages/auth/FellowRegistration';
+import Dashboard from '../pages/Dashboard';
+import Admission from '../pages/Admission';
+import RegistrationLogin from '../pages/auth/RegistrationLogin';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -43,16 +39,14 @@ const router = createBrowserRouter(
         <Route path="/contact" element={<Contact />} />
         <Route path="/services" element={<Services />} />
         <Route path="/component-test" element={<ComponentTest />} />
-       
-       {/* Admission Homepage */}
+
+        {/* Admission Homepage */}
         <Route path="/admission" element={<Admission />} />
-   
       </Route>
 
-          {/* Dashboard pages */}
-          
-        <Route path="/dashboard" element={<Dashboard/>} />
-        <Route path="/profile" element={<ProfilePage/>}/>
+      {/* Dashboard pages */}
+
+      <Route path="/dashboard" element={<Dashboard />} />
 
       {/* Blog pages */}
       <>

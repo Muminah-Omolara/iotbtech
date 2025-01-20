@@ -1,9 +1,14 @@
 import React, { useState } from "react";
 import { FaBars, FaBell, FaUserAlt } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 function DashboardNavBar({ toggleSidebar }) {
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const navigate = useNavigate();
 
+  const handleProfileClick = () => {
+    navigate('/profile')
+  }
   const toggleDropdown = () => {
     setDropdownOpen(!dropdownOpen);
   };
@@ -39,7 +44,7 @@ function DashboardNavBar({ toggleSidebar }) {
               {dropdownOpen && (
                 <div className="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg">
                   <ul>
-                    <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                    <li onClick={handleProfileClick} className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
                       Profile
                     </li>
                     <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">

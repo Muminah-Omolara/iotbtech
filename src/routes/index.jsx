@@ -20,6 +20,7 @@ import Services from "../pages/Services";
 import FellowRegistration from "../pages/auth/FellowRegistration";
 import Dashboard from "../pages/Dashboard";
 import Admission from "../pages/Admission";
+import ProfilePage from "../components/Profile";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -31,7 +32,7 @@ const router = createBrowserRouter(
         <Route path="/forget-password" element={<ForgotPassword />} />
         <Route path="/set-password" element={<SetPassword />} />
         <Route path="/fellows/registration" element={<FellowRegistration />} />
-        <Route path="/registration-login" element={<RegistrationLogin />} />
+        {/* <Route path="/registration-login" element={<RegistrationLogin />} /> */}
       </>
 
       {/* Website pages */}
@@ -51,7 +52,7 @@ const router = createBrowserRouter(
           {/* Dashboard pages */}
           
         <Route path="/dashboard" element={<Dashboard/>} />
-      
+        <Route path="/profile" element={<ProfilePage/>}/>
 
       {/* Blog pages */}
       <>

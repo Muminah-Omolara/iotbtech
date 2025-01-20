@@ -44,9 +44,10 @@ const router = createBrowserRouter(
         <Route path="/admission" element={<Admission />} />
       </Route>
 
-      {/* Dashboard pages */}
-
-      <Route path="/dashboard" element={<Dashboard />} />
+          {/* Dashboard pages */}
+          
+        <Route path="/dashboard" element={<Dashboard/>} />
+      
 
       {/* Blog pages */}
       <>

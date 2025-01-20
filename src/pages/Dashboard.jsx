@@ -9,7 +9,7 @@ function Dashboard() {
     setIsSidebarOpen(!isSidebarOpen);
   };
 
-  
+  // {new chages}
   const videos = [
     { id: 1, title: "Introduction", videoId: "EMWNZtCYg5s" },
     { id: 2, title: "Introduction", videoId: "EMWNZtCYg5s" },

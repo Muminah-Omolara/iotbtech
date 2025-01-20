@@ -3,7 +3,7 @@ import { mentorCompnies } from "../data/companies";
 const CompaniesLogoGrid = () => {
   return (
     <div className="py-8">
-      <div className="max-w-screen-xl mx-auto px-4 md:px-8">
+      <div className="mx-auto px-4 md:px-8">
         <h3 className="font-semibold text-sm text-gray-600 ">
           MENTORS FROM COMPANIES FROM AROUND THE WORLD
         </h3>

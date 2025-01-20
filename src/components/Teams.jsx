@@ -20,7 +20,7 @@ const Team = () => {
 
   return (
     <>
-      <div className="p-4 mt-12 mx-4 sm:mx-6 lg:mx-auto max-w-7xl leading-snug">
+      <div className="p-4 mt-12 mx-4 sm:mx-6 lg:mx-auto leading-snug">
         <p className="text-tt-primary text-left font-bold text-xl sm:text-2xl leading-snug">
           The Team behind IOTBTECH
         </p>

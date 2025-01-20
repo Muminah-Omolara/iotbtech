@@ -5,7 +5,7 @@ import ProcessCard from "../components/ProcessCard";
 const OurProcess = () => {
   return (
     <div className="px-4 sm:px-6 lg:px-8">
-      <div className="max-w-screen-xl mx-auto">
+      <div className="mx-auto">
         <div className="flex flex-col items-left justify-left">
           <h2 className="text-2xl font-semibold text-tt-primary mb-4">
             Our Process

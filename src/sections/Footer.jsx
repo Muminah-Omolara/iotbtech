@@ -64,8 +64,8 @@ const Footer = () => {
 
   return (
     <div>
-      <footer className=" bg-tt-grey bg-opacity-10 text-tt-black text-opacity-80 px-4 py-8 md:px-8">
-        <div className="max-w-screen-xl mx-auto flex flex-col mt-10 space-y-6 justify-between items-start lg:flex-row md:space-y-0 md:mt-0">
+      <footer className=" bg-tt-grey bg-opacity-10 text-tt-black text-opacity-80 px-4 py-8 md:px-16">
+        <div className="mx-auto flex flex-col mt-10 space-y-6 justify-between items-start lg:flex-row md:space-y-0 md:mt-0">
           <div className="max-w-xs">
             <TheLogo />
             <p className="leading-relaxed mt-2 text-[15px]">

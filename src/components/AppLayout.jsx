@@ -1,11 +1,11 @@
-import { Outlet } from "react-router-dom";
-import NavBar from "./NavBar";
-import Footer from "../sections/Footer";
+import { Outlet } from 'react-router-dom';
+import NavBar from './NavBar';
+import Footer from '../sections/Footer';
 
 const AppLayout = () => {
   return (
     <>
-      <div className="min-h-screen flex flex-col gap-24 font-montserrat">
+      <div className="min-h-screen flex flex-col  font-montserrat">
         {/* NavBar */}
         <div>
           <NavBar />

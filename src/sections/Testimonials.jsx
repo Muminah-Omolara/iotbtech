@@ -9,7 +9,7 @@ const Testimonials = () => {
 
   return (
     <div className="bg-tt-grey bg-opacity-10 px-4 sm:px-6 lg:px-8 py-10">
-      <div className="mx-auto items-center max-w-screen-xl">
+      <div className="mx-auto items-center">
         <div className="w-full max-w-5xl">
           <p className="text-2xl font-bold mb-4 text-tt-primary">Testimonial</p>
           <h2 className="text-xl md:text-2xl lg:text-3xl font-bold mb-3 leading-snug text-left">

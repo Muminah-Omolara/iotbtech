@@ -13,7 +13,7 @@ const Nav = ({
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="flex items-center justify-between px-8 shadow-md bg-white relative z-[1000] h-16">
+    <nav className="flex items-center justify-between px-8 shadow-md bg-white relative z-[1000] h-16 font-Montserrat">
       {/* Logo */}
       <div>
         <img

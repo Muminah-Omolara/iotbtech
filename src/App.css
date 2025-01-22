@@ -1,4 +1,4 @@
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @keyframes fadeInOut {
     0%, 100% {
       opacity: 0;
@@ -11,3 +11,5 @@
   .fadingText {
     animation: fadeInOut 2s infinite;
   }
+
+  

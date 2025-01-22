@@ -49,7 +49,7 @@ const Courses = () => {
           animate={isInView ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <span className="text-gray-800">
+          <span className="text-gray-800 font-bold">
             <Typewriter
               words={["Expand your skills", "Become Future-ready"]}
               loop={0}
@@ -78,11 +78,11 @@ const Courses = () => {
           <img
             src={SE}
             alt="Software Engineering"
-            className="w-full h-48 object-cover"
+            className="w-72 h-48 object-cover"
           />
           <div className="p-6">
             <h3 className="text-xl font-bold text-gray-800">
-              Software Engineering
+              Website Development
             </h3>
             <p className="text-gray-600 mt-2 mb-4">
               Master the art of building scalable software solutions.
@@ -106,7 +106,7 @@ const Courses = () => {
           <img
             src={Graphics}
             alt="Graphics Designing"
-            className="w-full h-48 object-cover"
+            className="w-72 h-48 object-cover"
           />
           <div className="p-6">
             <h3 className="text-xl font-bold text-gray-800">
@@ -135,7 +135,7 @@ const Courses = () => {
           <img
             src={Cloud}
             alt="Cloud Computing"
-            className="w-full h-48 object-cover"
+            className="w-72 h-48 object-cover"
           />
           <div className="p-6">
             <h3 className="text-xl font-bold text-gray-800">Cloud Computing</h3>
@@ -162,7 +162,7 @@ const Courses = () => {
           <img
             src={Product}
             alt="Product Designing"
-            className="w-full h-48 object-cover"
+            className="w-72 h-48 object-cover"
           />
           <div className="p-6">
             <h3 className="text-xl font-bold text-gray-800">

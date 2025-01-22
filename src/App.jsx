@@ -1,16 +1,16 @@
 import React, { useRef, useState, useEffect } from "react";
-import About from "./Components/About";
-import Benefits from "./Components/Benefits";
-import Card from "./Components/Card";
-import ComingSoon from "./Components/ComingSoon";
-import Courses from "./Components/Courses";
-import Footer from "./Components/Footer";
-import Hero from "./Components/Hero";
-import Nav from "./Components/Nav";
-import Newsletter from "./Components/Newsletter";
-import Team from "./Components/Team";
-import Testimonial from "./Components/Testimonial";
-import Upcoming from "./Components/upcoming";
+import About from "./components/About";
+import Benefits from "./components/Benefits";
+import Card from "./components/Card";
+import ComingSoon from "./components/ComingSoon";
+import Courses from "./components/Courses";
+import Footer from "./components/Footer";
+import Hero from "./components/Hero";
+import Nav from "./components/Nav";
+import Newsletter from "./components/Newsletter";
+import Team from "./components/Team";
+import Testimonial from "./components/Testimonial";
+import Upcoming from "./components/upcoming";
 import { FaArrowUp } from "react-icons/fa";
 
 function App() {
@@ -66,7 +66,7 @@ function App() {
   };
 
   return (
-    <>
+    <div className="max-w-full overflow-x-hidden">
       <Nav
         scrollToCourses={scrollToCourses}
         scrollToAbout={scrollToAbout}
@@ -75,34 +75,36 @@ function App() {
         scrollToTestimonial={scrollToTestimonial}
       />
       <Hero />
-      <Card />
+      <div className="font-Montserrat">
+        <Card />
 
-      <section ref={coursesRef}>
-        <Courses />
-      </section>
+        <section ref={coursesRef}>
+          <Courses />
+        </section>
 
-      <section ref={aboutRef}>
-        <About />
-      </section>
+        <section ref={aboutRef}>
+          <About />
+        </section>
 
-      <Benefits />
+        <Benefits />
 
-      <section ref={contactRef}>
-        <Newsletter />
-      </section>
+        <section ref={contactRef}>
+          <Newsletter />
+        </section>
 
-      <ComingSoon />
+        <ComingSoon />
 
-      <section ref={teamRef}>
-        <Team />
-      </section>
+        <section ref={teamRef}>
+          <Team />
+        </section>
 
-      <section ref={testimonialRef}>
-        <Testimonial />
-      </section>
+        <section ref={testimonialRef}>
+          <Testimonial />
+        </section>
 
-      <Upcoming />
-      <Footer />
+        <Upcoming />
+        <Footer />
+      </div>
 
       {/* Scroll to Top Button */}
       {showScrollTop && (
@@ -114,7 +116,7 @@ function App() {
           <FaArrowUp />
         </button>
       )}
-    </>
+    </div>
   );
 }
 

@@ -17,9 +17,9 @@ const Testimonial = () => {
     {
       name: "Muminah Omolara",
       image: Omolara,
-      role: "Software Developer",
+      role: "Website Developer",
       message:
-        "IOTB-TECH Software Engineering Training provided me with a valuable body of knowledge. I am ready to solve people's problems through Software Development!",
+        "IOTB-TECH Web Development Training provided me with a valuable body of knowledge. I am ready to solve people's problems through Software Development!",
     },
     {
       name: "Yunusa Usman",

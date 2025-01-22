@@ -7,14 +7,14 @@ const Hero = () => {
     <>
       {/* Hero Section */}
       <section
-        className="relative w-full h-screen bg-cover bg-center"
+        className="relative w-full h-[80vh] bg-cover bg-center"
         style={{
           backgroundImage: `url(${HeroBg})`,
         }}
       >
         {/* Content overlay */}
         <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center px-4">
-          <h1 className="text-white text-2xl md:text-6xl font-bold text-center leading-snug">
+          <h1 className="text-white text-4xl md:text-6xl font-bold text-center leading-snug font-Nunito">
             <Typewriter
               words={["Revolutionize", "Transform"]}
               loop={0} // Set to `0` for infinite looping
@@ -30,7 +30,7 @@ const Hero = () => {
           </h1>
 
           {/* Typewriter effect */}
-          <p className="text-white text-lg md:text-2xl mt-8 font-medium text-center">
+          <p className="text-white text-lg md:text-2xl mt-8 font-medium text-center font-Nunito">
             We are on a mission to{" "}
             <span className="text-blue-400 font-bold">
               <Typewriter

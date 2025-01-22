@@ -26,7 +26,7 @@ const About = () => {
         transition={{ duration: 0.6 }}
       >
         {/* Image Section */}
-        <div className="flex-shrink-0">
+        <div className="flex-shrink-0 mr-4">
           <img
             src={Img}
             alt="IOTB-TECH"
@@ -35,7 +35,7 @@ const About = () => {
         </div>
 
         {/* About Text Section */}
-        <div className="max-w-xl">
+        <div className="max-w-xl ml-16">
           <h2 className="text-3xl md:text-5xl font-bold text-gray-800">
             About{" "}
             <span className="text-blue-500">
@@ -50,23 +50,19 @@ const About = () => {
               )}
             </span>
           </h2>
-          <p className="text-gray-600 mt-6 text-lg md:text-xl leading-relaxed">
-            Established in 2020, <span className="font-bold">IOTB-TECH</span>, a
-            global leader in Skills and Talent Development, offers
-            multi-disciplinary learning management and training delivery
-            solutions to students and graduates in Nigeria. While working hard
-            to expand our horizon beyond these courses,{" "}
-            <span className="font-bold">IOTB-TECH</span> currently offers
-            training in four main sections of Tech across Nigeria -
-            <span className="text-blue-500 font-bold">
-              {" "}
-              Software Engineering
-            </span>
-            ,<span className="text-blue-500 font-bold"> Cloud Computing</span>,
-            <span className="text-blue-500 font-bold"> Graphics Designing</span>
-            , and
-            <span className="text-blue-500 font-bold"> Product Design</span>.
-          </p>
+
+          <div className="text-gray-600 mt-6 text-lg md:text-xl leading-relaxed">
+            <Typewriter
+              words={[
+                `Established in 2020, IOTB-TECH, a global leader in Skills and Talent Development, offers multi-disciplinary learning management and training delivery solutions to students and graduates in Nigeria. While working hard to expand our horizon beyond these courses, IOTB-TECH currently offers training in four main sections of Tech across Nigeria - Software Engineering, Cloud Computing, Graphics Designing, and Product Design.`,
+              ]}
+              loop={1} // Loop just once
+              typeSpeed={10} // Adjust for faster typing speed
+              deleteSpeed={20} // Optional: Adjust for delete speed (not used here)
+              cursor={false} // Hides the cursor if not needed
+            />
+          </div>
+
           <div>
             <button className="mt-8 px-6 py-3 bg-blue-500 text-white text-lg font-medium rounded-md hover:bg-blue-600 transition-all duration-300">
               Find out more

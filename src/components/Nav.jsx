@@ -13,7 +13,7 @@ const Nav = ({
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="flex items-center justify-between px-4 py-[-5px] shadow-md bg-white relative z-[1000]">
+    <nav className="flex items-center justify-between px-8 shadow-md bg-white relative z-[1000] h-16">
       {/* Logo */}
       <div>
         <img
@@ -25,7 +25,7 @@ const Nav = ({
 
       {/* Desktop Navigation */}
       <div className="hidden md:flex flex-1 justify-center">
-        <ul className="flex space-x-12 text-gray-700 font-medium">
+        <ul className="flex space-x-16 md:space-x-6 text-gray-700 font-medium">
           <li className="hover:text-blue-500 cursor-pointer transition-all duration-300">
             HOME
           </li>
@@ -79,7 +79,7 @@ const Nav = ({
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="absolute top-20 left-0 w-full bg-white shadow-md md:hidden">
+        <div className="absolute top-10 left-0 w-full bg-white shadow-md md:hidden">
           <ul className="flex flex-col items-center space-y-4 py-6 text-gray-700 font-medium">
             <li
               className="hover:text-blue-500 cursor-pointer transition-all duration-300"

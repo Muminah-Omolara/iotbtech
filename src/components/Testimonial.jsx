@@ -1,6 +1,7 @@
+// import "./swiper.css";
 import React, { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -78,7 +79,7 @@ const Testimonial = () => {
     }, []);
 
     return (
-      <div ref={headingRef} className="text-center mb-12">
+      <div ref={headingRef} className="text-center mb-12 -mt-8">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
           {triggerTypewriter && (
             <Typewriter
@@ -99,9 +100,13 @@ const Testimonial = () => {
       <TestimonialHeading />
       <div className="mt-8 bg-blue-50 py-12 px-6 mb-24">
         <Swiper
-          modules={[Navigation, Pagination]}
+          modules={[Navigation, Pagination, Autoplay]}
           navigation
           pagination={{ clickable: true }}
+          autoplay={{
+            delay: 4000,
+            disableOnInteraction: false,
+          }}
           spaceBetween={30}
           slidesPerView={1}
           className="w-full"
@@ -121,7 +126,9 @@ const Testimonial = () => {
                   <h3 className="text-xl font-semibold text-gray-800">
                     {testimonial.name}
                   </h3>
-                  <p className="text-sm text-gray-800">{testimonial.role}</p>
+                  <p className="text-sm text-gray-800 mb-4">
+                    {testimonial.role}
+                  </p>
                 </div>
               </div>
             </SwiperSlide>

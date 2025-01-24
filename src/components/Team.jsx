@@ -1,7 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
-import { motion, useInView } from "framer-motion"; // Import framer-motion
+import { motion, useInView } from "framer-motion"; 
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -21,9 +21,8 @@ import Hassan from "../assets/Xtra/Hassan_Yaya.jpeg";
 import SM from "../assets/Xtra/ibraheem-semiat.jpg";
 
 const Team = () => {
-  const sectionRef = React.useRef(null); // Reference to the section
-  const isInView = useInView(sectionRef, { once: true }); // Check if section is in view
-
+  const sectionRef = React.useRef(null);
+  const isInView = useInView(sectionRef, { once: true });
   const slideInAnimation = {
     initial: { opacity: 0, y: 50 }, // Start below the viewport
     animate: {
@@ -64,7 +63,7 @@ const Team = () => {
   return (
     <motion.section
       className="mt-24 bg-gray-50 py-12 px-6 md:px-12 lg:px-20 mb-24"
-      ref={sectionRef} // Attach ref to the section
+      ref={sectionRef}
       initial="initial"
       animate={isInView ? "animate" : "initial"}
       variants={slideInAnimation}
@@ -94,16 +93,16 @@ const Team = () => {
       >
         {teamMembers.map((member, index) => (
           <SwiperSlide key={index}>
-            <div className="flex flex-col items-center text-center bg-white shadow-lg rounded-lg p-4 hover:shadow-2xl transition-shadow duration-300">
+            <div className="flex flex-col items-center text-center bg-white shadow-lg rounded-lg mb-16 p-4 hover:shadow-2xl transition-shadow duration-300">
               <img
                 src={member.image}
                 alt={member.name}
-                className="w-24 h-24 rounded-full object-cover mb-4 border-4 border-blue-500"
+                className="w-36 h-36 rounded-full object-cover mb-4 border-4 border-blue-500"
               />
               <h3 className="text-lg font-medium text-gray-800">
                 {member.name}
               </h3>
-              <p className="text-sm text-gray-600 mt-1 mb-8 lg:mb-24">
+              <p className="text-sm text-gray-600 mt-1 mb-8 lg:mb-8">
                 {member.position}
               </p>
             </div>

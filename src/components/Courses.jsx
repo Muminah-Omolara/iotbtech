@@ -72,13 +72,13 @@ const Courses = () => {
       >
         {/* Software Engineering */}
         <motion.div
-          className="bg-white shadow-lg rounded-lg overflow-hidden cursor-pointer transition-transform transform hover:scale-95 hover:shadow-2xl"
+          className="bg-white w-96 lg:w-96 lg:ml-24 md:w-80 shadow-lg rounded-lg overflow-hidden cursor-pointer transition-transform transform hover:scale-95 hover:shadow-2xl"
           variants={cardVariants}
         >
           <img
             src={SE}
             alt="Software Engineering"
-            className="w-72 h-48 object-cover"
+            className="w-96 h-48 object-cover"
           />
           <div className="p-6">
             <h3 className="text-xl font-bold text-gray-800">
@@ -100,13 +100,13 @@ const Courses = () => {
 
         {/* Graphics Designing */}
         <motion.div
-          className="bg-white shadow-lg rounded-lg overflow-hidden cursor-pointer transition-transform transform hover:scale-95 hover:shadow-2xl"
+          className="bg-white w-96 lg:w-96 lg:ml-16 md:w-80 shadow-lg rounded-lg overflow-hidden cursor-pointer transition-transform transform hover:scale-95 hover:shadow-2xl"
           variants={cardVariants}
         >
           <img
             src={Graphics}
             alt="Graphics Designing"
-            className="w-72 h-48 object-cover"
+            className="w-96 h-48 object-cover"
           />
           <div className="p-6">
             <h3 className="text-xl font-bold text-gray-800">
@@ -129,13 +129,13 @@ const Courses = () => {
 
         {/* Cloud Computing */}
         <motion.div
-          className="bg-white shadow-lg rounded-lg overflow-hidden cursor-pointer transition-transform transform hover:scale-95 hover:shadow-2xl"
+          className="bg-white w-96 lg:w-96 lg:ml-24 md:w-80 shadow-lg rounded-lg overflow-hidden cursor-pointer transition-transform transform hover:scale-95 hover:shadow-2xl"
           variants={cardVariants}
         >
           <img
             src={Cloud}
             alt="Cloud Computing"
-            className="w-72 h-48 object-cover"
+            className="w-96 h-48 object-cover"
           />
           <div className="p-6">
             <h3 className="text-xl font-bold text-gray-800">Cloud Computing</h3>
@@ -156,13 +156,13 @@ const Courses = () => {
 
         {/* Product Designing */}
         <motion.div
-          className="bg-white shadow-lg rounded-lg overflow-hidden cursor-pointer transition-transform transform hover:scale-95 hover:shadow-2xl"
+          className="bg-white w-96 lg:w-96 lg:ml-16 md:w-80 shadow-lg rounded-lg overflow-hidden cursor-pointer transition-transform transform hover:scale-95 hover:shadow-2xl"
           variants={cardVariants}
         >
           <img
             src={Product}
             alt="Product Designing"
-            className="w-72 h-48 object-cover"
+            className="w-96 h-48 object-cover"
           />
           <div className="p-6">
             <h3 className="text-xl font-bold text-gray-800">

@@ -26,7 +26,7 @@ const About = () => {
         transition={{ duration: 0.6 }}
       >
         {/* Image Section */}
-        <div className="flex-shrink-0 mr-4">
+        <div className="flex-shrink-0 mr-4 md:w-full lg:w-1/2">
           <img
             src={Img}
             alt="IOTB-TECH"
@@ -35,11 +35,11 @@ const About = () => {
         </div>
 
         {/* About Text Section */}
-        <div className="max-w-xl ml-16">
+        <div className="lg:max-w-xl md:w-xl lg:ml-16 md:w-full">
           <h2 className="text-3xl md:text-5xl font-bold text-gray-800">
             About{" "}
             <span className="text-blue-500">
-              {isVisible && ( // Show Typewriter only when section is in viee
+              {isVisible && ( // This will show Typewriter only when section is in viee
                 <Typewriter
                   words={["IOTB-TECH"]}
                   cursor={false}
@@ -56,10 +56,9 @@ const About = () => {
               words={[
                 `Established in 2020, IOTB-TECH, a global leader in Skills and Talent Development, offers multi-disciplinary learning management and training delivery solutions to students and graduates in Nigeria. While working hard to expand our horizon beyond these courses, IOTB-TECH currently offers training in four main sections of Tech across Nigeria - Software Engineering, Cloud Computing, Graphics Designing, and Product Design.`,
               ]}
-              loop={1} // Loop just once
-              typeSpeed={10} // Adjust for faster typing speed
-              deleteSpeed={20} // Optional: Adjust for delete speed (not used here)
-              cursor={false} // Hides the cursor if not needed
+              loop={1}
+              typeSpeed={8}
+              cursor={false}
             />
           </div>
 

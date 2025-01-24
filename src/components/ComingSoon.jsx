@@ -1,7 +1,7 @@
 import React from "react";
 import { GiArtificialIntelligence } from "react-icons/gi";
 import { SiOpenproject } from "react-icons/si";
-import { GrTechnology } from "react-icons/gr";
+import motion from "../assets/Xtra/motionGraphics.avif";
 import { BiSolidBarChartAlt2 } from "react-icons/bi";
 import { Typewriter } from "react-simple-typewriter";
 
@@ -46,14 +46,18 @@ const ComingSoon = () => {
 
         {/* Course 3 */}
         <div className="flex flex-col items-center text-center bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition-shadow duration-300">
-          <GrTechnology className="text-6xl text-purple-500 mb-4" />
-          <p className="text-lg font-medium text-gray-700">IT Operations</p>
+          <img
+            src={motion}
+            alt=""
+            className="text-6xl text-purple-500 mb-4 w-20 h-20"
+          />
+          <p className="text-lg font-medium text-gray-700">Motion Graphics</p>
         </div>
 
         {/* Course 4 */}
         <div className="flex flex-col items-center text-center bg-white shadow-lg rounded-lg p-6 hover:shadow-2xl transition-shadow duration-300">
           <BiSolidBarChartAlt2 className="text-6xl text-yellow-500 mb-4" />
-          <p className="text-lg font-medium text-gray-700">Data Analysis</p>
+          <p className="text-lg font-medium text-gray-700">Data Analytics</p>
         </div>
       </div>
     </section>

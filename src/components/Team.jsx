@@ -1,7 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
-import { motion, useInView } from "framer-motion"; 
+import { motion, useInView } from "framer-motion";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -33,30 +33,50 @@ const Team = () => {
   };
 
   const teamMembers = [
-    { name: "Ibn Abur-Rahman", image: Kishky, position: "Software Engineer" },
+    {
+      name: "Ibn Ahmad Abur-Rahman Kishky ",
+      image: Kishky,
+      position: "Cloud Solutions Architect",
+    },
     {
       name: "Awwal Adewuyi",
       image: Almajiri,
       position: "Senior Software Engineer",
     },
-    { name: "Rofiat Adebakin", image: Rofiat, position: "UI/UX Designer" },
-    { name: "Hassan Yahyah", image: Hassan, position: "Product Manager" },
-    { name: "Ibraheem Semiat", image: SM, position: "Backend Developer" },
     {
-      name: "Abdullah Odewole",
-      image: Abdullah,
-      position: "Frontend Developer",
+      name: "Rofiat Atinuke Adebakin",
+      image: Rofiat,
+      position: "Teaching Service Commission",
     },
-    { name: "Sulaiman Olusokun", image: Slytech, position: "DevOps Engineer" },
-    { name: "Salahudeen Aishah", image: Aishah, position: "Content Creator" },
-    { name: "Oyedeji MS", image: MS, position: "AI Specialist" },
-    { name: "Abdur-Rokeeb", image: Rokeeb, position: "Cybersecurity Analyst" },
-    { name: "Rare Breed", image: rarebreed, position: "Blockchain Developer" },
-    { name: "Akeem Muhideen", image: MD, position: "Project Coordinator" },
+    { name: "Hassan Yahyah", image: Hassan, position: "FullStack Developer" },
+    { name: "Ibraheem Semiat", image: SM, position: "Project Manager" },
+    {
+      name: "Odewole Abdullah Adewale",
+      image: Abdullah,
+      position: "Brand Designer",
+    },
+    { name: "Sulaiman Olusokun", image: Slytech, position: "Program Analyst" },
+    {
+      name: "Salahudeen Aishah",
+      image: Aishah,
+      position: "Project MAnager, Freelancer",
+    },
+    {
+      name: "Oyedeji Adekunle Shuaraudeen",
+      image: MS,
+      position: "Product Designer",
+    },
+    { name: "Rokeeb Abdul", image: Rokeeb, position: "Product Dsigner" },
+    {
+      name: "Adepoju Abdulquadri",
+      image: rarebreed,
+      position: "Computer Technician/Cloud Administrator",
+    },
+    { name: "Akeem Muhyideen Folahan", image: MD, position: "Cloud Engineer" },
     {
       name: "Abdulkareem Mustopha",
       image: Moscow,
-      position: "Marketing Strategist",
+      position: "Project Manager/Cloud Administrator",
     },
   ];
 
@@ -93,18 +113,18 @@ const Team = () => {
       >
         {teamMembers.map((member, index) => (
           <SwiperSlide key={index}>
-            <div className="flex flex-col items-center text-center bg-white shadow-lg rounded-lg mb-16 p-4 hover:shadow-2xl transition-shadow duration-300">
+            <div className="flex flex-col items-center text-center bg-white shadow-lg rounded-lg mb-16 p-4 hover:shadow-2xl transition-shadow duration-300 h-72">
+              {" "}
+              {/* Fixed height */}
               <img
                 src={member.image}
                 alt={member.name}
                 className="w-36 h-36 rounded-full object-cover mb-4 border-4 border-blue-500"
               />
-              <h3 className="text-lg font-medium text-gray-800">
+              <h3 className="text-lg font-medium text-gray-800 whitespace-normal">
                 {member.name}
               </h3>
-              <p className="text-sm text-gray-600 mt-1 mb-8 lg:mb-8">
-                {member.position}
-              </p>
+              <p className="text-sm text-gray-600 mt-1">{member.position}</p>
             </div>
           </SwiperSlide>
         ))}
